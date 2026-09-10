@@ -195,6 +195,15 @@ export const DEFAULT_CONTENT = {
     ],
   },
 
+  committee: {
+    intro:
+      "The students who run TRS BVM day to day — organising events, leading projects, and keeping the society running.",
+    // Empty by default rather than placeholder names — a committee list is
+    // specific enough that a fake one would read as a real claim. Add real
+    // members through the admin panel.
+    members: [],
+  },
+
   join: {
     heading: "Joining TRS is on paper, on purpose.",
     description:

@@ -11,7 +11,7 @@
     "ctaSecondaryHref": "/join",
     "locationLine1": "BVM Engineering College",
     "locationLine2": "Vallabh Vidyanagar, Gujarat",
-    "image": "/brand/hero-campus.jpg",
+    "image": "/uploads/1789059081322-chatgpt-image-sep-10-2026-10-21-03-pm.png",
     "imageAlt": "BVM Engineering College campus"
   },
   "events": {
@@ -204,7 +204,7 @@
       "name": "Dr. Milendrakumar  Manilal  Solanki",
       "role": "Faculty Enrollment Contact",
       "email": "mmsolanki@bvmengineering.ac.in",
-      "photo": null
+      "photo": "/uploads/1789058363577-mmsolanki-bvmengineering-ac-inmms-remove.png"
     }
   },
   "footer": {

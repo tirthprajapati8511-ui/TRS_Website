@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useContent, useContentStatus } from "../lib/ContentContext";
 import AdminLogin from "./AdminLogin";
 import HeroEditor from "./editors/HeroEditor";
+import CommitteeEditor from "./editors/CommitteeEditor";
 import EventsEditor from "./editors/EventsEditor";
 import ProjectsEditor from "./editors/ProjectsEditor";
 import AchievementsEditor from "./editors/AchievementsEditor";
@@ -13,6 +14,7 @@ import { ADMIN_TOKEN_KEY as TOKEN_KEY } from "./tokenKey";
 
 const TABS = [
   { key: "hero", label: "Hero", Editor: HeroEditor },
+  { key: "committee", label: "Committee", Editor: CommitteeEditor },
   { key: "events", label: "Events", Editor: EventsEditor },
   { key: "projects", label: "Projects", Editor: ProjectsEditor },
   { key: "achievements", label: "Achievements", Editor: AchievementsEditor },

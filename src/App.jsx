@@ -8,6 +8,7 @@ import Projects from "./sections/Projects";
 import Achievements from "./sections/Achievements";
 import PageShell from "./pages/PageShell";
 import Join from "./pages/Join";
+import Committee from "./pages/Committee";
 import AdminPage from "./admin/AdminPage";
 import ScrollProgress from "./components/ScrollProgress";
 
@@ -43,7 +44,7 @@ function App() {
       <Route element={<SiteLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/explore" element={<PageShell title="Explore TRS" />} />
-        <Route path="/committee" element={<PageShell title="Committee" />} />
+        <Route path="/committee" element={<Committee />} />
         <Route path="/events" element={<PageShell title="Events" />} />
         <Route path="/events/:eventId" element={<PageShell title="Event Details" />} />
         <Route path="/projects" element={<PageShell title="Projects" />} />
