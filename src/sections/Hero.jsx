@@ -10,7 +10,18 @@ const ease = [0.16, 1, 0.3, 1];
 
 export default function Hero() {
   const { hero } = useContent();
-  const [imageOk, setImageOk] = useState(true);
+
+  // Content loads async: the very first render can briefly show the
+  // default hero.image (before content.json is fetched), and if that one
+  // 404s, the broken-image flag must not stick once the real saved image
+  // arrives. Tracking the src alongside the flag — and resetting both
+  // together during render when the src changes — avoids that instead of
+  // an effect that fires a render behind.
+  const [imageState, setImageState] = useState({ src: hero.image, ok: true });
+  if (imageState.src !== hero.image) {
+    setImageState({ src: hero.image, ok: true });
+  }
+  const imageOk = imageState.ok;
 
   return (
     <section className="relative overflow-hidden bg-navy text-on-navy">
@@ -20,7 +31,7 @@ export default function Hero() {
         <motion.img
           src={assetUrl(hero.image)}
           alt={hero.imageAlt}
-          onError={() => setImageOk(false)}
+          onError={() => setImageState((s) => ({ ...s, ok: false }))}
           initial={{ scale: 1.08 }}
           animate={{ scale: 1 }}
           transition={{ duration: 8, ease: "easeOut" }}
