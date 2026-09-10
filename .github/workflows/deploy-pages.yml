@@ -1,0 +1,55 @@
+name: Deploy to GitHub Pages
+
+# This publishes a static PREVIEW build. The admin panel (/admin) won't work
+# here — it depends on the local Vite dev server's content API, which has no
+# equivalent on a static host. The public site itself works fine; it falls
+# back to the defaults baked into the bundle.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+        env:
+          VITE_BASE_PATH: /TRS_Website/
+
+      # SPA fallback: GitHub Pages has no server-side router, so a direct
+      # visit to e.g. /join needs the same index.html served for it too —
+      # react-router then takes over client-side.
+      - run: cp dist/index.html dist/404.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

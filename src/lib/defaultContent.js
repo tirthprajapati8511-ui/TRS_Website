@@ -53,8 +53,9 @@ export const DEFAULT_CONTENT = {
     locationLine1: "BVM Engineering College",
     locationLine2: "Vallabh Vidyanagar, Gujarat",
     // Drop a file at public/brand/hero-campus.jpg and it appears automatically —
-    // until then the section falls back to a plain navy panel.
-    image: "/brand/hero-campus.jpg",
+    // until then the section falls back to a plain navy panel. Built off
+    // BASE_URL so it still resolves when served from a subpath.
+    image: `${import.meta.env.BASE_URL}brand/hero-campus.jpg`,
     imageAlt: "BVM Engineering College campus",
   },
 
