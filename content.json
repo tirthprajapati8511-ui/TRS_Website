@@ -1,0 +1,241 @@
+{
+  "hero": {
+    "eyebrow": "Robotics Innovation Community",
+    "headline": "Students Robots",
+    "headlineAccent": "Real Impact",
+    "quote": "Robotics is 90% thinking, 10% building",
+    "description": "TRS BVM Student Chapter is a community of passionate students working on robotics and automation to solve real-world challenges.",
+    "ctaPrimaryLabel": "Explore TRS",
+    "ctaPrimaryHref": "/explore",
+    "ctaSecondaryLabel": "Join TRS",
+    "ctaSecondaryHref": "/join",
+    "locationLine1": "BVM Engineering College",
+    "locationLine2": "Vallabh Vidyanagar, Gujarat",
+    "image": "/brand/hero-campus.jpg",
+    "imageAlt": "BVM Engineering College campus"
+  },
+  "events": {
+    "items": [
+      {
+        "id": "robofest-6",
+        "name": "ROBOFEST 6.0",
+        "dateLabel": "15 – 18 Feb 2026",
+        "status": "Registration Open",
+        "statusTone": "accent",
+        "location": "BVM Engineering College",
+        "description": "Annual robotics competition featuring multiple categories and teams.",
+        "image": null,
+        "href": "/events/robofest-6",
+        "structure": "multi-team",
+        "teams": [
+          {
+            "name": "Team A",
+            "category": "Placeholder category",
+            "leader": "Placeholder",
+            "facultyAdvisor": "Placeholder"
+          },
+          {
+            "name": "Team B",
+            "category": "Placeholder category",
+            "leader": "Placeholder",
+            "facultyAdvisor": "Placeholder"
+          }
+        ]
+      },
+      {
+        "id": "sauvc-2026",
+        "name": "SAUVC 2026",
+        "dateLabel": "Jan – Mar 2026",
+        "status": "Applications Open",
+        "statusTone": "good",
+        "location": "To Be Announced",
+        "description": "Student Autonomous Underwater Vehicle Competition.",
+        "image": null,
+        "href": "/events/sauvc-2026",
+        "structure": "single-team",
+        "teams": [
+          {
+            "name": "TRS SAUVC Team",
+            "roles": [
+              {
+                "title": "Team Lead",
+                "person": "Placeholder"
+              },
+              {
+                "title": "Electronics Lead",
+                "person": "Placeholder"
+              },
+              {
+                "title": "Mechanical Lead",
+                "person": "Placeholder"
+              }
+            ],
+            "facultyAdvisor": "Placeholder"
+          }
+        ]
+      },
+      {
+        "id": "robocon-2026",
+        "name": "ROBOCON 2026",
+        "dateLabel": "Apr 2026",
+        "status": "Coming Soon",
+        "statusTone": "neutral",
+        "location": "ABU Robocon",
+        "description": "Asia-Pacific Broadcasting Union Robocon Competition.",
+        "image": null,
+        "href": "/events/robocon-2026",
+        "structure": "single-team",
+        "teams": [
+          {
+            "name": "TRS Robocon Team",
+            "roles": [
+              {
+                "title": "Overall Team Lead",
+                "person": "Placeholder"
+              },
+              {
+                "title": "Software Lead",
+                "person": "Placeholder"
+              },
+              {
+                "title": "Mechanical Lead",
+                "person": "Placeholder"
+              },
+              {
+                "title": "Electronics Lead",
+                "person": "Placeholder"
+              }
+            ],
+            "facultyAdvisor": "Placeholder"
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "eyebrowTitle": "Our Projects",
+    "heading": "Selected work from our technical divisions.",
+    "items": [
+      {
+        "id": "autonomous-rover",
+        "name": "Autonomous Rover",
+        "description": "A versatile rover platform for autonomous navigation and mapping.",
+        "domains": [
+          "Navigation",
+          "Perception",
+          "Control"
+        ],
+        "image": null,
+        "href": "/projects/autonomous-rover"
+      },
+      {
+        "id": "underwater-rov",
+        "name": "Underwater ROV",
+        "description": "An underwater robotic vehicle for exploration and research.",
+        "domains": [
+          "Embedded",
+          "Control",
+          "Computer Vision"
+        ],
+        "image": null,
+        "href": "/projects/underwater-rov"
+      },
+      {
+        "id": "quadruped-robot",
+        "name": "Quadruped Robot",
+        "description": "A four-legged robot platform for research in locomotion and stability.",
+        "domains": [
+          "Mechanics",
+          "Control",
+          "AI"
+        ],
+        "image": null,
+        "href": "/projects/quadruped-robot"
+      }
+    ],
+    "ctaPanel": {
+      "heading": "Not just building robots, but better engineers.",
+      "description": "Join a community that challenges you, supports you, and helps you turn ideas into impact.",
+      "buttonLabel": "Join TRS",
+      "buttonHref": "/join"
+    }
+  },
+  "achievements": {
+    "eyebrowTitle": "Achievements",
+    "description": "TRS represents BVM Engineering College at national and regional robotics competitions. The full archive, organised by academic year, lives on the Achievements page.",
+    "recent": [
+      {
+        "year": "PLACEHOLDER",
+        "title": "ABU Robocon",
+        "detail": "National / zonal round participation — result to be added."
+      },
+      {
+        "year": "PLACEHOLDER",
+        "title": "RoboFest",
+        "detail": "Inter-college robotics event — result to be added."
+      },
+      {
+        "year": "PLACEHOLDER",
+        "title": "Technical Exhibition",
+        "detail": "Project showcase and recognition — detail to be added."
+      }
+    ],
+    "archiveYears": [
+      "2026–27",
+      "2025–26",
+      "2024–25",
+      "2023–24"
+    ]
+  },
+  "workshops": {
+    "eyebrowTitle": "Workshops",
+    "items": []
+  },
+  "join": {
+    "heading": "Joining TRS is on paper, on purpose.",
+    "description": "Membership isn't an online form — it's an official enrollment form you download, fill in, and submit in person. That's how we keep it a real commitment.",
+    "steps": [
+      "Download the official enrollment form (PDF).",
+      "Fill it in and get it signed where required.",
+      "Submit it physically to the faculty enrollment contact."
+    ],
+    "formHref": null,
+    "facultyContact": {
+      "name": "Dr. Milendrakumar  Manilal  Solanki",
+      "role": "Faculty Enrollment Contact",
+      "email": "mmsolanki@bvmengineering.ac.in",
+      "photo": null
+    }
+  },
+  "footer": {
+    "description": "TRS BVM Student Chapter is a student-driven robotics and engineering society at BVM Engineering College, designing, building and competing with robots.",
+    "addressLines": [
+      "BVM Engineering College",
+      "Vallabh Vidyanagar, Anand, Gujarat 388120"
+    ],
+    "email": "trs@bvmengineering.ac.in",
+    "phone": "+91 2692 230104 (College)",
+    "socials": [
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/trs_bvm?stkn=bDA3Y2phZG1naWdh"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/company/trs-bvm/"
+      },
+      {
+        "label": "YouTube",
+        "href": "https://youtube.com/@trsbvmstudentchapter7190?si=Yc-GSysMS0QzYE3V"
+      },
+      {
+        "label": "X",
+        "href": "https://x.com/BvmTrs"
+      }
+    ],
+    "parentOrg": {
+      "name": "The Robotics Society (India)",
+      "note": "An authorized student chapter of"
+    }
+  }
+}

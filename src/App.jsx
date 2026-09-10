@@ -7,6 +7,7 @@ import HomeUpdates from "./sections/HomeUpdates";
 import Projects from "./sections/Projects";
 import Achievements from "./sections/Achievements";
 import PageShell from "./pages/PageShell";
+import Join from "./pages/Join";
 import AdminPage from "./admin/AdminPage";
 import ScrollProgress from "./components/ScrollProgress";
 
@@ -49,15 +50,7 @@ function App() {
         <Route path="/projects/:projectId" element={<PageShell title="Project Details" />} />
         <Route path="/achievements" element={<PageShell title="Achievements" />} />
         <Route path="/workshops" element={<PageShell title="Workshops" />} />
-        <Route
-          path="/join"
-          element={
-            <PageShell
-              title="Join TRS"
-              description="Joining TRS involves downloading and physically submitting an official enrollment form — not an online sign-up. This page will carry the enrollment form, submission instructions and the faculty enrollment contact."
-            />
-          }
-        />
+        <Route path="/join" element={<Join />} />
         <Route path="/contact" element={<PageShell title="Contact" />} />
         <Route path="*" element={<PageShell title="Page not found" description="That page doesn't exist yet." />} />
       </Route>
