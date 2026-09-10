@@ -1,0 +1,279 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens — TRS BVM.
+ *
+ * Light is the default, primary theme (matches the approved mockup).
+ * Dark is a full alternate palette, not an inverted filter — selected via
+ * the .ThemeToggle component, which sets documentElement[data-theme].
+ * "system" (no attribute) follows the OS preference.
+ */
+@theme {
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-bg: #ffffff;
+  --color-bg-muted: #f5f7fa;
+  --color-bg-panel: #ffffff;
+  --color-bg-elevated: #eef2f6;
+  --color-line: #e3e7ec;
+  --color-line-strong: #ccd3da;
+
+  --color-ink: #101826;
+  --color-ink-dim: #4b5768;
+  --color-ink-faint: #8892a0;
+
+  --color-navy: #0b2140;
+  --color-navy-deep: #071730;
+  --color-on-navy: #ffffff;
+  --color-on-navy-dim: #aebedb;
+
+  --color-accent: #257ec2;
+  --color-accent-dim: #1c6399;
+  --color-accent-soft: #257ec21a;
+  --color-on-accent: #ffffff;
+
+  --color-good: #1c7a4f;
+  --color-good-soft: #1c7a4f1a;
+  --color-warn: #a15c00;
+  --color-warn-soft: #a15c0016;
+
+  /* Restrained, purposeful motion only — a status-indicator pulse and a
+     circuit-trace line, not decoration for its own sake. */
+  --animate-ping-slow: ping-slow 2.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+  --animate-trace: trace 2.6s linear infinite;
+}
+
+@keyframes ping-slow {
+  0% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  75%,
+  100% {
+    transform: scale(1.9);
+    opacity: 0;
+  }
+}
+
+@keyframes trace {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+/* Dark palette — used when the OS prefers dark and no explicit choice has
+   been made ("system"), or when the user explicitly picks dark. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #0b1220;
+    --color-bg-muted: #091019;
+    --color-bg-panel: #111a29;
+    --color-bg-elevated: #172335;
+    --color-line: #253248;
+    --color-line-strong: #34435c;
+
+    --color-ink: #eef1f6;
+    --color-ink-dim: #a7b1c2;
+    --color-ink-faint: #6b7690;
+
+    --color-navy: #071427;
+    --color-navy-deep: #040c1a;
+    --color-on-navy: #f3f6fb;
+    --color-on-navy-dim: #93a4c2;
+
+    --color-accent: #59a8e6;
+    --color-accent-dim: #7fbcee;
+    --color-accent-soft: #59a8e626;
+    --color-on-accent: #071427;
+
+    --color-good: #3fbf85;
+    --color-good-soft: #3fbf851f;
+    --color-warn: #e0a238;
+    --color-warn-soft: #e0a23820;
+  }
+}
+
+/* Explicit user choice always wins, in both directions. */
+:root[data-theme="dark"] {
+  --color-bg: #0b1220;
+  --color-bg-muted: #091019;
+  --color-bg-panel: #111a29;
+  --color-bg-elevated: #172335;
+  --color-line: #253248;
+  --color-line-strong: #34435c;
+
+  --color-ink: #eef1f6;
+  --color-ink-dim: #a7b1c2;
+  --color-ink-faint: #6b7690;
+
+  --color-navy: #071427;
+  --color-navy-deep: #040c1a;
+  --color-on-navy: #f3f6fb;
+  --color-on-navy-dim: #93a4c2;
+
+  --color-accent: #59a8e6;
+  --color-accent-dim: #7fbcee;
+  --color-accent-soft: #59a8e626;
+  --color-on-accent: #071427;
+
+  --color-good: #3fbf85;
+  --color-good-soft: #3fbf851f;
+  --color-warn: #e0a238;
+  --color-warn-soft: #e0a23820;
+}
+
+:root[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-bg-muted: #f5f7fa;
+  --color-bg-panel: #ffffff;
+  --color-bg-elevated: #eef2f6;
+  --color-line: #e3e7ec;
+  --color-line-strong: #ccd3da;
+
+  --color-ink: #101826;
+  --color-ink-dim: #4b5768;
+  --color-ink-faint: #8892a0;
+
+  --color-navy: #0b2140;
+  --color-navy-deep: #071730;
+  --color-on-navy: #ffffff;
+  --color-on-navy-dim: #aebedb;
+
+  --color-accent: #257ec2;
+  --color-accent-dim: #1c6399;
+  --color-accent-soft: #257ec21a;
+  --color-on-accent: #ffffff;
+
+  --color-good: #1c7a4f;
+  --color-good-soft: #1c7a4f1a;
+  --color-warn: #a15c00;
+  --color-warn-soft: #a15c0016;
+}
+
+html {
+  background: var(--color-bg);
+  scroll-behavior: smooth;
+  color-scheme: light;
+  /* Defensive: nothing on this site should ever need horizontal scroll. */
+  overflow-x: hidden;
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    color-scheme: dark;
+  }
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-line-strong);
+  border: 2px solid var(--color-bg);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ink-faint);
+}
+
+/* A single light sweep through the hero's accent headline on load — a
+   "power-on" read, not a looping shine. Runs once. */
+.shimmer-text {
+  background-image: linear-gradient(
+    100deg,
+    var(--color-accent-dim) 42%,
+    color-mix(in srgb, var(--color-accent-dim) 40%, white) 50%,
+    var(--color-accent-dim) 58%
+  );
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer-sweep 2.2s ease-in-out 1;
+  animation-delay: 1s;
+}
+@keyframes shimmer-sweep {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -50% 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .shimmer-text {
+    animation: none;
+  }
+}
+
+/* Keyboard focus — always visible, never suppressed. */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* A thin "current flowing through a trace" line — used once, behind the
+   feature-strip icons. Respects reduced-motion below. */
+.circuit-trace {
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--color-accent) 0 6px,
+    transparent 6px 16px
+  );
+  background-size: 22px 2px;
+  animation: trace-flow 1.4s linear infinite;
+}
+@keyframes trace-flow {
+  to {
+    background-position: 22px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .circuit-trace {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.mono-label {
+  font-family: var(--font-mono);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* Faint blueprint grid — used once, behind the hero, at low opacity.
+   Not a repeated decorative motif across the site. */
+.bg-grid-faint {
+  background-image:
+    linear-gradient(to right, var(--color-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-line) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
