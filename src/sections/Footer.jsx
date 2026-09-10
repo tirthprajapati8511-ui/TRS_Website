@@ -6,11 +6,10 @@ import { SOCIAL_ICONS } from "../components/SocialIcons";
 import { NAV_LINKS, JOIN_LINK } from "../lib/defaultContent";
 import { useContent } from "../lib/ContentContext";
 
-const QUICK_LINKS = [
-  ...NAV_LINKS.filter((l) => l.href !== "/"),
-  JOIN_LINK,
-  { label: "Contact", href: "/contact" },
-];
+// NAV_LINKS already ends with Contact — slot Join TRS in right before it,
+// same order as the header nav (Home dropped, it's the logo link already).
+const withoutHome = NAV_LINKS.filter((l) => l.href !== "/");
+const QUICK_LINKS = [...withoutHome.slice(0, -1), JOIN_LINK, withoutHome.at(-1)];
 
 export default function Footer() {
   const { footer } = useContent();
