@@ -191,6 +191,20 @@
     "eyebrowTitle": "Workshops",
     "items": []
   },
+  "committee": {
+    "intro": "The students and faculty who drive TRS BVM forward — coordinating events, leading projects, mentoring members, and managing the society’s day-to-day activities.",
+    "members": [
+      {
+        "id": "member-1789060267312",
+        "name": "New Member",
+        "role": "Role",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      }
+    ]
+  },
   "join": {
     "heading": "Joining TRS is on paper, on purpose.",
     "description": "Membership isn't an online form — it's an official enrollment form you download, fill in, and submit in person. That's how we keep it a real commitment.",
@@ -202,7 +216,7 @@
     "formHref": null,
     "facultyContact": {
       "name": "Dr. Milendrakumar  Manilal  Solanki",
-      "role": "Faculty Enrollment Contact",
+      "role": "Faculty In-Charge — TRS Enrollment",
       "email": "mmsolanki@bvmengineering.ac.in",
       "photo": "/uploads/1789058363577-mmsolanki-bvmengineering-ac-inmms-remove.png"
     }
