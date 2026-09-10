@@ -39,6 +39,16 @@ export const FEATURES = [
 ];
 
 export const DEFAULT_CONTENT = {
+  brand: {
+    // Real brand assets, never redrawn — see components/Logo.jsx. TRS's
+    // mark has a transparent background so one file works in both themes;
+    // BVM's college seal doesn't, so it needs a separate light/dark file
+    // or it shows as a white or black box against the wrong background.
+    trsLogo: "/brand/trs-logo.png",
+    bvmLogoLight: "/brand/bvm-college-logo.png",
+    bvmLogoDark: "/brand/bvm-college-logo-dark.png",
+  },
+
   hero: {
     eyebrow: "Robotics · Innovation · Community",
     headline: "Students. Robots.",

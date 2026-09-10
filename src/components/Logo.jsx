@@ -1,15 +1,15 @@
 // The TRS BVM mark and the BVM college seal are real brand assets — always
-// rendered as-is from /brand, never redrawn, re-typeset, or recolored.
-//
-// Paths are built off BASE_URL (not a hard-coded leading "/") so they still
-// resolve when the site is served from a subpath — the GitHub Pages preview
-// at /TRS_Website/, and later the production deploy at /TRS/.
-const base = import.meta.env.BASE_URL;
+// rendered as-is, never redrawn, re-typeset, or recolored. Which files get
+// rendered is editable in /admin (Branding tab), not hard-coded here.
+import { useContent } from "../lib/ContentContext";
+import { useTheme } from "../lib/ThemeContext";
+import { assetUrl } from "../lib/assetUrl";
 
 export function TrsLogo({ className = "h-9 w-auto" }) {
+  const { brand } = useContent();
   return (
     <img
-      src={`${base}brand/trs-logo.png`}
+      src={assetUrl(brand.trsLogo)}
       alt="TRS BVM — Technology & Robotics Society"
       className={className}
       width={120}
@@ -18,10 +18,16 @@ export function TrsLogo({ className = "h-9 w-auto" }) {
   );
 }
 
-export function BvmLogo({ className = "h-9 w-auto", dark = false }) {
+// The BVM seal has a solid (non-transparent) background, so the wrong
+// variant shows as a visible white or black box depending on the theme —
+// pick the one that matches the page's resolved theme automatically.
+export function BvmLogo({ className = "h-9 w-auto" }) {
+  const { brand } = useContent();
+  const { resolvedTheme } = useTheme();
+  const src = resolvedTheme === "dark" ? brand.bvmLogoDark : brand.bvmLogoLight;
   return (
     <img
-      src={`${base}brand/${dark ? "bvm-college-logo-dark.png" : "bvm-college-logo.png"}`}
+      src={assetUrl(src)}
       alt="Birla Vishvakarma Mahavidyalaya, Vallabh Vidyanagar"
       className={className}
       width={120}
