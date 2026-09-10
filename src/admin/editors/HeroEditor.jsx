@@ -1,4 +1,4 @@
-import { Field, TextArea, SectionCard } from "../fields";
+import { Field, TextArea, SectionCard, ImageUploadField } from "../fields";
 
 export default function HeroEditor({ value, onChange }) {
   const set = (partial) => onChange({ ...value, ...partial });
@@ -31,13 +31,7 @@ export default function HeroEditor({ value, onChange }) {
         <Field label="Location (line 2)" value={value.locationLine2} onChange={(v) => set({ locationLine2: v })} />
       </div>
 
-      <Field
-        label="Campus photo path"
-        value={value.image}
-        onChange={(v) => set({ image: v })}
-        mono
-        placeholder="/brand/hero-campus.jpg"
-      />
+      <ImageUploadField label="Campus photo" value={value.image} onChange={(path) => set({ image: path })} />
       <Field label="Photo alt text" value={value.imageAlt} onChange={(v) => set({ imageAlt: v })} />
     </SectionCard>
   );

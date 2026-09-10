@@ -4,6 +4,7 @@ import { MapPin } from "lucide-react";
 import Container from "../components/Container";
 import Button from "../components/Button";
 import { useContent } from "../lib/ContentContext";
+import { assetUrl } from "../lib/assetUrl";
 
 const ease = [0.16, 1, 0.3, 1];
 
@@ -17,7 +18,7 @@ export default function Hero() {
           blueprint grid until public/brand/hero-campus.jpg is supplied. */}
       {hero.image && imageOk && (
         <motion.img
-          src={hero.image}
+          src={assetUrl(hero.image)}
           alt={hero.imageAlt}
           onError={() => setImageOk(false)}
           initial={{ scale: 1.08 }}

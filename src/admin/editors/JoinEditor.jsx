@@ -1,4 +1,4 @@
-import { Field, TextArea, SectionCard, StringListEditor } from "../fields";
+import { Field, TextArea, SectionCard, StringListEditor, ImageUploadField } from "../fields";
 
 export default function JoinEditor({ value, onChange }) {
   const set = (partial) => onChange({ ...value, ...partial });
@@ -31,11 +31,10 @@ export default function JoinEditor({ value, onChange }) {
         <Field label="Name" value={value.facultyContact.name} onChange={(v) => setContact({ name: v })} />
         <Field label="Role" value={value.facultyContact.role} onChange={(v) => setContact({ role: v })} />
         <Field label="Email" value={value.facultyContact.email} onChange={(v) => setContact({ email: v })} mono />
-        <Field
-          label="Photo path (optional)"
-          value={value.facultyContact.photo ?? ""}
-          onChange={(v) => setContact({ photo: v || null })}
-          mono
+        <ImageUploadField
+          label="Photo"
+          value={value.facultyContact.photo}
+          onChange={(path) => setContact({ photo: path })}
         />
       </div>
     </SectionCard>

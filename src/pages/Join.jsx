@@ -3,6 +3,7 @@ import Container from "../components/Container";
 import Reveal from "../components/Reveal";
 import Button from "../components/Button";
 import { useContent } from "../lib/ContentContext";
+import { assetUrl } from "../lib/assetUrl";
 
 export default function Join() {
   const { join } = useContent();
@@ -59,7 +60,7 @@ export default function Join() {
               <div className="mt-5 flex items-center gap-4">
                 {facultyContact.photo ? (
                   <img
-                    src={facultyContact.photo}
+                    src={assetUrl(facultyContact.photo)}
                     alt={facultyContact.name}
                     className="h-16 w-16 rounded-full object-cover shrink-0"
                   />

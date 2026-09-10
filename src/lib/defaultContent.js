@@ -52,10 +52,11 @@ export const DEFAULT_CONTENT = {
     ctaSecondaryHref: "/join",
     locationLine1: "BVM Engineering College",
     locationLine2: "Vallabh Vidyanagar, Gujarat",
-    // Drop a file at public/brand/hero-campus.jpg and it appears automatically —
-    // until then the section falls back to a plain navy panel. Built off
-    // BASE_URL so it still resolves when served from a subpath.
-    image: `${import.meta.env.BASE_URL}brand/hero-campus.jpg`,
+    // Drop a file at public/brand/hero-campus.jpg and it appears automatically
+    // — until then the section falls back to a plain navy panel. Plain
+    // root-relative path: Hero.jsx resolves it against BASE_URL via
+    // assetUrl(), same as every other content-driven image path.
+    image: "/brand/hero-campus.jpg",
     imageAlt: "BVM Engineering College campus",
   },
 

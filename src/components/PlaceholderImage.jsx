@@ -1,4 +1,5 @@
 import { ImageIcon } from "lucide-react";
+import { assetUrl } from "../lib/assetUrl";
 
 /**
  * Honest stand-in for a photo we don't have yet. Deliberately plain — a
@@ -8,7 +9,7 @@ import { ImageIcon } from "lucide-react";
  */
 export default function PlaceholderImage({ src, alt = "", className = "", aspect = "aspect-[4/3]" }) {
   if (src) {
-    return <img src={src} alt={alt} className={`${aspect} w-full object-cover ${className}`} />;
+    return <img src={assetUrl(src)} alt={alt} className={`${aspect} w-full object-cover ${className}`} />;
   }
   return (
     <div

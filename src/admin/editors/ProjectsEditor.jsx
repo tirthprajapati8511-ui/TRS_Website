@@ -1,4 +1,4 @@
-import { ArrayEditor, Field, TextArea, SectionCard, StringListEditor } from "../fields";
+import { ArrayEditor, Field, TextArea, SectionCard, StringListEditor, ImageUploadField } from "../fields";
 
 export default function ProjectsEditor({ value, onChange }) {
   const set = (partial) => onChange({ ...value, ...partial });
@@ -35,10 +35,8 @@ export default function ProjectsEditor({ value, onChange }) {
                     />
                   </div>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <Field label="Image path (optional)" value={item.image ?? ""} onChange={(v) => update({ image: v || null })} mono />
-                  <Field label="Project link" value={item.href} onChange={(v) => update({ href: v })} mono />
-                </div>
+                <ImageUploadField label="Project photo" value={item.image} onChange={(path) => update({ image: path })} />
+                <Field label="Project link" value={item.href} onChange={(v) => update({ href: v })} mono />
               </>
             )}
           />

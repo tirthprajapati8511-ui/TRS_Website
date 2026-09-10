@@ -9,8 +9,7 @@ import WorkshopsEditor from "./editors/WorkshopsEditor";
 import JoinEditor from "./editors/JoinEditor";
 import FooterEditor from "./editors/FooterEditor";
 import { TrsLogo } from "../components/Logo";
-
-const TOKEN_KEY = "trs_admin_token";
+import { ADMIN_TOKEN_KEY as TOKEN_KEY } from "./tokenKey";
 
 const TABS = [
   { key: "hero", label: "Hero", Editor: HeroEditor },
