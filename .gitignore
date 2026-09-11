@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Raw source documents (committee lists, project/event reports) used as
+# reference material to fill in real content — local only, not versioned.
+/Website/
