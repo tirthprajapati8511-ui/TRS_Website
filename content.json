@@ -165,19 +165,19 @@
     "description": "TRS represents BVM Engineering College at national and regional robotics competitions. The full archive, organised by academic year, lives on the Achievements page.",
     "recent": [
       {
-        "year": "PLACEHOLDER",
-        "title": "ABU Robocon",
-        "detail": "National / zonal round participation — result to be added."
+        "year": "2025–26",
+        "title": "GUJCOST Robofest 5.0 — 1st & 2nd Runner-up",
+        "detail": "Underwater Robot category, Grand Finale."
       },
       {
-        "year": "PLACEHOLDER",
-        "title": "RoboFest",
-        "detail": "Inter-college robotics event — result to be added."
+        "year": "2024–25",
+        "title": "GUJCOST Robofest 4.0 — 2 First Positions",
+        "detail": "Underwater Robotics and Agriculture Robot categories."
       },
       {
-        "year": "PLACEHOLDER",
-        "title": "Technical Exhibition",
-        "detail": "Project showcase and recognition — detail to be added."
+        "year": "2023–24",
+        "title": "Mission CHANDRA — Competition Winner",
+        "detail": "Rs. 25,000 prize and an ISRO Ahmedabad internship opportunity."
       }
     ],
     "archiveYears": [
@@ -185,6 +185,135 @@
       "2025–26",
       "2024–25",
       "2023–24"
+    ],
+    "archive": [
+      {
+        "year": "2026–27",
+        "items": []
+      },
+      {
+        "year": "2025–26",
+        "items": [
+          {
+            "title": "DD Robocon '25 — AIR Rank 10",
+            "detail": "Mentors: Dr. Vinay Patel, Dr. Haresh Patolia, Prof. Vijay Pratap Singh. All-India rank of 10 with a 29-member student team."
+          },
+          {
+            "title": "GUJCOST Robofest 5.0 — First Runner-up, Underwater Robot",
+            "detail": "Team: Nikhil Tank, Meet Shiyani, Navya Mokana, Bhavya Jadav. Mentor: Dr. Vinay J. Patel. Rs. 7,50,000 cash prize at the Grand Finale of India's biggest robotics competition."
+          },
+          {
+            "title": "GUJCOST Robofest 5.0 — Second Runner-up, Underwater Robot",
+            "detail": "Team: Shyam Parsana, Vishrut Pambhar, Kishan Kanzariya, Harsh Chaudhari. Mentor: Dr. Mehfuza S. Holia. Rs. 5,00,000 cash prize at the Grand Finale."
+          }
+        ]
+      },
+      {
+        "year": "2024–25",
+        "items": [
+          {
+            "title": "DD Robocon '24 — AIR Rank 4",
+            "detail": "Mentors: Dr. Vinay Patel, Dr. Haresh Patolia."
+          },
+          {
+            "title": "GUJCOST Robofest 4.0 — First Position, Underwater Robotics",
+            "detail": "Mentor: Prof. Vijay Pratap Singh. Rs. 10,00,000 cash prize at the Grand Finale, India's biggest national-level robot-making competition."
+          },
+          {
+            "title": "GUJCOST Robofest 4.0 — Runner-up, Underwater Robotics",
+            "detail": "Mentor: Dr. Mehfuza Holia. Rs. 7,50,000 cash prize at the Grand Finale."
+          },
+          {
+            "title": "GUJCOST Robofest 4.0 — Runner-up, Underwater Robotics",
+            "detail": "Mentor: Prof. Aakar Roghelia. Rs. 7,50,000 cash prize at the Grand Finale."
+          },
+          {
+            "title": "GUJCOST Robofest 4.0 — Runner-up, Swarm Robotics",
+            "detail": "Mentor: Dr. D. M. Patel. Rs. 7,50,000 cash prize at the Grand Finale."
+          },
+          {
+            "title": "GUJCOST Robofest 4.0 — Runner-up, Ship Hull Cleaning Robot",
+            "detail": "Mentor: Dr. Vinay J. Patel. Rs. 7,50,000 cash prize, Application-Based Category."
+          },
+          {
+            "title": "GUJCOST Robofest 4.0 — First Position, Agriculture Robot",
+            "detail": "Mentor: Prof. Ashish M. Thakkar. Rs. 10,00,000 cash prize, Application-Based Category."
+          },
+          {
+            "title": "SAUVC–IEEE — Top 20 Finalist",
+            "detail": "Team Brahmaputra cleared the qualifying round at Singapore Polytechnic, advancing to the finals. Guided by Dr. Vinay J. Patel, Dr. Ashish Thakkar and Dr. Mehfuza Holia."
+          }
+        ]
+      },
+      {
+        "year": "2023–24",
+        "items": [
+          {
+            "title": "Mission CHANDRA — Competition Winner",
+            "detail": "Team 2 won the final round (14 Oct 2023) at Science City, Ahmedabad — Rs. 25,000 cash prize, trophy, certificates, and an internship opportunity at ISRO Ahmedabad."
+          },
+          {
+            "title": "Mission CHANDRA — Preliminary Round Qualifiers",
+            "detail": "Two TRS teams cleared the preliminary round, each receiving a trophy, certificate and Rs. 5,000 cash prize. Guided by Dr. Vinay J. Patel, Prof. Ashish M. Thakkar, and Dr. Mehfuza S. Holia."
+          },
+          {
+            "title": "ROBOFEST 3.0 — First Position, Underwater Robot",
+            "detail": "Mentor: Prof. G. B. Rathod. Rs. 10,00,000 cash prize."
+          },
+          {
+            "title": "ROBOFEST 3.0 — First Position, Swarm Robot",
+            "detail": "Mentor: Prof. Ashish Thakkar. Rs. 10,00,000 cash prize."
+          },
+          {
+            "title": "ROBOFEST 3.0 — Third Position, Rover Robot",
+            "detail": "Mentor: Dr. D. M. Patel. Rs. 5,00,000 cash prize."
+          },
+          {
+            "title": "ROBOFEST 3.0 — Consolation Prize, Home Cleaning Robot",
+            "detail": "Mentor: Dr. Mehfuza Holia. Rs. 2,50,000 cash prize."
+          },
+          {
+            "title": "ROBOFEST 3.0 — Consolation Prize, Rover Robot",
+            "detail": "Mentor: Prof. Vijay Pratap Singh. Rs. 2,50,000 cash prize."
+          },
+          {
+            "title": "ROBOFEST 3.0 — Hexapod Robot",
+            "detail": "Mentor: Dr. Haresh Patoliya. Rs. 50,000 (Ideation Stage) + Rs. 2,00,000 (Proof of Concept Stage)."
+          },
+          {
+            "title": "ROBOFEST 3.0 — Maze Solving Robot",
+            "detail": "Mentor: Prof. Ashish Thakkar. Rs. 50,000 (Ideation Stage) + Rs. 1,00,000 (Proof of Concept Stage)."
+          },
+          {
+            "title": "ROBOFEST 3.0 — Self-Balancing Robot",
+            "detail": "Mentor: Dr. Vinay J. Patel. Rs. 50,000 (Ideation Stage) + Rs. 2,00,000 (Proof of Concept Stage)."
+          },
+          {
+            "title": "ROBOFEST 3.0 — Hexapod Robot",
+            "detail": "Mentor: Dr. M. M. Solanki. Rs. 50,000 (Ideation Stage) + Rs. 2,00,000 (Proof of Concept Stage)."
+          },
+          {
+            "title": "ROBOFEST 3.0 — Underwater Robot",
+            "detail": "Mentor: Prof. Jayesh Koisha. Rs. 50,000 (Ideation Stage) + Rs. 2,00,000 (Proof of Concept Stage)."
+          },
+          {
+            "title": "ROBOFEST 3.0 — Swarm Robots",
+            "detail": "Mentor: Dr. R. B. Gandhi. Rs. 50,000 (Ideation Stage) + Rs. 1,00,000 (Proof of Concept Stage)."
+          },
+          {
+            "title": "ROBOFEST 3.0 — Maze Solving Robot",
+            "detail": "Mentor: Dr. Mehfuza Holia. Rs. 50,000 (Ideation Stage) + Rs. 1,00,000 (Proof of Concept Stage)."
+          },
+          {
+            "title": "ROBOFEST 3.0 — Self-Balancing Robot",
+            "detail": "Mentor: Prof. Aakar Roghelia. Rs. 50,000 (Ideation Stage) + Rs. 2,00,000 (Proof of Concept Stage)."
+          },
+          {
+            "title": "ROBOFEST 3.0 — Swarm Robots",
+            "detail": "Mentor: Dr. Vinay J. Patel. Rs. 50,000 (Ideation Stage) + Rs. 1,00,000 (Proof of Concept Stage)."
+          }
+        ]
+      }
     ]
   },
   "workshops": {
@@ -192,16 +321,205 @@
     "items": []
   },
   "committee": {
-    "intro": "The students and faculty who drive TRS BVM forward — coordinating events, leading projects, mentoring members, and managing the society’s day-to-day activities.",
+    "intro": "The students who run TRS BVM day to day — organising events, leading projects, and keeping the society running. AY 2026-27.",
     "members": [
       {
-        "id": "member-1789060267312",
-        "name": "Vinay Patel",
-        "role": "President",
-        "branch": "Mechenical",
-        "photo": "/uploads/1789104157953-mmsolanki-bvmengineering-ac-inmms-remove.png",
-        "email": "abc",
-        "linkedin": "abc"
+        "id": "c-jeel-gujrati",
+        "name": "Jeel Gujrati",
+        "role": "Secretary",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-tirth-prajapati",
+        "name": "Tirth Prajapati",
+        "role": "Joint Secretary",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-krish-akbari",
+        "name": "Krish Akbari",
+        "role": "Treasurer",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-rishabh-prajapati",
+        "name": "Rishabh Prajapati",
+        "role": "Executive Member",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-prachi-bachani",
+        "name": "Prachi Bachani",
+        "role": "Executive Member",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-prince-prasad",
+        "name": "Prince Prasad",
+        "role": "Branch Coordinator",
+        "branch": "Mechanical Engineering",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-jay-patil",
+        "name": "Jay Patil",
+        "role": "Branch Coordinator",
+        "branch": "Production Engineering",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-rudra-prajapati",
+        "name": "Rudra Prajapati",
+        "role": "Branch Coordinator",
+        "branch": "Electronics & Communication Engineering",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-krutarth-vandara",
+        "name": "Krutarth Vandara",
+        "role": "Branch Coordinator",
+        "branch": "Electronics Engineering",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-hinal-unagar",
+        "name": "Hinal Unagar",
+        "role": "Branch Coordinator",
+        "branch": "Electrical Engineering",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-anushka-pawar",
+        "name": "Anushka Pawar",
+        "role": "Branch Coordinator · Website Lead",
+        "branch": "Computer/IT Engineering",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-mohit-kapadiya",
+        "name": "Mohit Kapadiya",
+        "role": "Inventory Lead",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-kushal-dobariya",
+        "name": "Kushal Dobariya",
+        "role": "Inventory Lead",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-jay-rathod",
+        "name": "Jay Rathod",
+        "role": "Social Media Lead",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-kush-prajapati",
+        "name": "Kush Prajapati",
+        "role": "Documentation Lead",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-dev-patel",
+        "name": "Dev Patel",
+        "role": "Documentation Lead",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-kavya-shah",
+        "name": "Kavya Shah",
+        "role": "Documentation Lead",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-malav-patel",
+        "name": "Malav Patel",
+        "role": "Graphics Lead",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-manav-tajpara",
+        "name": "Manav Tajpara",
+        "role": "Graphics Lead",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-kenil-patel",
+        "name": "Kenil Patel",
+        "role": "Graphics Lead",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-nihar-bambharoliya",
+        "name": "Nihar Bambharoliya",
+        "role": "Photography Lead",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "id": "c-khush-goyani",
+        "name": "Khush Goyani",
+        "role": "Photography Lead",
+        "branch": "",
+        "photo": null,
+        "email": "",
+        "linkedin": ""
       }
     ]
   },
