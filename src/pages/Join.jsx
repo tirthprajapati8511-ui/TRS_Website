@@ -1,4 +1,4 @@
-import { CheckCircle2, Download, Mail, Phone, UserRound } from "lucide-react";
+import { CheckCircle2, Download, Mail, UserRound } from "lucide-react";
 import Container from "../components/Container";
 import Reveal from "../components/Reveal";
 import Button from "../components/Button";
@@ -76,24 +76,13 @@ export default function Join() {
                   <p className="text-[12.5px] text-ink-faint mt-0.5">{facultyContact.role}</p>
                 </div>
               </div>
-              <div className="mt-5 space-y-2.5">
-                <a
-                  href={`mailto:${facultyContact.email}`}
-                  className="flex items-center gap-2 text-[13.5px] text-accent hover:text-accent-dim transition-colors"
-                >
-                  <Mail size={15} strokeWidth={2} className="shrink-0" />
-                  {facultyContact.email}
-                </a>
-                {facultyContact.phone && (
-                  <a
-                    href={`tel:${facultyContact.phone}`}
-                    className="flex items-center gap-2 text-[13.5px] text-accent hover:text-accent-dim transition-colors"
-                  >
-                    <Phone size={15} strokeWidth={2} className="shrink-0" />
-                    {facultyContact.phone}
-                  </a>
-                )}
-              </div>
+              <a
+                href={`mailto:${facultyContact.email}`}
+                className="mt-5 flex items-center gap-2 text-[13.5px] text-accent hover:text-accent-dim transition-colors"
+              >
+                <Mail size={15} strokeWidth={2} className="shrink-0" />
+                {facultyContact.email}
+              </a>
             </div>
           </Reveal>
         </div>

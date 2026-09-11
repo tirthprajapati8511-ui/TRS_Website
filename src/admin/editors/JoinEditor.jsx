@@ -30,15 +30,7 @@ export default function JoinEditor({ value, onChange }) {
         <span className="mono-label text-[10px] text-ink-faint">Faculty enrollment contact</span>
         <Field label="Name" value={value.facultyContact.name} onChange={(v) => setContact({ name: v })} />
         <Field label="Role" value={value.facultyContact.role} onChange={(v) => setContact({ role: v })} />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <Field label="Email" value={value.facultyContact.email} onChange={(v) => setContact({ email: v })} mono />
-          <Field
-            label="Phone (optional)"
-            value={value.facultyContact.phone ?? ""}
-            onChange={(v) => setContact({ phone: v })}
-            mono
-          />
-        </div>
+        <Field label="Email" value={value.facultyContact.email} onChange={(v) => setContact({ email: v })} mono />
         <ImageUploadField
           label="Photo"
           value={value.facultyContact.photo}
