@@ -196,12 +196,12 @@
     "members": [
       {
         "id": "member-1789060267312",
-        "name": "New Member",
-        "role": "Role",
-        "branch": "",
-        "photo": null,
-        "email": "",
-        "linkedin": ""
+        "name": "Vinay Patel",
+        "role": "President",
+        "branch": "Mechenical",
+        "photo": "/uploads/1789104157953-mmsolanki-bvmengineering-ac-inmms-remove.png",
+        "email": "abc",
+        "linkedin": "abc"
       }
     ]
   },
