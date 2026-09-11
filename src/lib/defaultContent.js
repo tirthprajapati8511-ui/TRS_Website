@@ -228,6 +228,7 @@ export const DEFAULT_CONTENT = {
       name: "Placeholder — Faculty Coordinator",
       role: "Faculty Enrollment Contact",
       email: "placeholder@bvmengineering.ac.in",
+      phone: "",
       photo: null,
     },
   },

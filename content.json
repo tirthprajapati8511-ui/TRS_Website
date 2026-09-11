@@ -1,9 +1,4 @@
 {
-  "brand": {
-    "trsLogo": "/brand/trs-logo.png",
-    "bvmLogoLight": "/uploads/1789062284565-chatgpt-image-sep-10-2026-11-13-45-pm.png",
-    "bvmLogoDark": "/uploads/1789062095574-chatgpt-image-sep-10-2026-11-10-09-pm.png"
-  },
   "hero": {
     "eyebrow": "Robotics Innovation Community",
     "headline": "Students Robots",
