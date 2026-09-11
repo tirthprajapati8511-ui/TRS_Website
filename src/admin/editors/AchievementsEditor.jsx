@@ -1,4 +1,21 @@
-import { ArrayEditor, Field, TextArea, SectionCard, StringListEditor } from "../fields";
+import { ArrayEditor, Field, TextArea, SectionCard } from "../fields";
+
+function YearItemsEditor({ items, onChange }) {
+  return (
+    <ArrayEditor
+      items={items}
+      onChange={onChange}
+      addLabel="+ Add achievement"
+      newItem={() => ({ title: "New Achievement", detail: "" })}
+      renderItem={(item, update) => (
+        <>
+          <Field label="Title" value={item.title} onChange={(v) => update({ title: v })} />
+          <TextArea label="Detail" value={item.detail} onChange={(v) => update({ detail: v })} rows={2} />
+        </>
+      )}
+    />
+  );
+}
 
 export default function AchievementsEditor({ value, onChange }) {
   const set = (partial) => onChange({ ...value, ...partial });
@@ -6,7 +23,7 @@ export default function AchievementsEditor({ value, onChange }) {
   return (
     <SectionCard
       title="Achievements"
-      description="A compact homepage preview. The full year-by-year archive is a separate page."
+      description="Recent highlights show on the homepage; the archive below is the full Achievements page, organised by academic year."
     >
       <TextArea label="Intro text" value={value.description} onChange={(v) => set({ description: v })} rows={2} />
 
@@ -31,14 +48,33 @@ export default function AchievementsEditor({ value, onChange }) {
         </div>
       </div>
 
-      <div>
-        <span className="mono-label text-[10px] text-ink-faint">Archive years (for the full Achievements page)</span>
+      <div className="pt-2 border-t border-line">
+        <span className="mono-label text-[10px] text-ink-faint">Archive, by academic year</span>
         <div className="mt-1.5">
-          <StringListEditor
-            items={value.archiveYears}
-            onChange={(v) => set({ archiveYears: v })}
-            placeholder="e.g. 2025–26"
+          <ArrayEditor
+            items={value.archive}
+            onChange={(archive) => set({ archive })}
             addLabel="+ Add year"
+            newItem={() => ({ year: "New Year", items: [] })}
+            renderItem={(yearEntry, update) => (
+              <>
+                <Field
+                  label="Academic year"
+                  value={yearEntry.year}
+                  onChange={(v) => update({ year: v })}
+                  placeholder="e.g. 2025–26"
+                  mono
+                />
+                <div>
+                  <span className="mono-label text-[10px] text-ink-faint">
+                    Achievements for {yearEntry.year || "this year"}
+                  </span>
+                  <div className="mt-1.5">
+                    <YearItemsEditor items={yearEntry.items} onChange={(items) => update({ items })} />
+                  </div>
+                </div>
+              </>
+            )}
           />
         </div>
       </div>

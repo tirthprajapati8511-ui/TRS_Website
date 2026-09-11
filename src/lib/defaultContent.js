@@ -185,9 +185,15 @@ export const DEFAULT_CONTENT = {
       { year: "PLACEHOLDER", title: "RoboFest", detail: "Inter-college robotics event — result to be added." },
       { year: "PLACEHOLDER", title: "Technical Exhibition", detail: "Project showcase and recognition — detail to be added." },
     ],
-    // Full archive on the dedicated page will be organised like this —
-    // distinct from `events`, which tracks upcoming competitions, not results.
-    archiveYears: ["2026–27", "2025–26", "2024–25", "2023–24"],
+    // Full archive on the dedicated page — distinct from `events`, which
+    // tracks upcoming competitions, not results. Each year holds its own
+    // list of achievements; empty until real ones are added per year.
+    archive: [
+      { year: "2026–27", items: [] },
+      { year: "2025–26", items: [] },
+      { year: "2024–25", items: [] },
+      { year: "2023–24", items: [] },
+    ],
   },
 
   workshops: {
