@@ -25,7 +25,15 @@ function MemberCard({ member, index }) {
 
       <p className="mt-4 font-display text-[16px] font-semibold text-ink">{member.name}</p>
       <p className="mt-1 text-[13px] font-medium text-accent">{member.role}</p>
-      {member.branch && <p className="mt-1 text-[12.5px] text-ink-faint">{member.branch}</p>}
+      {member.branch && (
+        <p className="mt-1 text-[12.5px] text-ink-faint leading-snug">
+          {member.branch.split(",").map((part, i) => (
+            <span key={i} className="block">
+              {part.trim()}
+            </span>
+          ))}
+        </p>
+      )}
 
       {(member.email || member.linkedin) && (
         <div className="mt-3 flex items-center gap-3">
