@@ -29,7 +29,7 @@
         "statusTone": "accent",
         "location": "BVM Engineering College",
         "description": "Annual robotics competition featuring multiple categories and teams.",
-        "image": "/uploads/1789338072390-image.png",
+        "image": "/uploads/1789338766229-image.png",
         "href": "/events/robofest-6",
         "structure": "multi-team",
         "teams": [
@@ -92,26 +92,26 @@
         "structure": "single-team",
         "teams": [
           {
-            "name": "TRS Robocon Team",
+            "name": "TEAM PANCHJANYA",
             "roles": [
               {
-                "title": "Overall Team Lead",
-                "person": "Placeholder"
+                "title": "Team Lead",
+                "person": "Jeel Gujarati"
               },
               {
                 "title": "Software Lead",
-                "person": "Placeholder"
+                "person": "Karansinh Desai"
               },
               {
                 "title": "Mechanical Lead",
-                "person": "Placeholder"
+                "person": "Krish Akbari"
               },
               {
                 "title": "Electronics Lead",
-                "person": "Placeholder"
+                "person": "Tirth Prajapati"
               }
             ],
-            "facultyAdvisor": "Placeholder"
+            "facultyAdvisor": "Prof.(Dr.) Haresh Patolia"
           }
         ]
       }

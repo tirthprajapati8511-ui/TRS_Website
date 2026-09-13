@@ -11,6 +11,8 @@ import Join from "./pages/Join";
 import Committee from "./pages/Committee";
 import Faculty from "./pages/Faculty";
 import AchievementsPage from "./pages/Achievements";
+import EventsList from "./pages/EventsList";
+import EventDetail from "./pages/EventDetail";
 import AdminPage from "./admin/AdminPage";
 import ScrollProgress from "./components/ScrollProgress";
 
@@ -48,8 +50,8 @@ function App() {
         <Route path="/explore" element={<PageShell title="Explore TRS" />} />
         <Route path="/committee" element={<Committee />} />
         <Route path="/faculty" element={<Faculty />} />
-        <Route path="/events" element={<PageShell title="Events" />} />
-        <Route path="/events/:eventId" element={<PageShell title="Event Details" />} />
+        <Route path="/events" element={<EventsList />} />
+        <Route path="/events/:eventId" element={<EventDetail />} />
         <Route path="/projects" element={<PageShell title="Projects" />} />
         <Route path="/projects/:projectId" element={<PageShell title="Project Details" />} />
         <Route path="/achievements" element={<AchievementsPage />} />
