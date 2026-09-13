@@ -2,7 +2,7 @@
 // unstyled-fancy on purpose — this panel is a utility, not a showcase.
 
 import { useState } from "react";
-import { ImageIcon, Loader2, X } from "lucide-react";
+import { ChevronDown, ChevronUp, ImageIcon, Loader2, X } from "lucide-react";
 import { ADMIN_TOKEN_KEY } from "./tokenKey";
 
 const MAX_UPLOAD_MB = 8;
@@ -195,6 +195,42 @@ export function SectionCard({ title, description, children }) {
   );
 }
 
+/** Swaps an array item with its neighbour — the reordering primitive both
+ * list editors below share. Returns the reordered array, or the same
+ * reference if the move is out of bounds (first item moving up, etc). */
+function moveItem(items, index, direction) {
+  const target = index + direction;
+  if (target < 0 || target >= items.length) return items;
+  const next = [...items];
+  [next[index], next[target]] = [next[target], next[index]];
+  return next;
+}
+
+function MoveButtons({ index, count, onMove }) {
+  return (
+    <>
+      <button
+        type="button"
+        onClick={() => onMove(index, -1)}
+        disabled={index === 0}
+        aria-label="Move up"
+        className="text-ink-faint hover:text-accent disabled:opacity-25 disabled:hover:text-ink-faint transition-colors"
+      >
+        <ChevronUp size={15} strokeWidth={2} />
+      </button>
+      <button
+        type="button"
+        onClick={() => onMove(index, 1)}
+        disabled={index === count - 1}
+        aria-label="Move down"
+        className="text-ink-faint hover:text-accent disabled:opacity-25 disabled:hover:text-ink-faint transition-colors"
+      >
+        <ChevronDown size={15} strokeWidth={2} />
+      </button>
+    </>
+  );
+}
+
 export function RemoveButton({ onClick, label = "Remove" }) {
   return (
     <button
@@ -224,6 +260,7 @@ export function StringListEditor({ items, onChange, placeholder, addLabel }) {
   const update = (i, next) => onChange(items.map((it, idx) => (idx === i ? next : it)));
   const remove = (i) => onChange(items.filter((_, idx) => idx !== i));
   const add = () => onChange([...items, ""]);
+  const move = (i, dir) => onChange(moveItem(items, i, dir));
 
   return (
     <div className="space-y-2">
@@ -236,6 +273,7 @@ export function StringListEditor({ items, onChange, placeholder, addLabel }) {
             onChange={(e) => update(i, e.target.value)}
             className="flex-1 border border-line bg-bg px-3 py-2 text-sm text-ink outline-none focus:border-accent transition-colors"
           />
+          <MoveButtons index={i} count={items.length} onMove={move} />
           <RemoveButton onClick={() => remove(i)} />
         </div>
       ))}
@@ -252,12 +290,14 @@ export function ArrayEditor({ items, onChange, renderItem, newItem, addLabel }) 
   const updateAt = (i, next) => onChange(items.map((it, idx) => (idx === i ? next : it)));
   const remove = (i) => onChange(items.filter((_, idx) => idx !== i));
   const add = () => onChange([...items, newItem()]);
+  const move = (i, dir) => onChange(moveItem(items, i, dir));
 
   return (
     <div className="space-y-4">
       {items.map((item, i) => (
         <div key={i} className="relative border border-line bg-bg p-4 space-y-3">
-          <div className="absolute top-3 right-3">
+          <div className="absolute top-3 right-3 flex items-center gap-2">
+            <MoveButtons index={i} count={items.length} onMove={move} />
             <RemoveButton onClick={() => remove(i)} />
           </div>
           {renderItem(item, (partial) => updateAt(i, { ...item, ...partial }), i)}
