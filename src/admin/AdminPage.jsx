@@ -16,7 +16,7 @@ import { ADMIN_TOKEN_KEY as TOKEN_KEY } from "./tokenKey";
 const TABS = [
   { key: "brand", label: "Branding", Editor: BrandEditor },
   { key: "hero", label: "Hero", Editor: HeroEditor },
-  { key: "committee", label: "Committee", Editor: CommitteeEditor },
+  { key: "committee", label: "Executive Committee", Editor: CommitteeEditor },
   { key: "events", label: "Events", Editor: EventsEditor },
   { key: "projects", label: "Projects", Editor: ProjectsEditor },
   { key: "achievements", label: "Achievements", Editor: AchievementsEditor },

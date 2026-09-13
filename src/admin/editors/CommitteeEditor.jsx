@@ -5,8 +5,8 @@ export default function CommitteeEditor({ value, onChange }) {
 
   return (
     <SectionCard
-      title="Committee"
-      description="Members appear on the Committee page in the order listed here."
+      title="Executive Committee"
+      description="Members appear on the Executive Committee page in the order listed here."
     >
       <TextArea label="Intro text" value={value.intro} onChange={(v) => set({ intro: v })} rows={2} />
 

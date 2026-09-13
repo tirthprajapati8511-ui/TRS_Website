@@ -20,7 +20,7 @@
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Explore TRS", href: "/explore" },
-  { label: "Committee", href: "/committee" },
+  { label: "Executive Committee", href: "/committee" },
   { label: "Events", href: "/events" },
   { label: "Projects", href: "/projects" },
   { label: "Achievements", href: "/achievements" },

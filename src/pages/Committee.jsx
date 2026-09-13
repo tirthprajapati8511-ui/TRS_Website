@@ -68,7 +68,7 @@ export default function Committee() {
     <section className="bg-bg py-16 lg:py-24">
       <Container>
         <Reveal>
-          <span className="mono-label text-[11px] text-accent">Committee</span>
+          <span className="mono-label text-[11px] text-accent">Executive Committee</span>
           <h1 className="mt-3 max-w-2xl font-display text-3xl sm:text-4xl font-semibold text-ink leading-tight">
             The people behind TRS BVM
           </h1>
@@ -88,7 +88,7 @@ export default function Committee() {
           >
             <Users size={28} strokeWidth={1.5} className="text-ink-faint" />
             <p className="text-[14px] text-ink-faint max-w-sm">
-              Committee members haven't been added yet — check back soon.
+              Executive Committee members haven't been added yet — check back soon.
             </p>
           </Reveal>
         )}
