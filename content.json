@@ -549,49 +549,49 @@
         "id": "faculty-3",
         "name": "Prof. (Dr.) Rajiv Gandhi",
         "role": "",
-        "photo": null,
+        "photo": "/uploads/1789337868681-image.png",
         "email": ""
       },
       {
         "id": "faculty-4",
         "name": "Prof. (Dr.) D. M. Patel",
         "role": "",
-        "photo": null,
+        "photo": "/uploads/1789336906002-image.png",
         "email": ""
       },
       {
         "id": "faculty-5",
         "name": "Prof. (Dr.) Mehfuza S. Holia",
         "role": "",
-        "photo": null,
+        "photo": "/uploads/1789336968017-image.png",
         "email": ""
       },
       {
         "id": "faculty-6",
         "name": "Prof. (Dr.) Zankhana H. Shah",
         "role": "",
-        "photo": null,
+        "photo": "/uploads/1789336788780-image.png",
         "email": ""
       },
       {
         "id": "faculty-7",
         "name": "Prof. (Dr.) Aakar N. Roghelia",
         "role": "",
-        "photo": null,
+        "photo": "/uploads/1789336867719-image.png",
         "email": ""
       },
       {
         "id": "faculty-8",
         "name": "Prof. (Dr.) Milendrakumar Solanki",
         "role": "",
-        "photo": null,
+        "photo": "/uploads/1789336989293-image.png",
         "email": ""
       },
       {
         "id": "faculty-9",
         "name": "Prof. Ghansyamkumar B. Rathod",
         "role": "",
-        "photo": null,
+        "photo": "/uploads/1789337048335-ghansyam-rathod-bvmengineering-ac-iniima.jpg",
         "email": ""
       },
       {
@@ -612,28 +612,28 @@
         "id": "faculty-12",
         "name": "Prof. Dharita Patel",
         "role": "",
-        "photo": null,
+        "photo": "/uploads/1789337297263-image.png",
         "email": ""
       },
       {
         "id": "faculty-13",
         "name": "Prof. (Dr.) Anish A. Vahora",
         "role": "",
-        "photo": null,
+        "photo": "/uploads/1789337084027-anish-vahora-bvmengineering-ac-iniimage1.jpg",
         "email": ""
       },
       {
         "id": "faculty-14",
         "name": "Prof. (Dr.) Vishal Pandya",
         "role": "",
-        "photo": null,
+        "photo": "/uploads/1789337571565-vapandya-bvmengineering-ac-inimg-9765.jpg",
         "email": ""
       },
       {
         "id": "faculty-15",
         "name": "Prof. (Dr.) Vatsal Shah",
         "role": "",
-        "photo": null,
+        "photo": "/uploads/1789337133162-image.png",
         "email": ""
       },
       {
@@ -647,7 +647,7 @@
         "id": "faculty-17",
         "name": "Prof. (Dr.) Jagruti P. Shah",
         "role": "",
-        "photo": null,
+        "photo": "/uploads/1789337641175-image.png",
         "email": ""
       },
       {
@@ -675,7 +675,7 @@
         "id": "faculty-21",
         "name": "Mosin I. Hasan",
         "role": "",
-        "photo": null,
+        "photo": "/uploads/1789336747764-image.png",
         "email": ""
       }
     ]
