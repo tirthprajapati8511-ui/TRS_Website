@@ -62,10 +62,12 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-bg/95 backdrop-blur-sm border-b border-line overflow-x-clip">
       <TopBar />
 
-      {/* Ten nav items at a bigger, readable size need more than the 1240px
-          content width, so this row gets its own wider (but still capped)
-          container instead of the shared <Container> — and only switches
-          out of the hamburger at 2xl (1536px), where that width exists. */}
+      {/* Nine nav items plus Join TRS at a bigger, readable size need more
+          than the 1240px content width, so this row gets its own wider (but
+          still capped) container instead of the shared <Container> — and
+          only switches out of the hamburger at 1760px, comfortably past the
+          container's own 1680px cap, so there's real spare room whenever it
+          does show. */}
       <div className="mx-auto w-full max-w-[1680px] px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3 py-4">
         <NavLink to="/" className="flex items-center gap-3 shrink-0" aria-label="TRS BVM home">
           <TrsLogo className="h-[52px] w-[52px] shrink-0" />
@@ -77,7 +79,7 @@ export default function Navbar() {
           </span>
         </NavLink>
 
-        <nav aria-label="Primary" className="hidden 2xl:flex items-center gap-5">
+        <nav aria-label="Primary" className="hidden min-[1760px]:flex items-center gap-5">
           {NAV_LINKS.map((link) => (
             <NavLink key={link.label} to={link.href} className={linkCls} end={link.href === "/"}>
               {link.label}
@@ -85,7 +87,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden 2xl:flex items-center gap-4 shrink-0">
+        <div className="hidden min-[1760px]:flex items-center gap-4 shrink-0">
           <ThemeToggle />
           <div className="pl-4 ml-1 border-l border-line flex items-center gap-2.5">
             <BvmLogo className="h-10 w-10" />
@@ -98,7 +100,7 @@ export default function Navbar() {
           </Button>
         </div>
 
-        <div className="flex items-center gap-2.5 2xl:hidden">
+        <div className="flex items-center gap-2.5 min-[1760px]:hidden">
           <ThemeToggle />
           <button
             onClick={() => setOpen((o) => !o)}
@@ -118,7 +120,7 @@ export default function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-            className="2xl:hidden overflow-hidden border-b border-line bg-bg"
+            className="min-[1760px]:hidden overflow-hidden border-b border-line bg-bg"
           >
             <Container className="flex flex-col gap-1 py-4">
               {NAV_LINKS.map((link) => (

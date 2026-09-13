@@ -21,6 +21,7 @@ export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Explore TRS", href: "/explore" },
   { label: "Executive Committee", href: "/committee" },
+  { label: "Faculty Members", href: "/faculty" },
   { label: "Events", href: "/events" },
   { label: "Projects", href: "/projects" },
   { label: "Achievements", href: "/achievements" },
