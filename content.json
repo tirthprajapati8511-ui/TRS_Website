@@ -29,7 +29,7 @@
         "statusTone": "accent",
         "location": "BVM Engineering College",
         "description": "Annual robotics competition featuring multiple categories and teams.",
-        "image": null,
+        "image": "/uploads/1789338072390-image.png",
         "href": "/events/robofest-6",
         "structure": "multi-team",
         "teams": [
@@ -54,8 +54,8 @@
         "status": "Applications Open",
         "statusTone": "good",
         "location": "To Be Announced",
-        "description": "Student Autonomous Underwater Vehicle Competition.",
-        "image": null,
+        "description": "Singapore Autonomous Underwater Vehicle Competition.",
+        "image": "/uploads/1789338265191-logo-notext.png",
         "href": "/events/sauvc-2026",
         "structure": "single-team",
         "teams": [
@@ -87,7 +87,7 @@
         "statusTone": "neutral",
         "location": "ABU Robocon",
         "description": "Asia-Pacific Broadcasting Union Robocon Competition.",
-        "image": null,
+        "image": "/uploads/1789338346921-image.png",
         "href": "/events/robocon-2026",
         "structure": "single-team",
         "teams": [
