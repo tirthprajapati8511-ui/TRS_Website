@@ -526,6 +526,155 @@
         "email": "",
         "linkedin": "https://www.linkedin.com/in/nihar-bambharoliya-364b89398/"
       }
+    ],
+    "facultyMembers": [
+      {
+        "id": "faculty-1",
+        "name": "Prof. (Dr.) Vinay J. Patel",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-2",
+        "name": "Prof. (Dr.) Haresh Patolia",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-3",
+        "name": "Prof. (Dr.) Rajiv Gandhi",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-4",
+        "name": "Prof. (Dr.) D. M. Patel",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-5",
+        "name": "Prof. (Dr.) Mehfuza S. Holia",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-6",
+        "name": "Prof. (Dr.) Zankhana H. Shah",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-7",
+        "name": "Prof. (Dr.) Aakar N. Roghelia",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-8",
+        "name": "Prof. (Dr.) Milendrakumar Solanki",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-9",
+        "name": "Prof. Ghansyamkumar B. Rathod",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-10",
+        "name": "Prof. (Dr.) Alpesh Damor",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-11",
+        "name": "Prof. Jayesh Koisa",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-12",
+        "name": "Prof. Dharita Patel",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-13",
+        "name": "Prof. (Dr.) Anish A. Vahora",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-14",
+        "name": "Prof. (Dr.) Vishal Pandya",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-15",
+        "name": "Prof. (Dr.) Vatsal Shah",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-16",
+        "name": "Prof. Vijay Pratap Singh",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-17",
+        "name": "Prof. (Dr.) Jagruti P. Shah",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-18",
+        "name": "Prof. Kankesh Dave",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-19",
+        "name": "Prof. Priyank Machhi",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-20",
+        "name": "Prof. Vipul Gondaliya",
+        "role": "",
+        "photo": null,
+        "email": ""
+      },
+      {
+        "id": "faculty-21",
+        "name": "Mosin I. Hasan",
+        "role": "",
+        "photo": null,
+        "email": ""
+      }
     ]
   },
   "join": {

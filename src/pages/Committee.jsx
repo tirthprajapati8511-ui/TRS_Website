@@ -24,7 +24,7 @@ function MemberCard({ member, index }) {
       )}
 
       <p className="mt-4 font-display text-[16px] font-semibold text-ink">{member.name}</p>
-      <p className="mt-1 text-[13px] font-medium text-accent">{member.role}</p>
+      {member.role && <p className="mt-1 text-[13px] font-medium text-accent">{member.role}</p>}
       {member.branch && (
         <p className="mt-1 text-[12.5px] text-ink-faint leading-snug">
           {member.branch.split(",").map((part, i) => (
@@ -91,6 +91,22 @@ export default function Committee() {
               Executive Committee members haven't been added yet — check back soon.
             </p>
           </Reveal>
+        )}
+
+        {committee.facultyMembers.length > 0 && (
+          <div className="mt-16 pt-12 border-t border-line">
+            <Reveal>
+              <span className="mono-label text-[11px] text-accent">Faculty Members</span>
+              <h2 className="mt-3 font-display text-2xl font-semibold text-ink">
+                Guiding the society
+              </h2>
+            </Reveal>
+            <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+              {committee.facultyMembers.map((member, i) => (
+                <MemberCard key={member.id} member={member} index={i} />
+              ))}
+            </div>
+          </div>
         )}
       </Container>
     </section>
