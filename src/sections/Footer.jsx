@@ -10,6 +10,12 @@ import { useContent } from "../lib/ContentContext";
 // same order as the header nav (Home dropped, it's the logo link already).
 const withoutHome = NAV_LINKS.filter((l) => l.href !== "/");
 const QUICK_LINKS = [...withoutHome.slice(0, -1), JOIN_LINK, withoutHome.at(-1)];
+// Two independently-stacked lists rather than a single two-column grid — a
+// grid ties every item in a row to the same height, so one long label
+// (e.g. "Executive Committee" wrapping to two lines) drags unrelated items
+// in the other column down with it.
+const QUICK_LINKS_COL1 = QUICK_LINKS.slice(0, Math.ceil(QUICK_LINKS.length / 2));
+const QUICK_LINKS_COL2 = QUICK_LINKS.slice(Math.ceil(QUICK_LINKS.length / 2));
 
 export default function Footer() {
   const { footer } = useContent();
@@ -20,7 +26,7 @@ export default function Footer() {
       <div aria-hidden="true" className="h-[2px] circuit-trace opacity-70" />
       <Container className="py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10">
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-3">
             <div className="flex items-center gap-2.5">
               <TrsLogo className="h-9 w-9" />
               <div className="leading-tight">
@@ -48,20 +54,24 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-4">
             <h4 className="mono-label text-[11px] text-on-navy-dim">Quick Links</h4>
-            <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2.5">
-              {QUICK_LINKS.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    to={link.href}
-                    className="text-[13px] text-on-navy-dim hover:text-white transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
+            <div className="mt-4 grid grid-cols-2 gap-x-4">
+              {[QUICK_LINKS_COL1, QUICK_LINKS_COL2].map((col, i) => (
+                <ul key={i} className="space-y-2.5">
+                  {col.map((link) => (
+                    <li key={link.label}>
+                      <Link
+                        to={link.href}
+                        className="block text-[13px] text-on-navy-dim hover:text-white transition-colors"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               ))}
-            </ul>
+            </div>
           </div>
 
           <div className="lg:col-span-3">
