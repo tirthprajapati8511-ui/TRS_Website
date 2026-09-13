@@ -65,15 +65,32 @@ export function ImageUploadField({ label, value, onChange }) {
     processFile(file);
   };
 
-  // Copying an image out of Word (or a browser, or Snipping Tool) puts it on
-  // the clipboard as image data, not a file — a plain <input type="file">
-  // never sees that. Catching paste here means Ctrl+V just works instead of
-  // needing "save the image somewhere first, then browse to it".
+  // Copying an image out of Word (or a browser, or Snipping Tool) usually
+  // puts it on the clipboard as image data, not a file — a plain
+  // <input type="file"> never sees that. Word in particular is inconsistent
+  // about *which* format it puts on the clipboard depending on version, so
+  // this checks both places a browser might expose it, and says something
+  // useful if neither has a usable image instead of failing silently.
   const handlePaste = (e) => {
-    const item = Array.from(e.clipboardData?.items ?? []).find((it) => it.type.startsWith("image/"));
-    if (!item) return;
+    const clipboardData = e.clipboardData;
+    if (!clipboardData) return;
+
+    const item = Array.from(clipboardData.items ?? []).find((it) => it.type.startsWith("image/"));
+    const file = item ? item.getAsFile() : Array.from(clipboardData.files ?? []).find((f) => f.type.startsWith("image/"));
+
+    if (!file) {
+      // Something was pasted, just not a plain image the browser can read
+      // (common with Word, which sometimes copies pictures as an embedded
+      // object or a metafile instead of a bitmap) — don't stay silent.
+      e.preventDefault();
+      setStatus("error");
+      setError(
+        'Couldn\'t read an image from that paste. In Word, right-click the picture → "Save as Picture...", then use "Upload photo" below instead.'
+      );
+      return;
+    }
     e.preventDefault();
-    processFile(item.getAsFile());
+    processFile(file);
   };
 
   const handleDrop = (e) => {
