@@ -52,7 +52,7 @@ export default function Navbar() {
   }, [open]);
 
   const linkCls = ({ isActive }) =>
-    `relative py-1.5 text-[15px] font-medium whitespace-nowrap transition-colors after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:bg-accent after:transition-transform after:duration-300 after:origin-left ${
+    `relative py-1.5 text-[13.5px] font-medium whitespace-nowrap transition-colors after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:bg-accent after:transition-transform after:duration-300 after:origin-left ${
       isActive
         ? "text-accent after:w-full after:scale-x-100"
         : "text-ink-dim hover:text-ink after:w-full after:scale-x-0 hover:after:scale-x-100"
@@ -62,24 +62,25 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-bg/95 backdrop-blur-sm border-b border-line overflow-x-clip">
       <TopBar />
 
-      {/* Nine nav items plus Join TRS at a bigger, readable size need more
-          than the 1240px content width, so this row gets its own wider (but
-          still capped) container instead of the shared <Container> — and
-          only switches out of the hamburger at 1760px, comfortably past the
-          container's own 1680px cap, so there's real spare room whenever it
-          does show. */}
+      {/* Nine nav items plus Join TRS need more than the 1240px content
+          width, so this row gets its own wider (but still capped) container
+          instead of the shared <Container> — and only switches out of the
+          hamburger at 2xl (1536px). Windows display scaling means a laptop's
+          reported "1920px" screen is often a much narrower CSS viewport
+          (e.g. 1536px at 125% scaling), so this row has to actually fit
+          there, not just at the raw pixel count — kept deliberately tight. */}
       <div className="mx-auto w-full max-w-[1680px] px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3 py-4">
-        <NavLink to="/" className="flex items-center gap-3 shrink-0" aria-label="TRS BVM home">
-          <TrsLogo className="h-[52px] w-[52px] shrink-0" />
+        <NavLink to="/" className="flex items-center gap-2.5 shrink-0" aria-label="TRS BVM home">
+          <TrsLogo className="h-11 w-11 shrink-0" />
           <span className="hidden sm:block leading-tight">
-            <span className="block font-display text-[19px] font-semibold tracking-tight text-ink">
+            <span className="block font-display text-[17px] font-semibold tracking-tight text-ink">
               TRS BVM
             </span>
-            <span className="block text-[13px] text-ink-faint">Student Chapter</span>
+            <span className="block text-[12px] text-ink-faint">Student Chapter</span>
           </span>
         </NavLink>
 
-        <nav aria-label="Primary" className="hidden min-[1760px]:flex items-center gap-5">
+        <nav aria-label="Primary" className="hidden 2xl:flex items-center gap-4">
           {NAV_LINKS.map((link) => (
             <NavLink key={link.label} to={link.href} className={linkCls} end={link.href === "/"}>
               {link.label}
@@ -87,20 +88,17 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden min-[1760px]:flex items-center gap-4 shrink-0">
+        <div className="hidden 2xl:flex items-center gap-3 shrink-0">
           <ThemeToggle />
-          <div className="pl-4 ml-1 border-l border-line flex items-center gap-2.5">
-            <BvmLogo className="h-10 w-10" />
-            <span className="text-[11px] leading-tight text-ink-faint max-w-[100px]">
-              BVM Engineering College
-            </span>
+          <div className="pl-3 ml-1 border-l border-line flex items-center">
+            <BvmLogo className="h-9 w-9" />
           </div>
-          <Button href={JOIN_LINK.href} variant="primary" icon={false}>
+          <Button href={JOIN_LINK.href} variant="primary" size="sm" icon={false}>
             {JOIN_LINK.label}
           </Button>
         </div>
 
-        <div className="flex items-center gap-2.5 min-[1760px]:hidden">
+        <div className="flex items-center gap-2.5 2xl:hidden">
           <ThemeToggle />
           <button
             onClick={() => setOpen((o) => !o)}
@@ -120,7 +118,7 @@ export default function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-            className="min-[1760px]:hidden overflow-hidden border-b border-line bg-bg"
+            className="2xl:hidden overflow-hidden border-b border-line bg-bg"
           >
             <Container className="flex flex-col gap-1 py-4">
               {NAV_LINKS.map((link) => (
