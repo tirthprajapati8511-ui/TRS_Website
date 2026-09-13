@@ -62,7 +62,7 @@ function MemberCard({ member, index }) {
 }
 
 export default function Committee() {
-  const { committee } = useContent();
+  const { committee, faculty } = useContent();
 
   return (
     <section className="bg-bg py-16 lg:py-24">
@@ -93,16 +93,17 @@ export default function Committee() {
           </Reveal>
         )}
 
-        {committee.facultyMembers.length > 0 && (
+        {faculty.members.length > 0 && (
           <div className="mt-16 pt-12 border-t border-line">
             <Reveal>
               <span className="mono-label text-[11px] text-accent">Faculty Members</span>
               <h2 className="mt-3 font-display text-2xl font-semibold text-ink">
                 Guiding the society
               </h2>
+              <p className="mt-2 max-w-xl text-[13.5px] leading-relaxed text-ink-dim">{faculty.intro}</p>
             </Reveal>
             <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
-              {committee.facultyMembers.map((member, i) => (
+              {faculty.members.map((member, i) => (
                 <MemberCard key={member.id} member={member} index={i} />
               ))}
             </div>

@@ -526,8 +526,59 @@
         "email": "",
         "linkedin": "https://www.linkedin.com/in/nihar-bambharoliya-364b89398/"
       }
+    ]
+  },
+  "join": {
+    "heading": "Joining TRS is on paper, on purpose.",
+    "description": "Membership isn't an online form — it's an official enrollment form you download, fill in, and submit in person. That's how we keep it a real commitment.",
+    "steps": [
+      "Download the official enrollment form (PDF).",
+      "Fill it in and get it signed where required.",
+      "Submit it physically to the faculty enrollment contact."
     ],
-    "facultyMembers": [
+    "formHref": null,
+    "facultyContact": {
+      "name": "Dr. Milendrakumar  Manilal  Solanki",
+      "role": "TRS Membership In-Charge",
+      "email": "mmsolanki@bvmengineering.ac.in",
+      "photo": "/uploads/1789058363577-mmsolanki-bvmengineering-ac-inmms-remove.png",
+      "phone": "+91 98257 16003"
+    }
+  },
+  "footer": {
+    "description": "TRS BVM Student Chapter is a student-driven robotics and engineering society at BVM Engineering College, designing, building and competing with robots.",
+    "addressLines": [
+      "BVM Engineering College",
+      "Vallabh Vidyanagar, Anand, Gujarat 388120"
+    ],
+    "email": "trs@bvmengineering.ac.in",
+    "phone": "+91 2692 230104 (College)",
+    "socials": [
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/trs_bvm?stkn=bDA3Y2phZG1naWdh"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/company/trs-bvm/"
+      },
+      {
+        "label": "YouTube",
+        "href": "https://youtube.com/@trsbvmstudentchapter7190?si=Yc-GSysMS0QzYE3V"
+      },
+      {
+        "label": "X",
+        "href": "https://x.com/BvmTrs"
+      }
+    ],
+    "parentOrg": {
+      "name": "The Robotics Society (India)",
+      "note": "An authorized student chapter of"
+    }
+  },
+  "faculty": {
+    "intro": "The faculty members who advise and mentor TRS BVM.",
+    "members": [
       {
         "id": "faculty-1",
         "name": "Prof. (Dr.) Vinay J. Patel",
@@ -676,53 +727,5 @@
         "email": ""
       }
     ]
-  },
-  "join": {
-    "heading": "Joining TRS is on paper, on purpose.",
-    "description": "Membership isn't an online form — it's an official enrollment form you download, fill in, and submit in person. That's how we keep it a real commitment.",
-    "steps": [
-      "Download the official enrollment form (PDF).",
-      "Fill it in and get it signed where required.",
-      "Submit it physically to the faculty enrollment contact."
-    ],
-    "formHref": null,
-    "facultyContact": {
-      "name": "Dr. Milendrakumar  Manilal  Solanki",
-      "role": "TRS Membership In-Charge",
-      "email": "mmsolanki@bvmengineering.ac.in",
-      "photo": "/uploads/1789058363577-mmsolanki-bvmengineering-ac-inmms-remove.png",
-      "phone": "+91 98257 16003"
-    }
-  },
-  "footer": {
-    "description": "TRS BVM Student Chapter is a student-driven robotics and engineering society at BVM Engineering College, designing, building and competing with robots.",
-    "addressLines": [
-      "BVM Engineering College",
-      "Vallabh Vidyanagar, Anand, Gujarat 388120"
-    ],
-    "email": "trs@bvmengineering.ac.in",
-    "phone": "+91 2692 230104 (College)",
-    "socials": [
-      {
-        "label": "Instagram",
-        "href": "https://www.instagram.com/trs_bvm?stkn=bDA3Y2phZG1naWdh"
-      },
-      {
-        "label": "LinkedIn",
-        "href": "https://www.linkedin.com/company/trs-bvm/"
-      },
-      {
-        "label": "YouTube",
-        "href": "https://youtube.com/@trsbvmstudentchapter7190?si=Yc-GSysMS0QzYE3V"
-      },
-      {
-        "label": "X",
-        "href": "https://x.com/BvmTrs"
-      }
-    ],
-    "parentOrg": {
-      "name": "The Robotics Society (India)",
-      "note": "An authorized student chapter of"
-    }
   }
 }

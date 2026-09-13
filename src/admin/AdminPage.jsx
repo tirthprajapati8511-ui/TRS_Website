@@ -4,6 +4,7 @@ import AdminLogin from "./AdminLogin";
 import BrandEditor from "./editors/BrandEditor";
 import HeroEditor from "./editors/HeroEditor";
 import CommitteeEditor from "./editors/CommitteeEditor";
+import FacultyEditor from "./editors/FacultyEditor";
 import EventsEditor from "./editors/EventsEditor";
 import ProjectsEditor from "./editors/ProjectsEditor";
 import AchievementsEditor from "./editors/AchievementsEditor";
@@ -17,6 +18,7 @@ const TABS = [
   { key: "brand", label: "Branding", Editor: BrandEditor },
   { key: "hero", label: "Hero", Editor: HeroEditor },
   { key: "committee", label: "Executive Committee", Editor: CommitteeEditor },
+  { key: "faculty", label: "Faculty Members", Editor: FacultyEditor },
   { key: "events", label: "Events", Editor: EventsEditor },
   { key: "projects", label: "Projects", Editor: ProjectsEditor },
   { key: "achievements", label: "Achievements", Editor: AchievementsEditor },

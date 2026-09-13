@@ -218,7 +218,14 @@ export const DEFAULT_CONTENT = {
     // specific enough that a fake one would read as a real claim. Add real
     // members through the admin panel.
     members: [],
-    facultyMembers: [],
+  },
+
+  // Kept independent of `committee` on purpose — faculty are advisors and
+  // mentors, not part of the student executive committee, so they get their
+  // own content, admin tab, and section rather than being nested under it.
+  faculty: {
+    intro: "The faculty members who advise and mentor TRS BVM.",
+    members: [],
   },
 
   join: {
