@@ -1,4 +1,9 @@
 {
+  "brand": {
+    "trsLogo": "/brand/trs-logo.png",
+    "bvmLogoLight": "/uploads/1789329803848-chatgpt-image-sep-10-2026-11-13-45-pm.png",
+    "bvmLogoDark": "/uploads/1789329810534-chatgpt-image-sep-10-2026-11-10-09-pm.png"
+  },
   "hero": {
     "eyebrow": "Robotics Innovation Community",
     "headline": "Students Robots",
@@ -180,12 +185,6 @@
         "detail": "Rs. 25,000 prize and an ISRO Ahmedabad internship opportunity."
       }
     ],
-    "archiveYears": [
-      "2026–27",
-      "2025–26",
-      "2024–25",
-      "2023–24"
-    ],
     "archive": [
       {
         "year": "2026–27",
@@ -314,6 +313,12 @@
           }
         ]
       }
+    ],
+    "archiveYears": [
+      "2026–27",
+      "2025–26",
+      "2024–25",
+      "2023–24"
     ]
   },
   "workshops": {
@@ -327,7 +332,7 @@
         "id": "c-jeel-gujrati",
         "name": "Jeel Gujrati",
         "role": "Secretary",
-        "branch": "",
+        "branch": "Mechenical 3rd Year",
         "photo": null,
         "email": "",
         "linkedin": ""

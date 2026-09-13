@@ -38,10 +38,9 @@ async function uploadImage(file) {
 export function ImageUploadField({ label, value, onChange }) {
   const [status, setStatus] = useState("idle"); // idle | uploading | error
   const [error, setError] = useState("");
+  const [dragOver, setDragOver] = useState(false);
 
-  const handleFile = async (e) => {
-    const file = e.target.files?.[0];
-    e.target.value = ""; // allow re-picking the same file later
+  const processFile = async (file) => {
     if (!file) return;
     if (file.size > MAX_UPLOAD_MB * 1024 * 1024) {
       setStatus("error");
@@ -60,8 +59,41 @@ export function ImageUploadField({ label, value, onChange }) {
     }
   };
 
+  const handleFile = (e) => {
+    const file = e.target.files?.[0];
+    e.target.value = ""; // allow re-picking the same file later
+    processFile(file);
+  };
+
+  // Copying an image out of Word (or a browser, or Snipping Tool) puts it on
+  // the clipboard as image data, not a file — a plain <input type="file">
+  // never sees that. Catching paste here means Ctrl+V just works instead of
+  // needing "save the image somewhere first, then browse to it".
+  const handlePaste = (e) => {
+    const item = Array.from(e.clipboardData?.items ?? []).find((it) => it.type.startsWith("image/"));
+    if (!item) return;
+    e.preventDefault();
+    processFile(item.getAsFile());
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    setDragOver(false);
+    processFile(e.dataTransfer.files?.[0]);
+  };
+
   return (
-    <div>
+    <div
+      tabIndex={0}
+      onPaste={handlePaste}
+      onDragOver={(e) => {
+        e.preventDefault();
+        setDragOver(true);
+      }}
+      onDragLeave={() => setDragOver(false)}
+      onDrop={handleDrop}
+      className={`rounded-md outline-none focus-visible:ring-2 focus-visible:ring-accent ${dragOver ? "ring-2 ring-accent" : ""}`}
+    >
       <span className="mono-label text-[10px] text-ink-faint">{label}</span>
       <div className="mt-1.5 flex items-center gap-3">
         {value ? (
@@ -95,6 +127,9 @@ export function ImageUploadField({ label, value, onChange }) {
           </button>
         )}
       </div>
+      <p className="mt-1.5 text-[11px] text-ink-faint">
+        Click to browse, or click here and paste (Ctrl+V) an image copied from Word or anywhere else.
+      </p>
       {status === "error" && <p className="mt-1.5 text-[12px] text-warn">{error}</p>}
     </div>
   );
