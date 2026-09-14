@@ -2,6 +2,7 @@ import { Award, Trophy } from "lucide-react";
 import Container from "../components/Container";
 import Reveal from "../components/Reveal";
 import PlaceholderImage from "../components/PlaceholderImage";
+import PhotoGallery from "../components/PhotoGallery";
 import { useContent } from "../lib/ContentContext";
 
 function YearSection({ entry, index }) {
@@ -28,6 +29,11 @@ function YearSection({ entry, index }) {
                   )}
                 </div>
               </div>
+              {item.gallery?.length > 0 && (
+                <div className="px-5 pb-5">
+                  <PhotoGallery photos={item.gallery} />
+                </div>
+              )}
             </div>
           ))}
         </div>
