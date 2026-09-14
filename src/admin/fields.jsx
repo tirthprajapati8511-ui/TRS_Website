@@ -152,6 +152,125 @@ export function ImageUploadField({ label, value, onChange }) {
   );
 }
 
+/**
+ * Same upload/paste/drag mechanics as ImageUploadField, but for a whole set
+ * of photos rather than one — an event with a stack of photos from the day,
+ * not just a single cover image. Each upload appends to the list; existing
+ * ones can be reordered or removed the same way as any other list here.
+ */
+export function ImageGalleryField({ label, value = [], onChange }) {
+  const [status, setStatus] = useState("idle"); // idle | uploading | error
+  const [error, setError] = useState("");
+  const [dragOver, setDragOver] = useState(false);
+
+  const addFile = async (file) => {
+    if (!file) return;
+    if (file.size > MAX_UPLOAD_MB * 1024 * 1024) {
+      setStatus("error");
+      setError(`That file is over ${MAX_UPLOAD_MB}MB — use a smaller one.`);
+      return;
+    }
+    setStatus("uploading");
+    setError("");
+    try {
+      const path = await uploadImage(file);
+      onChange([...value, path]);
+      setStatus("idle");
+    } catch (err) {
+      setStatus("error");
+      setError(err.message || "Upload failed.");
+    }
+  };
+
+  const handleFile = (e) => {
+    const file = e.target.files?.[0];
+    e.target.value = "";
+    addFile(file);
+  };
+
+  const handlePaste = (e) => {
+    const clipboardData = e.clipboardData;
+    if (!clipboardData) return;
+    const item = Array.from(clipboardData.items ?? []).find((it) => it.type.startsWith("image/"));
+    const file = item ? item.getAsFile() : Array.from(clipboardData.files ?? []).find((f) => f.type.startsWith("image/"));
+
+    if (!file) {
+      e.preventDefault();
+      setStatus("error");
+      setError(
+        'Couldn\'t read an image from that paste. In Word, right-click the picture → "Save as Picture...", then use "+ Add photo" below instead.'
+      );
+      return;
+    }
+    e.preventDefault();
+    addFile(file);
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    setDragOver(false);
+    Array.from(e.dataTransfer.files ?? []).forEach((f) => {
+      if (f.type.startsWith("image/")) addFile(f);
+    });
+  };
+
+  const remove = (i) => onChange(value.filter((_, idx) => idx !== i));
+  const move = (i, dir) => onChange(moveItem(value, i, dir));
+
+  return (
+    <div
+      tabIndex={0}
+      onPaste={handlePaste}
+      onDragOver={(e) => {
+        e.preventDefault();
+        setDragOver(true);
+      }}
+      onDragLeave={() => setDragOver(false)}
+      onDrop={handleDrop}
+      className={`rounded-md outline-none focus-visible:ring-2 focus-visible:ring-accent ${dragOver ? "ring-2 ring-accent" : ""}`}
+    >
+      <span className="mono-label text-[10px] text-ink-faint">{label}</span>
+
+      {value.length > 0 && (
+        <div className="mt-2 grid grid-cols-3 sm:grid-cols-4 gap-2">
+          {value.map((path, i) => (
+            <div key={i} className="relative group">
+              <img src={path} alt="" className="h-16 w-full rounded object-cover border border-line" />
+              <div className="absolute top-1 right-1 flex items-center gap-0.5 rounded bg-bg/85 px-0.5">
+                <MoveButtons index={i} count={value.length} onMove={move} />
+                <button
+                  type="button"
+                  onClick={() => remove(i)}
+                  className="text-ink-faint hover:text-accent transition-colors"
+                  aria-label="Remove photo"
+                >
+                  <X size={13} strokeWidth={2} />
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      <label className="mt-2 inline-flex items-center gap-2 border border-line px-3 py-2 text-[12.5px] text-ink-dim hover:border-accent hover:text-accent transition-colors cursor-pointer">
+        {status === "uploading" && <Loader2 size={13} className="animate-spin" />}
+        {status === "uploading" ? "Uploading…" : "+ Add photo"}
+        <input
+          type="file"
+          accept="image/jpeg,image/png,image/webp,image/svg+xml"
+          onChange={handleFile}
+          className="hidden"
+          disabled={status === "uploading"}
+        />
+      </label>
+      <p className="mt-1.5 text-[11px] text-ink-faint">
+        Add as many as you like — browse, paste (Ctrl+V), or drag photos in.
+      </p>
+      {status === "error" && <p className="mt-1.5 text-[12px] text-warn">{error}</p>}
+    </div>
+  );
+}
+
 export function Field({ label, value, onChange, placeholder, mono = false }) {
   return (
     <label className="block">

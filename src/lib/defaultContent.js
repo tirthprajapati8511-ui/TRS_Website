@@ -82,6 +82,7 @@ export const DEFAULT_CONTENT = {
         location: "BVM Engineering College",
         description: "Annual robotics competition featuring multiple categories and teams.",
         image: null,
+        gallery: [],
         href: "/events/robofest-6",
         structure: "multi-team",
         teams: [
@@ -98,6 +99,7 @@ export const DEFAULT_CONTENT = {
         location: "To Be Announced",
         description: "Student Autonomous Underwater Vehicle Competition.",
         image: null,
+        gallery: [],
         href: "/events/sauvc-2026",
         structure: "single-team",
         teams: [
@@ -121,6 +123,7 @@ export const DEFAULT_CONTENT = {
         location: "ABU Robocon",
         description: "Asia-Pacific Broadcasting Union Robocon Competition.",
         image: null,
+        gallery: [],
         href: "/events/robocon-2026",
         structure: "single-team",
         teams: [

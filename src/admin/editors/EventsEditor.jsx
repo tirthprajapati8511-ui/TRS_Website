@@ -1,4 +1,4 @@
-import { ArrayEditor, Field, TextArea, SectionCard, ImageUploadField } from "../fields";
+import { ArrayEditor, Field, TextArea, SectionCard, ImageUploadField, ImageGalleryField } from "../fields";
 
 const STATUS_TONES = ["accent", "good", "neutral"];
 
@@ -78,6 +78,7 @@ export default function EventsEditor({ value, onChange }) {
           location: "",
           description: "",
           image: null,
+          gallery: [],
           href: "/events",
           structure: "single-team",
           teams: [],
@@ -107,7 +108,12 @@ export default function EventsEditor({ value, onChange }) {
               <Field label="Location" value={item.location} onChange={(v) => update({ location: v })} />
             </div>
             <TextArea label="Short description" value={item.description} onChange={(v) => update({ description: v })} rows={2} />
-            <ImageUploadField label="Event photo" value={item.image} onChange={(path) => update({ image: path })} />
+            <ImageUploadField label="Cover photo" value={item.image} onChange={(path) => update({ image: path })} />
+            <ImageGalleryField
+              label="Gallery photos (optional) — shown on the event's detail page"
+              value={item.gallery ?? []}
+              onChange={(gallery) => update({ gallery })}
+            />
             <Field label="View details link" value={item.href} onChange={(v) => update({ href: v })} mono />
 
             <label className="block">

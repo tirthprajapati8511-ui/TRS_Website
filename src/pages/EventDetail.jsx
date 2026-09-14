@@ -6,6 +6,32 @@ import PlaceholderImage from "../components/PlaceholderImage";
 import Button from "../components/Button";
 import { STATUS_STYLES } from "../components/EventCard";
 import { useContent } from "../lib/ContentContext";
+import { assetUrl } from "../lib/assetUrl";
+
+// Thumbnails crop to a square (unlike the cover photo / badge slots
+// elsewhere, which never crop) — a photo grid reads fine that way, and
+// clicking one opens the untouched original in a new tab.
+function Gallery({ photos }) {
+  return (
+    <div className="grid grid-cols-3 sm:grid-cols-4 gap-2.5">
+      {photos.map((photo, i) => (
+        <a
+          key={i}
+          href={assetUrl(photo)}
+          target="_blank"
+          rel="noreferrer"
+          className="block aspect-square rounded-lg overflow-hidden border border-line"
+        >
+          <img
+            src={assetUrl(photo)}
+            alt=""
+            className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+          />
+        </a>
+      ))}
+    </div>
+  );
+}
 
 // Type A (multi-team): each team stands alone with its own category/leader.
 function MultiTeamBlock({ teams }) {
@@ -128,6 +154,13 @@ export default function EventDetail() {
             ) : (
               <SingleTeamBlock teams={event.teams} />
             )}
+          </Reveal>
+        )}
+
+        {event.gallery?.length > 0 && (
+          <Reveal delay={0.2} className="mt-10">
+            <h2 className="font-display text-lg font-semibold text-ink mb-5">Photos</h2>
+            <Gallery photos={event.gallery} />
           </Reveal>
         )}
 
