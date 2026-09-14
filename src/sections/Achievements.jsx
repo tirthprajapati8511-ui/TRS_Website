@@ -5,8 +5,25 @@ import SectionHeader from "../components/SectionHeader";
 import PlaceholderImage from "../components/PlaceholderImage";
 import { useContent } from "../lib/ContentContext";
 
+// Newest year first, in whatever order each year's items are listed (the
+// admin's reorder arrows control that) — so this is always in sync with the
+// full archive instead of being a second hand-maintained list.
+function getRecentHighlights(archive, limit = 3) {
+  const highlights = [];
+  for (const yearEntry of archive) {
+    for (const item of yearEntry.items) {
+      highlights.push({ ...item, year: yearEntry.year });
+      if (highlights.length >= limit) return highlights;
+    }
+  }
+  return highlights;
+}
+
 export default function Achievements() {
   const { achievements } = useContent();
+  const recentHighlights = getRecentHighlights(achievements.archive);
+
+  if (recentHighlights.length === 0) return null;
 
   return (
     <section id="achievements" className="bg-bg-muted py-16 lg:py-20 border-b border-line">
@@ -16,7 +33,7 @@ export default function Achievements() {
           {achievements.description}
         </Reveal>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-          {achievements.recent.map((item, i) => (
+          {recentHighlights.map((item, i) => (
             <Reveal
               key={`${item.title}-${i}`}
               delay={0.1 + i * 0.06}

@@ -181,11 +181,12 @@ export const DEFAULT_CONTENT = {
     eyebrowTitle: "Achievements",
     description:
       "TRS represents BVM Engineering College at national and regional robotics competitions. The full archive, organised by academic year, lives on the Achievements page.",
-    recent: [
-      { year: "PLACEHOLDER", title: "ABU Robocon", detail: "National / zonal round participation — result to be added.", image: null },
-      { year: "PLACEHOLDER", title: "RoboFest", detail: "Inter-college robotics event — result to be added.", image: null },
-      { year: "PLACEHOLDER", title: "Technical Exhibition", detail: "Project showcase and recognition — detail to be added.", image: null },
-    ],
+    // The homepage's compact "recent highlights" preview is derived from
+    // this at render time (see sections/Achievements.jsx) — newest year
+    // first, in whatever order each year's items are listed here — rather
+    // than being a second, separately hand-maintained list that can drift
+    // out of sync with it.
+    //
     // Full archive on the dedicated page — distinct from `events`, which
     // tracks upcoming competitions, not results. Each year holds its own
     // list of achievements; empty until real ones are added per year.

@@ -194,23 +194,6 @@
   "achievements": {
     "eyebrowTitle": "Achievements",
     "description": "TRS represents BVM Engineering College at national and regional robotics competitions. The full archive, organised by academic year, lives on the Achievements page.",
-    "recent": [
-      {
-        "year": "2025–26",
-        "title": "GUJCOST Robofest 5.0 — 1st & 2nd Runner-up",
-        "detail": "Underwater Robot category, Grand Finale."
-      },
-      {
-        "year": "2024–25",
-        "title": "GUJCOST Robofest 4.0 — 2 First Positions",
-        "detail": "Underwater Robotics and Agriculture Robot categories."
-      },
-      {
-        "year": "2023–24",
-        "title": "Mission CHANDRA — Competition Winner",
-        "detail": "Rs. 25,000 prize and an ISRO Ahmedabad internship opportunity."
-      }
-    ],
     "archive": [
       {
         "year": "2026–27",
