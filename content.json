@@ -203,8 +203,9 @@
         "year": "2025–26",
         "items": [
           {
-            "title": "DD Robocon '25 — AIR Rank 10",
-            "detail": "Mentors: Dr. Vinay Patel, Dr. Haresh Patolia, Prof. Vijay Pratap Singh. All-India rank of 10 with a 29-member student team."
+            "title": "GUJCOST Robofest 5.0 — 13 Teams Qualified for the Grand Finale",
+            "detail": "Out of a total of 82 teams selected nationwide for the Grand Finale (Level-3), 13 teams from TRS BVM qualified — out of the 14 teams that had advanced to Level-2.",
+            "image": null
           },
           {
             "title": "GUJCOST Robofest 5.0 — First Runner-up, Underwater Robot",
@@ -213,6 +214,10 @@
           {
             "title": "GUJCOST Robofest 5.0 — Second Runner-up, Underwater Robot",
             "detail": "Team: Shyam Parsana, Vishrut Pambhar, Kishan Kanzariya, Harsh Chaudhari. Mentor: Dr. Mehfuza S. Holia. Rs. 5,00,000 cash prize at the Grand Finale."
+          },
+          {
+            "title": "DD Robocon '25 — AIR Rank 10",
+            "detail": "Mentors: Dr. Vinay Patel, Dr. Haresh Patolia, Prof. Vijay Pratap Singh. All-India rank of 10 with a 29-member student team."
           }
         ]
       },
