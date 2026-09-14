@@ -114,6 +114,32 @@
             "facultyAdvisor": "Prof.(Dr.) Haresh Patolia"
           }
         ]
+      },
+      {
+        "id": "event-1789339079932",
+        "name": "NIDAR 2027",
+        "dateLabel": "TBA",
+        "status": "Ongoing",
+        "statusTone": "good",
+        "location": "South",
+        "description": "",
+        "image": "/uploads/1789339149803-image.png",
+        "href": "/events",
+        "structure": "multi-team",
+        "teams": [
+          {
+            "name": "Team AeroCorvus BVM",
+            "category": "AirMouse",
+            "leader": "Karansinh Desai",
+            "facultyAdvisor": "Haresh Patolia"
+          },
+          {
+            "name": "Team Vyom",
+            "category": "Rescue Swarm",
+            "leader": "Krunal Zala",
+            "facultyAdvisor": "Dharita K Patel"
+          }
+        ]
       }
     ]
   },

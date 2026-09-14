@@ -182,9 +182,9 @@ export const DEFAULT_CONTENT = {
     description:
       "TRS represents BVM Engineering College at national and regional robotics competitions. The full archive, organised by academic year, lives on the Achievements page.",
     recent: [
-      { year: "PLACEHOLDER", title: "ABU Robocon", detail: "National / zonal round participation — result to be added." },
-      { year: "PLACEHOLDER", title: "RoboFest", detail: "Inter-college robotics event — result to be added." },
-      { year: "PLACEHOLDER", title: "Technical Exhibition", detail: "Project showcase and recognition — detail to be added." },
+      { year: "PLACEHOLDER", title: "ABU Robocon", detail: "National / zonal round participation — result to be added.", image: null },
+      { year: "PLACEHOLDER", title: "RoboFest", detail: "Inter-college robotics event — result to be added.", image: null },
+      { year: "PLACEHOLDER", title: "Technical Exhibition", detail: "Project showcase and recognition — detail to be added.", image: null },
     ],
     // Full archive on the dedicated page — distinct from `events`, which
     // tracks upcoming competitions, not results. Each year holds its own

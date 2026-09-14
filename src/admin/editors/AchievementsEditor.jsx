@@ -1,4 +1,4 @@
-import { ArrayEditor, Field, TextArea, SectionCard } from "../fields";
+import { ArrayEditor, Field, TextArea, SectionCard, ImageUploadField } from "../fields";
 
 function YearItemsEditor({ items, onChange }) {
   return (
@@ -6,11 +6,12 @@ function YearItemsEditor({ items, onChange }) {
       items={items}
       onChange={onChange}
       addLabel="+ Add achievement"
-      newItem={() => ({ title: "New Achievement", detail: "" })}
+      newItem={() => ({ title: "New Achievement", detail: "", image: null })}
       renderItem={(item, update) => (
         <>
           <Field label="Title" value={item.title} onChange={(v) => update({ title: v })} />
           <TextArea label="Detail" value={item.detail} onChange={(v) => update({ detail: v })} rows={2} />
+          <ImageUploadField label="Photo (optional)" value={item.image} onChange={(path) => update({ image: path })} />
         </>
       )}
     />
@@ -34,7 +35,7 @@ export default function AchievementsEditor({ value, onChange }) {
             items={value.recent}
             onChange={(recent) => set({ recent })}
             addLabel="+ Add highlight"
-            newItem={() => ({ year: "PLACEHOLDER", title: "New Achievement", detail: "" })}
+            newItem={() => ({ year: "PLACEHOLDER", title: "New Achievement", detail: "", image: null })}
             renderItem={(item, update) => (
               <>
                 <div className="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-3">
@@ -42,6 +43,7 @@ export default function AchievementsEditor({ value, onChange }) {
                   <Field label="Title" value={item.title} onChange={(v) => update({ title: v })} />
                 </div>
                 <TextArea label="Detail" value={item.detail} onChange={(v) => update({ detail: v })} rows={2} />
+                <ImageUploadField label="Photo (optional)" value={item.image} onChange={(path) => update({ image: path })} />
               </>
             )}
           />

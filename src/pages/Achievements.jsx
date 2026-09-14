@@ -1,6 +1,7 @@
 import { Award, Trophy } from "lucide-react";
 import Container from "../components/Container";
 import Reveal from "../components/Reveal";
+import PlaceholderImage from "../components/PlaceholderImage";
 import { useContent } from "../lib/ContentContext";
 
 function YearSection({ entry, index }) {
@@ -11,13 +12,21 @@ function YearSection({ entry, index }) {
       {entry.items.length > 0 ? (
         <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
           {entry.items.map((item, i) => (
-            <div key={i} className="flex gap-3.5 rounded-lg border border-line bg-bg-panel p-5">
-              <Trophy size={18} strokeWidth={2} className="shrink-0 mt-0.5 text-accent" />
-              <div>
-                <h3 className="font-display text-[15px] font-semibold text-ink">{item.title}</h3>
-                {item.detail && (
-                  <p className="mt-1.5 text-[13px] leading-relaxed text-ink-dim">{item.detail}</p>
-                )}
+            <div
+              key={i}
+              className="flex flex-col rounded-lg border border-line bg-bg-panel overflow-hidden"
+            >
+              {item.image && (
+                <PlaceholderImage src={item.image} alt={item.title} aspect="aspect-[16/9]" />
+              )}
+              <div className="flex gap-3.5 p-5">
+                <Trophy size={18} strokeWidth={2} className="shrink-0 mt-0.5 text-accent" />
+                <div>
+                  <h3 className="font-display text-[15px] font-semibold text-ink">{item.title}</h3>
+                  {item.detail && (
+                    <p className="mt-1.5 text-[13px] leading-relaxed text-ink-dim">{item.detail}</p>
+                  )}
+                </div>
               </div>
             </div>
           ))}
