@@ -45,6 +45,9 @@
             "leader": "Placeholder",
             "facultyAdvisor": "Placeholder"
           }
+        ],
+        "gallery": [
+          "/uploads/1789388267013-robofest-6-0-hackathon-1-.png"
         ]
       },
       {
@@ -205,7 +208,8 @@
           {
             "title": "GUJCOST Robofest 5.0 — 13 Teams Qualified for the Grand Finale",
             "detail": "Out of a total of 82 teams selected nationwide for the Grand Finale (Level-3), 13 teams from TRS BVM qualified — out of the 14 teams that had advanced to Level-2.",
-            "image": "/uploads/1789368242242-image.png"
+            "image": "/uploads/1789369579188-img-20260319-wa0109-jpg.jpg",
+            "gallery": []
           },
           {
             "title": "GUJCOST Robofest 5.0 — First Runner-up, Underwater Robot",
@@ -213,7 +217,8 @@
           },
           {
             "title": "GUJCOST Robofest 5.0 — Second Runner-up, Underwater Robot",
-            "detail": "Team: Shyam Parsana, Vishrut Pambhar, Kishan Kanzariya, Harsh Chaudhari. Mentor: Dr. Mehfuza S. Holia. Rs. 5,00,000 cash prize at the Grand Finale."
+            "detail": "Team: Shyam Parsana, Vishrut Pambhar, Kishan Kanzariya, Harsh Chaudhari. Mentor: Dr. Mehfuza S. Holia. Rs. 5,00,000 cash prize at the Grand Finale.",
+            "image": "/uploads/1789369956979-image.png"
           },
           {
             "title": "DD Robocon '25 — AIR Rank 10",
