@@ -1,5 +1,13 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { DEFAULT_CONTENT } from "./defaultContent";
+// Vite bundles a .json import as real data at build time — this is what
+// makes the *static* build (GitHub Pages, or any host with no server behind
+// it) show real saved content instead of silently falling back to the
+// placeholder defaults. It's a point-in-time snapshot as of whatever commit
+// was built; the live /api/content fetch below still wins whenever it's
+// reachable (local dev), so editing in /admin and refreshing always shows
+// the latest without needing a rebuild.
+import bundledContent from "../../content.json";
 
 const ContentContext = createContext(null);
 
@@ -21,7 +29,7 @@ function mergeContent(saved) {
 
 export function ContentProvider({ children }) {
   const [content, setContent] = useState(DEFAULT_CONTENT);
-  const [status, setStatus] = useState("loading"); // loading | saved | defaults | offline
+  const [status, setStatus] = useState("loading"); // loading | saved | defaults | bundled
 
   const refresh = useCallback(async () => {
     try {
@@ -31,10 +39,12 @@ export function ContentProvider({ children }) {
       setContent(mergeContent(data.content));
       setStatus(data.hasSavedContent ? "saved" : "defaults");
     } catch {
-      // No content API available (e.g. static production build with no
-      // server behind it) — fall back to the defaults shipped in the bundle.
-      setContent(DEFAULT_CONTENT);
-      setStatus("offline");
+      // No content API available (a static build with no server behind
+      // it) — use the content.json snapshot baked in at build time rather
+      // than the bare placeholder defaults, so a static deploy still shows
+      // whatever was actually saved as of that build.
+      setContent(mergeContent(bundledContent));
+      setStatus("bundled");
     }
   }, []);
 

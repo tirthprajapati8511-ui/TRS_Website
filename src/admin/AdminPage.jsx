@@ -204,7 +204,7 @@ function StatusPill({ status }) {
     loading: { text: "Loading…", cls: "text-ink-faint" },
     saved: { text: "Editing saved content", cls: "text-accent" },
     defaults: { text: "Editing defaults — nothing saved yet", cls: "text-ink-dim" },
-    offline: { text: "No local API — changes won't save", cls: "text-ink-faint" },
+    bundled: { text: "No local API — viewing the last built snapshot, changes won't save", cls: "text-ink-faint" },
   };
   const { text, cls } = map[status] ?? map.loading;
   return <span className={`mono-label text-[10px] ${cls}`}>{text}</span>;
