@@ -6,6 +6,7 @@ import { ChevronDown, ChevronUp, ImageIcon, Loader2, X } from "lucide-react";
 import { ADMIN_TOKEN_KEY } from "./tokenKey";
 
 const MAX_UPLOAD_MB = 8;
+const MAX_VIDEO_UPLOAD_MB = 60; // keep in sync with vite.content-api.js
 
 function fileToBase64(file) {
   return new Promise((resolve, reject) => {
@@ -265,6 +266,96 @@ export function ImageGalleryField({ label, value = [], onChange }) {
       </label>
       <p className="mt-1.5 text-[11px] text-ink-faint">
         Add as many as you like — browse, paste (Ctrl+V), or drag photos in.
+      </p>
+      {status === "error" && <p className="mt-1.5 text-[12px] text-warn">{error}</p>}
+    </div>
+  );
+}
+
+/**
+ * A single video field, same upload mechanics as the photo fields (drag or
+ * browse — no paste, browsers don't reliably put video files on the
+ * clipboard the way they do images). Uploaded videos get committed into the
+ * project's own storage (there's no separate video host here), so this is
+ * meant for short clips, not anything long.
+ */
+export function VideoUploadField({ label, value, onChange }) {
+  const [status, setStatus] = useState("idle"); // idle | uploading | error
+  const [error, setError] = useState("");
+  const [dragOver, setDragOver] = useState(false);
+
+  const processFile = async (file) => {
+    if (!file) return;
+    if (file.size > MAX_VIDEO_UPLOAD_MB * 1024 * 1024) {
+      setStatus("error");
+      setError(`That video is over ${MAX_VIDEO_UPLOAD_MB}MB — trim or compress it first.`);
+      return;
+    }
+    setStatus("uploading");
+    setError("");
+    try {
+      const path = await uploadImage(file);
+      onChange(path);
+      setStatus("idle");
+    } catch (err) {
+      setStatus("error");
+      setError(err.message || "Upload failed.");
+    }
+  };
+
+  const handleFile = (e) => {
+    const file = e.target.files?.[0];
+    e.target.value = "";
+    processFile(file);
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    setDragOver(false);
+    processFile(e.dataTransfer.files?.[0]);
+  };
+
+  return (
+    <div
+      onDragOver={(e) => {
+        e.preventDefault();
+        setDragOver(true);
+      }}
+      onDragLeave={() => setDragOver(false)}
+      onDrop={handleDrop}
+      className={`rounded-md ${dragOver ? "ring-2 ring-accent" : ""}`}
+    >
+      <span className="mono-label text-[10px] text-ink-faint">{label}</span>
+      <div className="mt-1.5 space-y-2">
+        {value && (
+          <video src={value} controls className="w-full max-w-xs rounded border border-line" />
+        )}
+        <div className="flex items-center gap-3">
+          <label className="inline-flex items-center gap-2 border border-line px-3 py-2 text-[12.5px] text-ink-dim hover:border-accent hover:text-accent transition-colors cursor-pointer">
+            {status === "uploading" && <Loader2 size={13} className="animate-spin" />}
+            {status === "uploading" ? "Uploading…" : value ? "Change video" : "Upload video"}
+            <input
+              type="file"
+              accept="video/mp4,video/webm,video/quicktime"
+              onChange={handleFile}
+              className="hidden"
+              disabled={status === "uploading"}
+            />
+          </label>
+          {value && (
+            <button
+              type="button"
+              onClick={() => onChange(null)}
+              className="text-ink-faint hover:text-accent transition-colors"
+              aria-label="Remove video"
+            >
+              <X size={16} strokeWidth={2} />
+            </button>
+          )}
+        </div>
+      </div>
+      <p className="mt-1.5 text-[11px] text-ink-faint">
+        MP4, WebM or MOV, up to {MAX_VIDEO_UPLOAD_MB}MB — click to browse or drag a file in.
       </p>
       {status === "error" && <p className="mt-1.5 text-[12px] text-warn">{error}</p>}
     </div>

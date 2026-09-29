@@ -152,6 +152,8 @@ export const DEFAULT_CONTENT = {
         description: "A versatile rover platform for autonomous navigation and mapping.",
         domains: ["Navigation", "Perception", "Control"],
         image: null,
+        gallery: [],
+        video: null,
         href: "/projects/autonomous-rover",
       },
       {
@@ -160,6 +162,8 @@ export const DEFAULT_CONTENT = {
         description: "An underwater robotic vehicle for exploration and research.",
         domains: ["Embedded", "Control", "Computer Vision"],
         image: null,
+        gallery: [],
+        video: null,
         href: "/projects/underwater-rov",
       },
       {
@@ -168,6 +172,8 @@ export const DEFAULT_CONTENT = {
         description: "A four-legged robot platform for research in locomotion and stability.",
         domains: ["Mechanics", "Control", "AI"],
         image: null,
+        gallery: [],
+        video: null,
         href: "/projects/quadruped-robot",
       },
     ],

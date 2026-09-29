@@ -9,9 +9,9 @@ import path from "node:path";
 //                                "x-admin-token" to match ADMIN_TOKEN
 // - POST /api/content/login  -> { token } -> { ok: true } if it matches
 // - POST /api/upload         -> { filename, mime, dataBase64 } -> saves the
-//                                image under public/uploads and returns the
-//                                path to put straight into a content field.
-//                                Requires "x-admin-token".
+//                                image/video under public/uploads and
+//                                returns the path to put straight into a
+//                                content field. Requires "x-admin-token".
 //
 // This is intentionally simple: a single shared token, no sessions, no
 // hashing. It's meant for one person editing their own club site from
@@ -20,13 +20,22 @@ import path from "node:path";
 const CONTENT_FILE = path.resolve(process.cwd(), "content.json");
 const UPLOADS_DIR = path.resolve(process.cwd(), "public", "uploads");
 const ADMIN_TOKEN = process.env.TRS_ADMIN_TOKEN || "trsbvm";
-const MAX_UPLOAD_BYTES = 8 * 1024 * 1024; // 8MB, before base64 overhead
+const MAX_IMAGE_BYTES = 8 * 1024 * 1024; // 8MB, before base64 overhead
+// Videos get committed straight into the git repo (there's no separate blob
+// storage here) — every one uploaded stays in the repo's history forever,
+// even if deleted later. 60MB keeps a short, reasonably-compressed clip
+// comfortable without repo size getting out of hand.
+const MAX_VIDEO_BYTES = 60 * 1024 * 1024;
 const ALLOWED_MIME_EXT = {
   "image/jpeg": "jpg",
   "image/png": "png",
   "image/webp": "webp",
   "image/svg+xml": "svg",
+  "video/mp4": "mp4",
+  "video/webm": "webm",
+  "video/quicktime": "mov",
 };
+const VIDEO_MIMES = new Set(["video/mp4", "video/webm", "video/quicktime"]);
 
 function readContent() {
   if (fs.existsSync(CONTENT_FILE)) {
@@ -73,15 +82,19 @@ function attachMiddleware(server) {
         const ext = ALLOWED_MIME_EXT[mime];
         if (!ext) {
           return send(res, 400, {
-            error: "Unsupported image type — use JPG, PNG, WebP or SVG.",
+            error: "Unsupported file type — use JPG, PNG, WebP, SVG, MP4, WebM or MOV.",
           });
         }
+        const isVideo = VIDEO_MIMES.has(mime);
         const buffer = Buffer.from(dataBase64 || "", "base64");
         if (buffer.length === 0) {
           return send(res, 400, { error: "Empty file." });
         }
-        if (buffer.length > MAX_UPLOAD_BYTES) {
-          return send(res, 400, { error: "Image is larger than 8MB." });
+        const limit = isVideo ? MAX_VIDEO_BYTES : MAX_IMAGE_BYTES;
+        if (buffer.length > limit) {
+          return send(res, 400, {
+            error: `${isVideo ? "Video" : "Image"} is larger than ${limit / (1024 * 1024)}MB.`,
+          });
         }
         fs.mkdirSync(UPLOADS_DIR, { recursive: true });
         const safeBase = (filename || "image")

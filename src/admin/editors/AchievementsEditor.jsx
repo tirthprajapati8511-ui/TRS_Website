@@ -1,4 +1,12 @@
-import { ArrayEditor, Field, TextArea, SectionCard, ImageUploadField, ImageGalleryField } from "../fields";
+import {
+  ArrayEditor,
+  Field,
+  TextArea,
+  SectionCard,
+  ImageUploadField,
+  ImageGalleryField,
+  VideoUploadField,
+} from "../fields";
 
 function YearItemsEditor({ items, onChange }) {
   return (
@@ -6,7 +14,7 @@ function YearItemsEditor({ items, onChange }) {
       items={items}
       onChange={onChange}
       addLabel="+ Add achievement"
-      newItem={() => ({ title: "New Achievement", detail: "", image: null, gallery: [] })}
+      newItem={() => ({ title: "New Achievement", detail: "", image: null, gallery: [], video: null })}
       renderItem={(item, update) => (
         <>
           <Field label="Title" value={item.title} onChange={(v) => update({ title: v })} />
@@ -17,6 +25,7 @@ function YearItemsEditor({ items, onChange }) {
             value={item.gallery ?? []}
             onChange={(gallery) => update({ gallery })}
           />
+          <VideoUploadField label="Video (optional)" value={item.video} onChange={(path) => update({ video: path })} />
         </>
       )}
     />

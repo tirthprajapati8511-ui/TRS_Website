@@ -13,6 +13,8 @@ import Faculty from "./pages/Faculty";
 import AchievementsPage from "./pages/Achievements";
 import EventsList from "./pages/EventsList";
 import EventDetail from "./pages/EventDetail";
+import ProjectsList from "./pages/ProjectsList";
+import ProjectDetail from "./pages/ProjectDetail";
 import AdminPage from "./admin/AdminPage";
 import ScrollProgress from "./components/ScrollProgress";
 
@@ -52,8 +54,8 @@ function App() {
         <Route path="/faculty" element={<Faculty />} />
         <Route path="/events" element={<EventsList />} />
         <Route path="/events/:eventId" element={<EventDetail />} />
-        <Route path="/projects" element={<PageShell title="Projects" />} />
-        <Route path="/projects/:projectId" element={<PageShell title="Project Details" />} />
+        <Route path="/projects" element={<ProjectsList />} />
+        <Route path="/projects/:projectId" element={<ProjectDetail />} />
         <Route path="/achievements" element={<AchievementsPage />} />
         <Route path="/workshops" element={<PageShell title="Workshops" />} />
         <Route path="/join" element={<Join />} />

@@ -4,6 +4,7 @@ import Reveal from "../components/Reveal";
 import PlaceholderImage from "../components/PlaceholderImage";
 import PhotoGallery from "../components/PhotoGallery";
 import { useContent } from "../lib/ContentContext";
+import { assetUrl } from "../lib/assetUrl";
 
 function YearSection({ entry, index }) {
   return (
@@ -18,7 +19,7 @@ function YearSection({ entry, index }) {
               className="flex flex-col rounded-lg border border-line bg-bg-panel overflow-hidden"
             >
               {item.image && (
-                <PlaceholderImage src={item.image} alt={item.title} aspect="aspect-[16/9]" />
+                <PlaceholderImage src={item.image} alt={item.title} aspect="aspect-square" />
               )}
               <div className="flex gap-3.5 p-5">
                 <Trophy size={18} strokeWidth={2} className="shrink-0 mt-0.5 text-accent" />
@@ -29,6 +30,15 @@ function YearSection({ entry, index }) {
                   )}
                 </div>
               </div>
+              {item.video && (
+                <div className="px-5 pb-5">
+                  <video
+                    src={assetUrl(item.video)}
+                    controls
+                    className="w-full rounded border border-line"
+                  />
+                </div>
+              )}
               {item.gallery?.length > 0 && (
                 <div className="px-5 pb-5">
                   <PhotoGallery photos={item.gallery} />

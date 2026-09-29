@@ -206,6 +206,12 @@
         "year": "2025–26",
         "items": [
           {
+            "title": "GUJCOST Robofest 5.0 — 14 Teams Qualified for Level-2, Highest in India",
+            "detail": "14 teams from TRS BVM advanced to Level-2 of Robofest 5.0 -- the highest number of teams selected from a single institution across the nation. Out of 1,102 ideation proposals submitted in Level-1 (914 at Senior Level), only 138 senior-level proposals were shortlisted for Level-2, and 14 of those were from BVM. Each advancing team received Rs 50,000. Categories: Underwater (Dr. A. A. Vahora, Dr. A. M. Thakkar, Prof. G. B. Rathod, Prof. V. J. Patel, Dr. M. S. Holia), Aerial (Prof. V. R. Singh), Maze (Dr. M. S. Holia), IGV (Prof. V. J. Patel, Prof. H. P. Patolia), Application (Prof. D. M. Patel, Prof. H. P. Patolia, Prof. D. K. Patel, Dr. M. M. Solanki, Prof. J. R. Koisa).",
+            "image": null,
+            "gallery": []
+          },
+          {
             "title": "GUJCOST Robofest 5.0 — 13 Teams Qualified for the Grand Finale",
             "detail": "Out of a total of 82 teams selected nationwide for the Grand Finale (Level-3), 13 teams from TRS BVM qualified — out of the 14 teams that had advanced to Level-2.",
             "image": "/uploads/1789369579188-img-20260319-wa0109-jpg.jpg",
@@ -329,6 +335,99 @@
           {
             "title": "ROBOFEST 3.0 — Swarm Robots",
             "detail": "Mentor: Dr. Vinay J. Patel. Rs. 50,000 (Ideation Stage) + Rs. 1,00,000 (Proof of Concept Stage)."
+          },
+          {
+            "title": "GUJCOST Robofest 3.0 — All 14 Teams Qualified for Level-3",
+            "detail": "All 14 TRS BVM teams advanced to Level-3 of Robofest 3.0 -- out of 630 teams that applied for Level-1, only 151 reached Level-2, and 67 teams (including all 14 from BVM) were shortlisted for Level-3. Cash prizes for this stage ranged from Rs 1,00,000 to Rs 2,00,000 per team, Rs 22,00,000 total across all 67 teams. Categories: Maze Solving (Prof. A. M. Thakkar, Prof. M. S. Holia), Hexapod (Prof. H. P. Patolia, Prof. M. M. Solanki), Submarine (Prof. G. B. Rathod, Prof. J. R. Koisa), Rover (Prof. V. R. Singh, Prof. D. M. Patel), Self-Balancing (Prof. V. J. Patel, Prof. A. N. Roghalia), Swarm Robot (Prof. A. M. Thakkar, Prof. R. B. Gandhi, Prof. V. J. Patel), Home Cleaning Robot (Prof. M. S. Holia).",
+            "image": null,
+            "gallery": []
+          },
+          {
+            "title": "GUJCOST Robofest 3.0 — 14 Teams Qualified for Level-2",
+            "detail": "All 14 TRS BVM teams were selected for Level-2 of Robofest 3.0, a global-level robot-making competition by GUJCOST, Gandhinagar -- out of 630 proposals submitted nationally and internationally for Level-1, only 151 advanced. Each team received Rs 50,000 (Rs 7,00,000 total). Categories: Maze Solving (Prof. M. S. Holia, Prof. A. M. Thakkar), Hexapod (Dr. H. P. Patolia, Dr. M. M. Solanki), Rover (Prof. V. R. Singh, Dr. D. M. Patel), Home Cleaning Robot (Prof. M. S. Holia), Self-Balancing (Prof. V. J. Patel, Prof. A. K. Roghelia), Submarine (Prof. G. B. Rathod, Prof. J. R. Koisa), Swarm Robot (Prof. A. M. Thakkar, Dr. R. B. Gandhi, Prof. V. J. Patel).",
+            "image": null,
+            "gallery": []
+          }
+        ]
+      },
+      {
+        "year": "2021–22",
+        "items": [
+          {
+            "title": "GUJCOST Robofest 2.0 — All 5 Teams Win First Position",
+            "detail": "All five TRS BVM teams -- Quadruped, Underwater Robot, Prosthetic Limbs, Micro-Robots, and Pipe Climbing Robot -- won first position in their respective categories. Rs 5,00,000 cash prize per team (Rs 25,00,000 total). Felicitated by Shri Jitubhai Vaghani, Education Minister of Gujarat, on 29 October 2022 at Swarnim Sankul-1, Gandhinagar. Overall Mentor: Prof. Vinay Patel.",
+            "image": "/uploads/1790712772174-img-20221029-wa0091.jpg",
+            "gallery": []
+          },
+          {
+            "title": "Robofest 2.0 — First Position, Pipe Climbing Robot",
+            "detail": "Team: Amaan Shaikh, Zuber Makrani, Ayush Patel, Parth Makvana, Hrushikesh Vegad. Faculty Mentor: Prof. Rajiv B. Gandhi. Overall Mentor: Prof. Vinay Patel.",
+            "image": null,
+            "gallery": []
+          },
+          {
+            "title": "Robofest 2.0 — First Position, Prosthetic Limbs (Remote Sensors)",
+            "detail": "Team: Jay Goswami, Keivalya Pandya, Raunak Abhani, Vaidehi Shah. Faculty Mentor: Prof. Ashish M. Thakkar. Overall Mentor: Prof. Vinay Patel.",
+            "image": "/uploads/1790713179058-img-20221029-183007.jpg",
+            "gallery": []
+          },
+          {
+            "title": "Robofest 2.0 — First Position, Underwater Robot",
+            "detail": "Team: Darshit Darji, Vrushal Vara, Vivek Solanki, Naitik Dalwadi, Rutvik Valand. Faculty Mentor: Prof. Dipak M. Patel. Overall Mentor: Prof. Vinay Patel.",
+            "image": null,
+            "gallery": []
+          },
+          {
+            "title": "Robofest 2.0 — First Position, Micro-Robots",
+            "detail": "Team: Heramb Dahivalkar, Vishvas Suthar, Ved Bhonsle, Pratham Bharve, Dipesh Vadhwani, Indrajit Patel. Faculty Mentor: Dr. Mehfuza S. Holia. Overall Mentor: Prof. Vinay Patel.",
+            "image": null,
+            "gallery": []
+          },
+          {
+            "title": "Robofest 2.0 — First Position, Four-Legged Robot (Quadrupedal Motion)",
+            "detail": "Team: Jay Prajapati, Ishan Mohite, Manav Thakkar, Parth Panchal, Pawan Patel. Faculty Mentor: Prof. Haresh P. Patolia. Overall Mentor: Prof. Vinay Patel.",
+            "image": null,
+            "gallery": []
+          },
+          {
+            "title": "GUJCOST Robofest 2.0 — Qualified for Level-3, Prototype Making",
+            "detail": "All five TRS BVM teams qualified for the Prototype Making stage across their categories, with a combined prize pool of Rs 6,00,000 at this stage.",
+            "image": "/uploads/1790712429731-image.png",
+            "gallery": []
+          }
+        ]
+      },
+      {
+        "year": "2020–21",
+        "items": [
+          {
+            "title": "GUJCOST Robofest 2.0 — Qualified for Level-2, Proof of Concept",
+            "detail": "All five TRS BVM teams (Pipe Climbing Robot, Underwater Robot, Four-Legged Robot, Micro-Robots, Prosthetic Limbs) advanced to Level-2 after winning Rs 50,000 each at the Level-1 Ideation stage, organised by GUJCOST, Gandhinagar.",
+            "image": "/uploads/1790712191232-image.png",
+            "gallery": []
+          },
+          {
+            "title": "ARTPARK Robotics Challenge — Top 29 Teams Nationally",
+            "detail": "Team JANATICS BVM qualified in the first round of the National Level ARTPARK Robotics Challenge, securing a place among the Top 29 teams for developing an autonomous robot for janitorial tasks in washrooms. Team: Keivalya Pandya, Jay Prajapati, Darshit Darji, Hrushikesh Vegad, Jay Goswami. Mentor: Prof. (Dr.) Vinay Patel.",
+            "image": "/uploads/1790711990403-image.png",
+            "gallery": []
+          }
+        ]
+      },
+      {
+        "year": "2019–20",
+        "items": [
+          {
+            "title": "ROBOFEST 1.0 — Joint Winner, Rover Category",
+            "detail": "Team: Jay Prajapati, Hussain S. Badri, Dhairya A. Parikh, Harshil Patel, Ishwariya Joshi. Mentor: Dr. Vinay Patel. Rs. 2,50,000 cash prize.",
+            "image": "/uploads/1790709802040-whatsapp-image-2020-10-23-at-11-32-34-am.jpg",
+            "gallery": [
+              "/uploads/1790709816077-final-rover-9-team-bvm.jpg",
+              "/uploads/1790709820939-final-rover-7-team-bvm.jpg",
+              "/uploads/1790709825213-final-manipulator-side-view-rover.jpg",
+              "/uploads/1790709832890-copy-of-final-rover-5-team-bvm.jpg"
+            ],
+            "video": "/uploads/1790709839247-360-degree-orientation-final-prototype-r.mp4"
           }
         ]
       }

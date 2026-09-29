@@ -7,24 +7,30 @@ import { assetUrl } from "../lib/assetUrl";
  * real event/project photography. Swap `src` in the content data once a
  * real photo exists; this never renders once that happens.
  *
- * Shows the full image rather than cropping it to fill the frame — event
- * "photos" are often a competition badge or logo (square, with text right
- * up to the edges), and cropping those to a fixed aspect ratio slices off
- * exactly the part that matters. Any empty space around a non-matching
- * image is filled with the same muted background as the placeholder state,
- * so it reads as intentional rather than as a bug.
+ * Crops to fill the frame by default (`fit="cover"`) — real photos come in
+ * every aspect ratio (portrait phone shots next to landscape ones), and
+ * letting each one show at its own size looks far more inconsistent side by
+ * side in a grid than a centred crop does. Pass `fit="contain"` for the rare
+ * case where nothing can be cropped — a badge or logo with text right up to
+ * the edges — which then letterboxes into the same muted background as the
+ * empty-placeholder state instead.
  */
-export default function PlaceholderImage({ src, alt = "", className = "", aspect = "aspect-[4/3]" }) {
+export default function PlaceholderImage({
+  src,
+  alt = "",
+  className = "",
+  aspect = "aspect-[4/3]",
+  fit = "cover",
+}) {
   if (src) {
-    return (
-      <div className={`${aspect} w-full overflow-hidden bg-bg-elevated flex items-center justify-center`}>
-        <img
-          src={assetUrl(src)}
-          alt={alt}
-          className={`h-full w-full object-contain ${className}`}
-        />
-      </div>
-    );
+    if (fit === "contain") {
+      return (
+        <div className={`${aspect} w-full overflow-hidden bg-bg-elevated flex items-center justify-center`}>
+          <img src={assetUrl(src)} alt={alt} className={`h-full w-full object-contain ${className}`} />
+        </div>
+      );
+    }
+    return <img src={assetUrl(src)} alt={alt} className={`${aspect} w-full object-cover ${className}`} />;
   }
   return (
     <div
