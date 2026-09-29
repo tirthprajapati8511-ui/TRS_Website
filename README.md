@@ -1,4 +1,4 @@
-# TRS BVM — Technology & Robotics Society
+# TRS BVM — The Robotics Society
 
 The official website for the TRS Student Chapter at BVM Engineering College — built with React, Vite, and Tailwind CSS, with a built-in admin panel for editing content without touching code.
 

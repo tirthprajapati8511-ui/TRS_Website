@@ -10,7 +10,7 @@ export function TrsLogo({ className = "h-9 w-auto" }) {
   return (
     <img
       src={assetUrl(brand.trsLogo)}
-      alt="TRS BVM — Technology & Robotics Society"
+      alt="TRS BVM — The Robotics Society"
       className={className}
       width={120}
       height={120}
