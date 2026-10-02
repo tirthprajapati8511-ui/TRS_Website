@@ -33,10 +33,10 @@ export const JOIN_LINK = { label: "Join TRS", href: "/join" };
 
 export const FEATURES = [
   { icon: "users", title: "Student Driven", desc: "By students, for students" },
-  { icon: "tool", title: "Hands-on Learning", desc: "From concepts to real systems" },
+  { icon: "tool", title: "Learning by Competing", desc: "From concepts to the arena" },
   { icon: "trophy", title: "Competitions", desc: "National & international exposure" },
-  { icon: "lightbulb", title: "Innovation", desc: "Ideas that create real impact" },
-  { icon: "network", title: "Community", desc: "A place to learn, build and grow" },
+  { icon: "lightbulb", title: "Winning Record", desc: "Results at national events" },
+  { icon: "network", title: "Club", desc: "A place to learn, compete and grow" },
 ];
 
 export const DEFAULT_CONTENT = {
@@ -51,12 +51,12 @@ export const DEFAULT_CONTENT = {
   },
 
   hero: {
-    eyebrow: "Robotics · Innovation · Community",
+    eyebrow: "Robotics · Innovation · Club",
     headline: "Students. Robots.",
     headlineAccent: "Real Impact.",
     quote: "Robotics is 90% thinking, 10% building.",
     description:
-      "TRS BVM Student Chapter is a community of passionate students working on robotics and automation to solve real-world challenges.",
+      "TRS BVM Student Chapter is a club of passionate students working on robotics and automation to solve real-world challenges.",
     ctaPrimaryLabel: "Explore TRS",
     ctaPrimaryHref: "/explore",
     ctaSecondaryLabel: "Join TRS",
@@ -180,7 +180,7 @@ export const DEFAULT_CONTENT = {
     ctaPanel: {
       heading: "Not just building robots, but better engineers.",
       description:
-        "Join a community that challenges you, supports you, and helps you turn ideas into impact.",
+        "Join a club that challenges you, supports you, and helps you turn ideas into impact.",
       buttonLabel: "Join TRS",
       buttonHref: "/join",
     },
@@ -209,7 +209,7 @@ export const DEFAULT_CONTENT = {
 
   explore: {
     "eyebrow": "Explore TRS",
-    "heading": "A way to predict the future is to invent it",
+    "heading": "We compete, we learn, we grow",
     "motto": "LEARN | EXPLORE | INNOVATE",
     "about": [
       {
