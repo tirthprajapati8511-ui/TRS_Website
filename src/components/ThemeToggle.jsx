@@ -42,7 +42,11 @@ export default function ThemeToggle({ className = "" }) {
             {active && (
               <span className="absolute inset-0 rounded-full bg-accent animate-ping-slow" />
             )}
-            <Icon size={15} strokeWidth={2.25} className="relative" />
+            <Icon
+              size={15}
+              strokeWidth={2.25}
+              className={`relative transition-transform duration-500 ${active ? "rotate-[360deg]" : ""}`}
+            />
           </button>
         );
       })}

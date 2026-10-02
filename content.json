@@ -24,12 +24,12 @@
       {
         "id": "robofest-6",
         "name": "ROBOFEST 6.0",
-        "dateLabel": "15 – 18 Feb 2026",
-        "status": "Registration Open",
-        "statusTone": "accent",
-        "location": "BVM Engineering College",
-        "description": "Annual robotics competition featuring multiple categories and teams.",
-        "image": "/uploads/1789338766229-image.png",
+        "dateLabel": "15 – 18 Feb 2027",
+        "status": "Registration Closed",
+        "statusTone": "neutral",
+        "location": "RSC, Bhavnagar",
+        "description": "GUJCOST's flagship state-level robotics competition, with a Rs 5 crore prize pool and an AI-powered robotics theme.",
+        "image": "/uploads/1790976312785-robofestlogo.png",
         "href": "/events/robofest-6",
         "structure": "multi-team",
         "teams": [
@@ -48,49 +48,165 @@
         ],
         "gallery": [
           "/uploads/1789388267013-robofest-6-0-hackathon-1-.png"
+        ],
+        "details": [
+          {
+            "heading": "Organiser",
+            "body": "Gujarat Council on Science and Technology (GUJCOST), Department of Science and Technology, Government of Gujarat."
+          },
+          {
+            "heading": "Theme",
+            "body": "AI-Powered Robotics Innovation Challenge — teams build autonomous robots for missions such as security, deep-sea exploration, athletic precision, autonomous driving, and humanitarian and educational use."
+          },
+          {
+            "heading": "Levels",
+            "body": "Junior: Classes 9–12, ITI and diploma students.\nSenior: first- to third-year undergraduate STEM students.\nHackathon: an ideation-based track."
+          },
+          {
+            "heading": "Robot categories",
+            "body": "Two-wheeled self-balancing robot\nSubmarine / underwater robot\nRover\nHexapod robot\nSwarm robots\nHome cleaning robot\nMaze-solving robot (Fun Robotics)"
+          },
+          {
+            "heading": "Team rules",
+            "body": "Each team has 4 members and 1 mentor. A mentor can guide a maximum of 2 teams."
+          },
+          {
+            "heading": "Timeline",
+            "body": "Registration: 15 July – 10 August 2026.\nProgram runs: 7 October 2026 – 28 February 2027, in three stages.\nGrand finale: February 2027."
+          },
+          {
+            "heading": "Prize pool",
+            "body": "Rs 5 crore across winners and prototype developers at the different stages."
+          }
+        ]
+      },
+      {
+        "id": "event-1789339079932",
+        "name": "NIDAR 2027",
+        "dateLabel": "January 2027",
+        "status": "Ongoing",
+        "statusTone": "good",
+        "location": "South",
+        "description": "India's largest national drone innovation challenge, with three problem statements and a Rs 67 lakh prize pool.",
+        "image": "/uploads/1789339149803-image.png",
+        "href": "/events/event-1789339079932",
+        "structure": "multi-team",
+        "teams": [
+          {
+            "name": "Team AeroCorvus BVM",
+            "category": "AirMouse",
+            "leader": "Karansinh Desai",
+            "facultyAdvisor": "Haresh Patolia"
+          },
+          {
+            "name": "Team Vyom",
+            "category": "Rescue Swarm",
+            "leader": "Krunal Zala",
+            "facultyAdvisor": "Dharita K Patel"
+          }
+        ],
+        "details": [
+          {
+            "heading": "Organiser",
+            "body": "Hosted by Drone Federation India with the Ministry of Electronics and IT (MeitY), under the SwaYaan initiative. The 2026–27 edition was launched on 13 July 2026 in New Delhi."
+          },
+          {
+            "heading": "Problem statements",
+            "body": "Rescue Swarm\nAir Mouse\nVEGA Pilot"
+          },
+          {
+            "heading": "Format",
+            "body": "Hybrid and multi-stage: online submissions and evaluations, followed by an in-person final operational round."
+          },
+          {
+            "heading": "Duration",
+            "body": "1 August 2026 – 31 August 2027, held nationwide."
+          },
+          {
+            "heading": "Skills tested",
+            "body": "Drone autonomy, computer vision, onboard sensing, navigation, control and real-time decision-making."
+          },
+          {
+            "heading": "Prize pool",
+            "body": "Rs 67 lakh."
+          },
+          {
+            "heading": "Official website",
+            "body": "nidar.org.in"
+          }
         ]
       },
       {
         "id": "sauvc-2026",
-        "name": "SAUVC 2026",
-        "dateLabel": "Jan – Mar 2026",
-        "status": "Applications Open",
-        "statusTone": "good",
-        "location": "To Be Announced",
-        "description": "Singapore Autonomous Underwater Vehicle Competition.",
+        "name": "SAUVC 2027",
+        "dateLabel": "24 – 27 Feb 2027",
+        "status": "Upcoming",
+        "statusTone": "accent",
+        "location": "Singapore Polytechnic, Singapore",
+        "description": "International student underwater robotics challenge: build an AUV to complete four tasks in a pool.",
         "image": "/uploads/1789338265191-logo-notext.png",
         "href": "/events/sauvc-2026",
         "structure": "single-team",
         "teams": [
           {
-            "name": "TRS SAUVC Team",
+            "name": "Team Brahmaputra",
             "roles": [
               {
                 "title": "Team Lead",
-                "person": "Placeholder"
+                "person": "Utsav Maradia"
               },
               {
                 "title": "Electronics Lead",
-                "person": "Placeholder"
+                "person": "Kishan Mori"
               },
               {
                 "title": "Mechanical Lead",
-                "person": "Placeholder"
+                "person": "Urvil"
               }
             ],
-            "facultyAdvisor": "Placeholder"
+            "facultyAdvisor": "Prof. (Dr.) Vinay Patel"
+          }
+        ],
+        "details": [
+          {
+            "heading": "Organiser",
+            "body": "IEEE OES Singapore, supported by the National University of Singapore and Singapore Polytechnic."
+          },
+          {
+            "heading": "Scale",
+            "body": "Now in its 11th year, with participants from 25 countries who have built 126 autonomous underwater vehicles."
+          },
+          {
+            "heading": "The four challenges",
+            "body": "Navigation\nVisual identification\nAcoustic localisation\nRobotic manipulation\nPerformance is judged on speed and accuracy."
+          },
+          {
+            "heading": "Team rules",
+            "body": "Teams may have up to 11 members, and at least half must be non-professionals (students, hobbyists or hackerspace members) at registration. Detailed rules are in Rulebook v6.1.0."
+          },
+          {
+            "heading": "Dates and venue",
+            "body": "24–27 February 2027 at Singapore Polytechnic, Singapore."
+          },
+          {
+            "heading": "Beyond the competition",
+            "body": "Mentorship, skill development across mechanical, electrical and software engineering, guest lectures from marine robotics experts, and networking."
+          },
+          {
+            "heading": "Official website",
+            "body": "sauvc.org"
           }
         ]
       },
       {
         "id": "robocon-2026",
-        "name": "ROBOCON 2026",
-        "dateLabel": "Apr 2026",
+        "name": "ROBOCON 2027",
+        "dateLabel": "1 – 4 Jul 2027",
         "status": "Coming Soon",
         "statusTone": "neutral",
-        "location": "ABU Robocon",
-        "description": "Asia-Pacific Broadcasting Union Robocon Competition.",
-        "image": "/uploads/1789338346921-image.png",
+        "location": "IIT Delhi",
+        "description": "India's national robotics championship and the qualifier for ABU Robocon 2027 in Indonesia.",
+        "image": "/uploads/1790976999000-dd-robocon-2027-logo.png",
         "href": "/events/robocon-2026",
         "structure": "single-team",
         "teams": [
@@ -111,36 +227,38 @@
               },
               {
                 "title": "Electronics Lead",
-                "person": "Tirth Prajapati"
+                "person": "Tirth Prajapati",
+                "contact": "7046836785"
               }
             ],
-            "facultyAdvisor": "Prof.(Dr.) Haresh Patolia"
+            "facultyAdvisor": "Prof.(Dr.) Haresh Patolia",
+            "logo": "/uploads/1790977920599-panchjanya-original.png"
           }
-        ]
-      },
-      {
-        "id": "event-1789339079932",
-        "name": "NIDAR 2027",
-        "dateLabel": "TBA",
-        "status": "Ongoing",
-        "statusTone": "good",
-        "location": "South",
-        "description": "",
-        "image": "/uploads/1789339149803-image.png",
-        "href": "/events",
-        "structure": "multi-team",
-        "teams": [
+        ],
+        "details": [
           {
-            "name": "Team AeroCorvus BVM",
-            "category": "AirMouse",
-            "leader": "Karansinh Desai",
-            "facultyAdvisor": "Haresh Patolia"
+            "heading": "Organisers",
+            "body": "IIT Delhi, Prasar Bharati (Doordarshan) and STPI."
           },
           {
-            "name": "Team Vyom",
-            "category": "Rescue Swarm",
-            "leader": "Krunal Zala",
-            "facultyAdvisor": "Dharita K Patel"
+            "heading": "Purpose",
+            "body": "DD Robocon India is the exclusive national qualifier for ABU Robocon 2027. The winning team represents India at the international final in Solo, Indonesia."
+          },
+          {
+            "heading": "2027 theme",
+            "body": "“The Pursuit of Mustika Nusantara” — robots must master complex physical tasks under strict time limits."
+          },
+          {
+            "heading": "Stages and dates",
+            "body": "31 Dec 2026: pre-registration opens.\n31 Jan 2027: concept note and idea submission deadline.\n15 Feb 2027: Stage 1 shortlisting announced.\n15 May 2027: Stage 2 video submission deadline.\n31 May 2027: Stage 2 shortlisting results.\n1–4 Jul 2027: DD Robocon national final."
+          },
+          {
+            "heading": "ABU Robocon 2027",
+            "body": "29 August 2027 at Edutorium UMS, Surakarta (Solo), Central Java, Indonesia."
+          },
+          {
+            "heading": "Official website",
+            "body": "ddrobocon.iitd.ac.in"
           }
         ]
       }
@@ -200,7 +318,15 @@
     "archive": [
       {
         "year": "2026–27",
-        "items": []
+        "items": [
+          {
+            "title": "ROBOFEST GUJARAT HACKATHON 6.0",
+            "detail": " 7 teams from Birla Vishvakarma Mahavidyalaya , Vallabh vidhyanagar have secured their place among the shortlisted entries and will advance to the upcoming Hackathon stage.\nTeams qualifying through this stage receives ₹50,000/- cash prize and a certificate , celebrating their accomplishment and inspiring them to explore new ideas in robotics.\n",
+            "image": "/uploads/1790976075650-image.png",
+            "gallery": [],
+            "video": null
+          }
+        ]
       },
       {
         "year": "2025–26",
@@ -208,7 +334,7 @@
           {
             "title": "GUJCOST Robofest 5.0 — 14 Teams Qualified for Level-2, Highest in India",
             "detail": "14 teams from TRS BVM advanced to Level-2 of Robofest 5.0 -- the highest number of teams selected from a single institution across the nation. Out of 1,102 ideation proposals submitted in Level-1 (914 at Senior Level), only 138 senior-level proposals were shortlisted for Level-2, and 14 of those were from BVM. Each advancing team received Rs 50,000. Categories: Underwater (Dr. A. A. Vahora, Dr. A. M. Thakkar, Prof. G. B. Rathod, Prof. V. J. Patel, Dr. M. S. Holia), Aerial (Prof. V. R. Singh), Maze (Dr. M. S. Holia), IGV (Prof. V. J. Patel, Prof. H. P. Patolia), Application (Prof. D. M. Patel, Prof. H. P. Patolia, Prof. D. K. Patel, Dr. M. M. Solanki, Prof. J. R. Koisa).",
-            "image": null,
+            "image": "/uploads/1790975930873-image.png",
             "gallery": []
           },
           {
@@ -219,12 +345,13 @@
           },
           {
             "title": "GUJCOST Robofest 5.0 — First Runner-up, Underwater Robot",
-            "detail": "Team: Nikhil Tank, Meet Shiyani, Navya Mokana, Bhavya Jadav. Mentor: Dr. Vinay J. Patel. Rs. 7,50,000 cash prize at the Grand Finale of India's biggest robotics competition."
+            "detail": "Team: Nikhil Tank, Meet Shiyani, Navya Mokana, Bhavya Jadav. Mentor: Dr. Vinay J. Patel. Rs. 7,50,000 cash prize at the Grand Finale of India's biggest robotics competition.",
+            "image": "/uploads/1790975445367-robotics-auv-gujcostrobofest-teamcyclone.jpg"
           },
           {
             "title": "GUJCOST Robofest 5.0 — Second Runner-up, Underwater Robot",
             "detail": "Team: Shyam Parsana, Vishrut Pambhar, Kishan Kanzariya, Harsh Chaudhari. Mentor: Dr. Mehfuza S. Holia. Rs. 5,00,000 cash prize at the Grand Finale.",
-            "image": "/uploads/1789369956979-image.png"
+            "image": "/uploads/1790975816879-image.png"
           },
           {
             "title": "DD Robocon '25 — AIR Rank 10",
@@ -237,35 +364,43 @@
         "items": [
           {
             "title": "DD Robocon '24 — AIR Rank 4",
-            "detail": "Mentors: Dr. Vinay Patel, Dr. Haresh Patolia."
+            "detail": "Mentors: Dr. Vinay Patel, Dr. Haresh Patolia.",
+            "image": "/uploads/1790975270828-img-20261003-023502-324-jpg.jpg"
           },
           {
             "title": "GUJCOST Robofest 4.0 — First Position, Underwater Robotics",
-            "detail": "Mentor: Prof. Vijay Pratap Singh. Rs. 10,00,000 cash prize at the Grand Finale, India's biggest national-level robot-making competition."
+            "detail": "Mentor: Prof. Vijay Pratap Singh. Rs. 10,00,000 cash prize at the Grand Finale, India's biggest national-level robot-making competition.",
+            "image": "/uploads/1790971879789-485584180-18055675238130457-647764987097.webp"
           },
           {
             "title": "GUJCOST Robofest 4.0 — Runner-up, Underwater Robotics",
-            "detail": "Mentor: Dr. Mehfuza Holia. Rs. 7,50,000 cash prize at the Grand Finale."
+            "detail": "Mentor: Dr. Mehfuza Holia. Rs. 7,50,000 cash prize at the Grand Finale.",
+            "image": "/uploads/1790971937533-484970395-18055675469130457-671554067261.webp"
           },
           {
             "title": "GUJCOST Robofest 4.0 — Runner-up, Underwater Robotics",
-            "detail": "Mentor: Prof. Aakar Roghelia. Rs. 7,50,000 cash prize at the Grand Finale."
+            "detail": "Mentor: Prof. Aakar Roghelia. Rs. 7,50,000 cash prize at the Grand Finale.",
+            "image": "/uploads/1790971986889-485644094-18055675307130457-542220723765.webp"
           },
           {
             "title": "GUJCOST Robofest 4.0 — Runner-up, Swarm Robotics",
-            "detail": "Mentor: Dr. D. M. Patel. Rs. 7,50,000 cash prize at the Grand Finale."
-          },
-          {
-            "title": "GUJCOST Robofest 4.0 — Runner-up, Ship Hull Cleaning Robot",
-            "detail": "Mentor: Dr. Vinay J. Patel. Rs. 7,50,000 cash prize, Application-Based Category."
+            "detail": "Mentor: Dr. D. M. Patel. Rs. 7,50,000 cash prize at the Grand Finale.",
+            "image": "/uploads/1790972029988-485452315-18055675424130457-750937401993.webp"
           },
           {
             "title": "GUJCOST Robofest 4.0 — First Position, Agriculture Robot",
-            "detail": "Mentor: Prof. Ashish M. Thakkar. Rs. 10,00,000 cash prize, Application-Based Category."
+            "detail": "Mentor: Prof. Ashish M. Thakkar. Rs. 10,00,000 cash prize, Application-Based Category.",
+            "image": "/uploads/1790971696731-485053940-18055675727130457-498179950636.webp"
+          },
+          {
+            "title": "GUJCOST Robofest 4.0 — Runner-up, Ship Hull Cleaning Robot",
+            "detail": "Mentor: Dr. Vinay J. Patel. Rs. 7,50,000 cash prize, Application-Based Category.",
+            "image": "/uploads/1790972090205-485452315-18055675424130457-750937401993.webp"
           },
           {
             "title": "SAUVC–IEEE — Top 20 Finalist",
-            "detail": "Team Brahmaputra cleared the qualifying round at Singapore Polytechnic, advancing to the finals. Guided by Dr. Vinay J. Patel, Dr. Ashish Thakkar and Dr. Mehfuza Holia."
+            "detail": "Team Brahmaputra cleared the qualifying round at Singapore Polytechnic, advancing to the finals. Guided by Dr. Vinay J. Patel, Dr. Ashish Thakkar and Dr. Mehfuza Holia.",
+            "image": "/uploads/1790971685323-485097152-18055297736130457-558339530717.webp"
           }
         ]
       },
@@ -274,78 +409,44 @@
         "items": [
           {
             "title": "Mission CHANDRA — Competition Winner",
-            "detail": "Team 2 won the final round (14 Oct 2023) at Science City, Ahmedabad — Rs. 25,000 cash prize, trophy, certificates, and an internship opportunity at ISRO Ahmedabad."
-          },
-          {
-            "title": "Mission CHANDRA — Preliminary Round Qualifiers",
-            "detail": "Two TRS teams cleared the preliminary round, each receiving a trophy, certificate and Rs. 5,000 cash prize. Guided by Dr. Vinay J. Patel, Prof. Ashish M. Thakkar, and Dr. Mehfuza S. Holia."
+            "detail": "Team 2 won the final round (14 Oct 2023) at Science City, Ahmedabad — Rs. 25,000 cash prize, trophy, certificates, and an internship opportunity at ISRO Ahmedabad.",
+            "image": "/uploads/1790970390174-whatsapp-image-2023-10-17-at-20-12-01.jpg"
           },
           {
             "title": "ROBOFEST 3.0 — First Position, Underwater Robot",
-            "detail": "Mentor: Prof. G. B. Rathod. Rs. 10,00,000 cash prize."
+            "detail": "Mentor: Prof. G. B. Rathod. Rs. 10,00,000 cash prize.",
+            "image": "/uploads/1790971074584-414970955-18010875437130457-469925573602.jpg"
           },
           {
             "title": "ROBOFEST 3.0 — First Position, Swarm Robot",
-            "detail": "Mentor: Prof. Ashish Thakkar. Rs. 10,00,000 cash prize."
+            "detail": "Mentor: Prof. Ashish Thakkar. Rs. 10,00,000 cash prize.",
+            "image": "/uploads/1790971120159-414938461-18010875359130457-407396024726.jpg"
           },
           {
             "title": "ROBOFEST 3.0 — Third Position, Rover Robot",
-            "detail": "Mentor: Dr. D. M. Patel. Rs. 5,00,000 cash prize."
+            "detail": "Mentor: Dr. D. M. Patel. Rs. 5,00,000 cash prize.",
+            "image": "/uploads/1790971158085-415291097-18010875536130457-552329663663.jpg"
           },
           {
             "title": "ROBOFEST 3.0 — Consolation Prize, Home Cleaning Robot",
-            "detail": "Mentor: Dr. Mehfuza Holia. Rs. 2,50,000 cash prize."
+            "detail": "Mentor: Dr. Mehfuza Holia. Rs. 2,50,000 cash prize.",
+            "image": "/uploads/1790971531706-415294051-18010875989130457-734165063328.jpg"
           },
           {
             "title": "ROBOFEST 3.0 — Consolation Prize, Rover Robot",
-            "detail": "Mentor: Prof. Vijay Pratap Singh. Rs. 2,50,000 cash prize."
-          },
-          {
-            "title": "ROBOFEST 3.0 — Hexapod Robot",
-            "detail": "Mentor: Dr. Haresh Patoliya. Rs. 50,000 (Ideation Stage) + Rs. 2,00,000 (Proof of Concept Stage)."
-          },
-          {
-            "title": "ROBOFEST 3.0 — Maze Solving Robot",
-            "detail": "Mentor: Prof. Ashish Thakkar. Rs. 50,000 (Ideation Stage) + Rs. 1,00,000 (Proof of Concept Stage)."
-          },
-          {
-            "title": "ROBOFEST 3.0 — Self-Balancing Robot",
-            "detail": "Mentor: Dr. Vinay J. Patel. Rs. 50,000 (Ideation Stage) + Rs. 2,00,000 (Proof of Concept Stage)."
-          },
-          {
-            "title": "ROBOFEST 3.0 — Hexapod Robot",
-            "detail": "Mentor: Dr. M. M. Solanki. Rs. 50,000 (Ideation Stage) + Rs. 2,00,000 (Proof of Concept Stage)."
-          },
-          {
-            "title": "ROBOFEST 3.0 — Underwater Robot",
-            "detail": "Mentor: Prof. Jayesh Koisha. Rs. 50,000 (Ideation Stage) + Rs. 2,00,000 (Proof of Concept Stage)."
-          },
-          {
-            "title": "ROBOFEST 3.0 — Swarm Robots",
-            "detail": "Mentor: Dr. R. B. Gandhi. Rs. 50,000 (Ideation Stage) + Rs. 1,00,000 (Proof of Concept Stage)."
-          },
-          {
-            "title": "ROBOFEST 3.0 — Maze Solving Robot",
-            "detail": "Mentor: Dr. Mehfuza Holia. Rs. 50,000 (Ideation Stage) + Rs. 1,00,000 (Proof of Concept Stage)."
-          },
-          {
-            "title": "ROBOFEST 3.0 — Self-Balancing Robot",
-            "detail": "Mentor: Prof. Aakar Roghelia. Rs. 50,000 (Ideation Stage) + Rs. 2,00,000 (Proof of Concept Stage)."
-          },
-          {
-            "title": "ROBOFEST 3.0 — Swarm Robots",
-            "detail": "Mentor: Dr. Vinay J. Patel. Rs. 50,000 (Ideation Stage) + Rs. 1,00,000 (Proof of Concept Stage)."
+            "detail": "Mentor: Prof. Vijay Pratap Singh. Rs. 2,50,000 cash prize.",
+            "image": "/uploads/1790971469631-414919824-18010875953130457-647346508610.jpg"
           },
           {
             "title": "GUJCOST Robofest 3.0 — All 14 Teams Qualified for Level-3",
             "detail": "All 14 TRS BVM teams advanced to Level-3 of Robofest 3.0 -- out of 630 teams that applied for Level-1, only 151 reached Level-2, and 67 teams (including all 14 from BVM) were shortlisted for Level-3. Cash prizes for this stage ranged from Rs 1,00,000 to Rs 2,00,000 per team, Rs 22,00,000 total across all 67 teams. Categories: Maze Solving (Prof. A. M. Thakkar, Prof. M. S. Holia), Hexapod (Prof. H. P. Patolia, Prof. M. M. Solanki), Submarine (Prof. G. B. Rathod, Prof. J. R. Koisa), Rover (Prof. V. R. Singh, Prof. D. M. Patel), Self-Balancing (Prof. V. J. Patel, Prof. A. N. Roghalia), Swarm Robot (Prof. A. M. Thakkar, Prof. R. B. Gandhi, Prof. V. J. Patel), Home Cleaning Robot (Prof. M. S. Holia).",
-            "image": null,
+            "image": "/uploads/1790970220769-image.png",
             "gallery": []
           },
           {
             "title": "GUJCOST Robofest 3.0 — 14 Teams Qualified for Level-2",
             "detail": "All 14 TRS BVM teams were selected for Level-2 of Robofest 3.0, a global-level robot-making competition by GUJCOST, Gandhinagar -- out of 630 proposals submitted nationally and internationally for Level-1, only 151 advanced. Each team received Rs 50,000 (Rs 7,00,000 total). Categories: Maze Solving (Prof. M. S. Holia, Prof. A. M. Thakkar), Hexapod (Dr. H. P. Patolia, Dr. M. M. Solanki), Rover (Prof. V. R. Singh, Dr. D. M. Patel), Home Cleaning Robot (Prof. M. S. Holia), Self-Balancing (Prof. V. J. Patel, Prof. A. K. Roghelia), Submarine (Prof. G. B. Rathod, Prof. J. R. Koisa), Swarm Robot (Prof. A. M. Thakkar, Dr. R. B. Gandhi, Prof. V. J. Patel).",
-            "image": null,
+            "image": "/uploads/1790970045793-image.png",
             "gallery": []
           }
         ]
@@ -362,32 +463,53 @@
           {
             "title": "Robofest 2.0 — First Position, Pipe Climbing Robot",
             "detail": "Team: Amaan Shaikh, Zuber Makrani, Ayush Patel, Parth Makvana, Hrushikesh Vegad. Faculty Mentor: Prof. Rajiv B. Gandhi. Overall Mentor: Prof. Vinay Patel.",
-            "image": null,
-            "gallery": []
+            "image": "/uploads/1790966036480-img-20221029-wa0135.jpg",
+            "gallery": [
+              "/uploads/1790966044123-img-1539.jpg",
+              "/uploads/1790966049961-whatsapp-image-2022-02-28-at-10-43-34-pm.jpg",
+              "/uploads/1790966054446-whatsapp-image-2022-02-28-at-10-43-34-pm.jpg",
+              "/uploads/1790966058451-whatsapp-image-2022-02-28-at-10-43-35-pm.jpg"
+            ]
           },
           {
             "title": "Robofest 2.0 — First Position, Prosthetic Limbs (Remote Sensors)",
             "detail": "Team: Jay Goswami, Keivalya Pandya, Raunak Abhani, Vaidehi Shah. Faculty Mentor: Prof. Ashish M. Thakkar. Overall Mentor: Prof. Vinay Patel.",
-            "image": "/uploads/1790713179058-img-20221029-183007.jpg",
-            "gallery": []
+            "image": "/uploads/1790966339438-img-20221029-wa0071.jpg",
+            "gallery": [
+              "/uploads/1790966354869-img-20221029-183007.jpg",
+              "/uploads/1790966345062-okay-sign.jpg",
+              "/uploads/1790966350098-saksham-2.jpg",
+              "/uploads/1790966363961-comparison-between-old-and-new-design-2.jpg"
+            ]
           },
           {
             "title": "Robofest 2.0 — First Position, Underwater Robot",
             "detail": "Team: Darshit Darji, Vrushal Vara, Vivek Solanki, Naitik Dalwadi, Rutvik Valand. Faculty Mentor: Prof. Dipak M. Patel. Overall Mentor: Prof. Vinay Patel.",
-            "image": null,
-            "gallery": []
+            "image": "/uploads/1790967141960-img-20221029-wa0136.jpg",
+            "gallery": [
+              "/uploads/1790967148536-img-4217-original.jpg",
+              "/uploads/1790967153069-cfc8a4fd-b116-4198-8d38-7760457b570e-ori.jpg",
+              "/uploads/1790967157214-2.png"
+            ]
           },
           {
             "title": "Robofest 2.0 — First Position, Micro-Robots",
             "detail": "Team: Heramb Dahivalkar, Vishvas Suthar, Ved Bhonsle, Pratham Bharve, Dipesh Vadhwani, Indrajit Patel. Faculty Mentor: Dr. Mehfuza S. Holia. Overall Mentor: Prof. Vinay Patel.",
-            "image": null,
-            "gallery": []
+            "image": "/uploads/1790966830922-img-20221029-wa0140.jpg",
+            "gallery": [
+              "/uploads/1790966835604-img-20211128-020406-01.jpg",
+              "/uploads/1790966839776-img-20211128-015147-01.jpg"
+            ]
           },
           {
             "title": "Robofest 2.0 — First Position, Four-Legged Robot (Quadrupedal Motion)",
             "detail": "Team: Jay Prajapati, Ishan Mohite, Manav Thakkar, Parth Panchal, Pawan Patel. Faculty Mentor: Prof. Haresh P. Patolia. Overall Mentor: Prof. Vinay Patel.",
-            "image": null,
-            "gallery": []
+            "image": "/uploads/1790965669402-img-20221029-wa0137.jpg",
+            "gallery": [
+              "/uploads/1790965676553-6e4aedad-0612-42d4-aace-73397a69687a.jpg",
+              "/uploads/1790965697794-img-20211117-wa0042.jpg",
+              "/uploads/1790965703056-img-20211121-004157.jpg"
+            ]
           },
           {
             "title": "GUJCOST Robofest 2.0 — Qualified for Level-3, Prototype Making",
@@ -427,7 +549,7 @@
               "/uploads/1790709825213-final-manipulator-side-view-rover.jpg",
               "/uploads/1790709832890-copy-of-final-rover-5-team-bvm.jpg"
             ],
-            "video": "/uploads/1790709839247-360-degree-orientation-final-prototype-r.mp4"
+            "video": null
           }
         ]
       }
@@ -845,5 +967,72 @@
       "name": "The Robotics Society (India)",
       "note": "An authorized student chapter of"
     }
+  },
+  "explore": {
+    "eyebrow": "Explore TRS",
+    "heading": "A way to predict the future is to invent it",
+    "motto": "LEARN | EXPLORE | INNOVATE",
+    "about": [
+      {
+        "text": "TRS BVM is the authorised student chapter of The Robotics Society (TRS), India, at BVM Engineering College. The Robotics Society empowers technical institutions across India to start TRS Student Chapters — a group of researchers, industrialists and students working in different domains of robotics, together making our society."
+      },
+      {
+        "text": "Regular meetings help us connect with every member and keep everyone updated with the latest technology, because we believe that technology will not replace great teachers, but technology in the hands of great teachers is transformational."
+      },
+      {
+        "text": "We believe that any sufficiently advanced technology is equivalent to magic. That magic shows in our projects, built with the help of faculty and M.Tech students."
+      },
+      {
+        "text": "We are a team not because we work together, but because we respect each other and welcome every member's ideas and projects from their innovative minds."
+      }
+    ],
+    "whatWeDo": [
+      {
+        "title": "Events",
+        "description": "Competitions and programmes we take part in, from Robofest and Robocon to SAUVC and NIDAR.",
+        "href": "/events"
+      },
+      {
+        "title": "Workshops",
+        "description": "Webinars, hands-on sessions and hackathons that keep every member up to date.",
+        "href": "/workshops"
+      },
+      {
+        "title": "Projects",
+        "description": "Rovers, drones, underwater robots, quadrupeds and more, built by our teams.",
+        "href": "/projects"
+      },
+      {
+        "title": "Achievements",
+        "description": "Our results year by year, from Robofest 1.0 to today.",
+        "href": "/achievements"
+      }
+    ],
+    "domains": [
+      "6-wheeled all-terrain rover (NVIDIA Jetson Nano)",
+      "Quadruped robot",
+      "PID-controlled line follower",
+      "Micro mouse robot",
+      "Aerial vehicles and drones",
+      "Underwater robots",
+      "2D plotter"
+    ],
+    "facilities": [
+      "Robotics lab, accessible 24×7",
+      "3D printer",
+      "Demonstration robots",
+      "Toolkits and machines, including a CNC machine",
+      "Access to the mechanical workshop"
+    ],
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "Robotics lab access"
+      }
+    ],
+    "ctaHeading": "Want to build with us?",
+    "ctaDescription": "Membership is open to BVM students. See how to enrol and become part of the society.",
+    "ctaLabel": "Join TRS",
+    "ctaHref": "/join"
   }
 }

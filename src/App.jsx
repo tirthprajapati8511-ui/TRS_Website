@@ -1,4 +1,6 @@
-import { Route, Routes, Outlet } from "react-router-dom";
+import { useEffect } from "react";
+import { Route, Routes, Outlet, useLocation } from "react-router-dom";
+import { MotionConfig, motion } from "framer-motion";
 import Navbar from "./sections/Navbar";
 import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
@@ -7,6 +9,7 @@ import HomeUpdates from "./sections/HomeUpdates";
 import Projects from "./sections/Projects";
 import Achievements from "./sections/Achievements";
 import PageShell from "./pages/PageShell";
+import Explore from "./pages/Explore";
 import Join from "./pages/Join";
 import Committee from "./pages/Committee";
 import Faculty from "./pages/Faculty";
@@ -17,17 +20,31 @@ import ProjectsList from "./pages/ProjectsList";
 import ProjectDetail from "./pages/ProjectDetail";
 import AdminPage from "./admin/AdminPage";
 import ScrollProgress from "./components/ScrollProgress";
+import BackToTop from "./components/BackToTop";
 
 // Shared chrome for every public page — only the admin panel opts out.
 function SiteLayout() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="bg-bg text-ink min-h-screen flex flex-col">
       <ScrollProgress />
       <Navbar />
-      <main className="flex-1">
+      <motion.main
+        key={pathname}
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+        className="flex-1"
+      >
         <Outlet />
-      </main>
+      </motion.main>
       <Footer />
+      <BackToTop />
     </div>
   );
 }
@@ -46,10 +63,11 @@ function Home() {
 
 function App() {
   return (
+    <MotionConfig reducedMotion="user">
     <Routes>
       <Route element={<SiteLayout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/explore" element={<PageShell title="Explore TRS" />} />
+        <Route path="/explore" element={<Explore />} />
         <Route path="/committee" element={<Committee />} />
         <Route path="/faculty" element={<Faculty />} />
         <Route path="/events" element={<EventsList />} />
@@ -64,6 +82,7 @@ function App() {
       </Route>
       <Route path="/admin/*" element={<AdminPage />} />
     </Routes>
+    </MotionConfig>
   );
 }
 

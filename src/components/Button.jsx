@@ -14,9 +14,9 @@ const sizes = {
 
 const variants = {
   // Solid TRS blue — the one strong CTA action on a given screen.
-  primary: "bg-accent text-on-accent hover:bg-accent-dim",
+  primary: "btn-shine bg-accent text-on-accent hover:bg-accent-dim hover:shadow-md",
   // Bordered, neutral — secondary action on a light/panel background.
-  outline: "border border-line-strong text-ink hover:border-accent hover:text-accent bg-transparent",
+  outline: "btn-shine border border-line-strong text-ink hover:border-accent hover:text-accent bg-transparent",
   // Bordered white — secondary action sitting on the hero photograph.
   onImage: "border border-white/70 text-white hover:bg-white hover:text-navy bg-transparent",
   // Text-only.

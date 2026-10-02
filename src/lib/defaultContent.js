@@ -207,6 +207,74 @@ export const DEFAULT_CONTENT = {
     ],
   },
 
+  explore: {
+    "eyebrow": "Explore TRS",
+    "heading": "A way to predict the future is to invent it",
+    "motto": "LEARN | EXPLORE | INNOVATE",
+    "about": [
+      {
+        "text": "TRS BVM is the authorised student chapter of The Robotics Society (TRS), India, at BVM Engineering College. The Robotics Society empowers technical institutions across India to start TRS Student Chapters — a group of researchers, industrialists and students working in different domains of robotics, together making our society."
+      },
+      {
+        "text": "Regular meetings help us connect with every member and keep everyone updated with the latest technology, because we believe that technology will not replace great teachers, but technology in the hands of great teachers is transformational."
+      },
+      {
+        "text": "We believe that any sufficiently advanced technology is equivalent to magic. That magic shows in our projects, built with the help of faculty and M.Tech students."
+      },
+      {
+        "text": "We are a team not because we work together, but because we respect each other and welcome every member's ideas and projects from their innovative minds."
+      }
+    ],
+    "whatWeDo": [
+      {
+        "title": "Events",
+        "description": "Competitions and programmes we take part in, from Robofest and Robocon to SAUVC and NIDAR.",
+        "href": "/events"
+      },
+      {
+        "title": "Workshops",
+        "description": "Webinars, hands-on sessions and hackathons that keep every member up to date.",
+        "href": "/workshops"
+      },
+      {
+        "title": "Projects",
+        "description": "Rovers, drones, underwater robots, quadrupeds and more, built by our teams.",
+        "href": "/projects"
+      },
+      {
+        "title": "Achievements",
+        "description": "Our results year by year, from Robofest 1.0 to today.",
+        "href": "/achievements"
+      }
+    ],
+    "domains": [
+      "6-wheeled all-terrain rover (NVIDIA Jetson Nano)",
+      "Quadruped robot",
+      "PID-controlled line follower",
+      "Micro mouse robot",
+      "Aerial vehicles and drones",
+      "Underwater robots",
+      "2D plotter"
+    ],
+    "facilities": [
+      "Robotics lab, accessible 24×7",
+      "3D printer",
+      "Demonstration robots",
+      "Toolkits and machines, including a CNC machine",
+      "Access to the mechanical workshop"
+    ],
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "Robotics lab access"
+      }
+    ],
+    "ctaHeading": "Want to build with us?",
+    "ctaDescription": "Membership is open to BVM students. See how to enrol and become part of the society.",
+    "ctaLabel": "Join TRS",
+    "ctaHref": "/join"
+  },
+
   workshops: {
     eyebrowTitle: "Workshops",
     items: [

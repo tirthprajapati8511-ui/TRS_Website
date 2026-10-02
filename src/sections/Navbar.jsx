@@ -42,6 +42,13 @@ function TopBar() {
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   // Lock body scroll while the mobile menu is open.
   useEffect(() => {
@@ -59,7 +66,11 @@ export default function Navbar() {
     }`;
 
   return (
-    <header className="sticky top-0 z-50 bg-bg/95 backdrop-blur-sm border-b border-line overflow-x-clip">
+    <header
+      className={`sticky top-0 z-50 bg-bg/95 backdrop-blur-sm border-b border-line overflow-x-clip transition-shadow duration-300 ${
+        scrolled ? "shadow-md" : ""
+      }`}
+    >
       <TopBar />
 
       {/* Nine nav items plus Join TRS need more than the 1240px content

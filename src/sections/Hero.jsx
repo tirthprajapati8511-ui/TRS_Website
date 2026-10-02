@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useRef, useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { MapPin } from "lucide-react";
 import Container from "../components/Container";
 import Button from "../components/Button";
@@ -10,6 +10,9 @@ const ease = [0.16, 1, 0.3, 1];
 
 export default function Hero() {
   const { hero } = useContent();
+  const sectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({ target: sectionRef, offset: ["start start", "end start"] });
+  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
 
   // Content loads async: the very first render can briefly show the
   // default hero.image (before content.json is fetched), and if that one
@@ -24,7 +27,7 @@ export default function Hero() {
   const imageOk = imageState.ok;
 
   return (
-    <section className="relative overflow-hidden bg-navy text-on-navy">
+    <section ref={sectionRef} className="relative overflow-hidden bg-navy text-on-navy">
       {/* Campus photograph. Falls back to a plain navy panel + faint
           blueprint grid until public/brand/hero-campus.jpg is supplied. */}
       {hero.image && imageOk && (
@@ -32,6 +35,7 @@ export default function Hero() {
           src={assetUrl(hero.image)}
           alt={hero.imageAlt}
           onError={() => setImageState((s) => ({ ...s, ok: false }))}
+          style={{ y: imageY }}
           initial={{ scale: 1.08 }}
           animate={{ scale: 1 }}
           transition={{ duration: 8, ease: "easeOut" }}

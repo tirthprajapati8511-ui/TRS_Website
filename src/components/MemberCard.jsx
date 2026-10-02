@@ -1,5 +1,5 @@
 import { Mail, UserRound } from "lucide-react";
-import Reveal from "./Reveal";
+import { motion } from "framer-motion";
 import { LinkedIn } from "./SocialIcons";
 import { assetUrl } from "../lib/assetUrl";
 
@@ -8,15 +8,19 @@ import { assetUrl } from "../lib/assetUrl";
 // both a student and a faculty entry.
 export default function MemberCard({ member, index }) {
   return (
-    <Reveal
-      delay={index * 0.05}
-      className="flex flex-col items-center text-center rounded-lg border border-line bg-bg-panel p-6"
+    <motion.div
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ y: -5 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.6, delay: Math.min(index, 8) * 0.05, ease: [0.16, 1, 0.3, 1] }}
+      className="group flex flex-col items-center text-center rounded-lg border border-line bg-bg-panel p-6 transition-shadow duration-300 hover:border-accent/50 hover:shadow-lg"
     >
       {member.photo ? (
         <img
           src={assetUrl(member.photo)}
           alt={member.name}
-          className="h-24 w-24 rounded-full object-cover"
+          className="h-24 w-24 rounded-full object-cover ring-2 ring-transparent transition-all duration-300 group-hover:scale-105 group-hover:ring-accent/60"
         />
       ) : (
         <span className="flex h-24 w-24 items-center justify-center rounded-full bg-bg-elevated text-ink-faint">
@@ -58,6 +62,6 @@ export default function MemberCard({ member, index }) {
           )}
         </div>
       )}
-    </Reveal>
+    </motion.div>
   );
 }

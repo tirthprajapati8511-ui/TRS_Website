@@ -48,8 +48,8 @@ export default function ProjectDetail() {
           )}
         </Reveal>
 
-        <Reveal delay={0.06} className="mt-8 rounded-lg overflow-hidden">
-          <PlaceholderImage src={project.image} alt={`${project.name} photo`} aspect="aspect-[16/9]" />
+        <Reveal delay={0.06} className="mt-8 max-w-xl rounded-lg overflow-hidden">
+          <PlaceholderImage src={project.image} alt={`${project.name} photo`} />
         </Reveal>
 
         <Reveal delay={0.1}>

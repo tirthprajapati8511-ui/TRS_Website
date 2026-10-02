@@ -41,7 +41,7 @@ export default function Achievements() {
             >
               {item.image ? (
                 <div className="h-12 w-12 shrink-0 rounded-md overflow-hidden">
-                  <PlaceholderImage src={item.image} alt={item.title} aspect="aspect-square" />
+                  <PlaceholderImage src={item.image} alt={item.title} />
                 </div>
               ) : (
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent-soft text-accent transition-all duration-300 group-hover:bg-accent group-hover:text-on-accent group-hover:rotate-12">

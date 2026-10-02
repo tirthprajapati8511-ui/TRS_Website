@@ -2,13 +2,10 @@ import { Calendar, MapPin } from "lucide-react";
 import TiltCard from "./TiltCard";
 import PlaceholderImage from "./PlaceholderImage";
 import Button from "./Button";
+import StatusPill from "./StatusPill";
+import { safeUrl } from "../lib/safeUrl";
 
 // Shared between the homepage preview and the full /events list.
-export const STATUS_STYLES = {
-  accent: "bg-accent-soft text-accent-dim",
-  good: "bg-good-soft text-good",
-  neutral: "bg-navy text-on-navy",
-};
 
 export default function EventCard({ event, index }) {
   return (
@@ -22,13 +19,9 @@ export default function EventCard({ event, index }) {
           alt={`${event.name} event photo`}
           className="transition-transform duration-500 group-hover:scale-105"
         />
-        <span
-          className={`absolute top-3 left-3 rounded-full px-2.5 py-1 text-[11px] font-medium ${
-            STATUS_STYLES[event.statusTone] ?? STATUS_STYLES.neutral
-          }`}
-        >
+        <StatusPill tone={event.statusTone} className="absolute top-3 left-3">
           {event.status}
-        </span>
+        </StatusPill>
       </div>
 
       <div className="flex flex-1 flex-col p-5">
@@ -41,10 +34,24 @@ export default function EventCard({ event, index }) {
           <MapPin size={13} strokeWidth={2} />
           {event.location}
         </div>
-        <p className="mt-2.5 text-[13px] leading-relaxed text-ink-dim flex-1">{event.description}</p>
-        <Button href={event.href} variant="link" size="sm" className="mt-4 self-start">
-          View Details
-        </Button>
+        <p className="mt-2.5 text-[13px] leading-relaxed text-ink-dim flex-1 line-clamp-3">{event.description}</p>
+        <div className="mt-4 flex items-center gap-4">
+          <Button href={event.href} variant="link" size="sm">
+            View Details
+          </Button>
+          {safeUrl(event.registerUrl) && (
+            <Button
+              href={safeUrl(event.registerUrl)}
+              target="_blank"
+              rel="noreferrer"
+              variant="outline"
+              size="sm"
+              icon={false}
+            >
+              Register
+            </Button>
+          )}
+        </div>
       </div>
     </TiltCard>
   );

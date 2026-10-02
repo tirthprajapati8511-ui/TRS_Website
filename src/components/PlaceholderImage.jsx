@@ -1,36 +1,39 @@
 import { ImageIcon } from "lucide-react";
+import { motion } from "framer-motion";
 import { assetUrl } from "../lib/assetUrl";
 
 /**
- * Honest stand-in for a photo we don't have yet. Deliberately plain — a
- * muted tile with an icon, not a generated "robot" image standing in for
- * real event/project photography. Swap `src` in the content data once a
- * real photo exists; this never renders once that happens.
- *
- * Crops to fill the frame by default (`fit="cover"`) — real photos come in
- * every aspect ratio (portrait phone shots next to landscape ones), and
- * letting each one show at its own size looks far more inconsistent side by
- * side in a grid than a centred crop does. Pass `fit="contain"` for the rare
- * case where nothing can be cropped — a badge or logo with text right up to
- * the edges — which then letterboxes into the same muted background as the
- * empty-placeholder state instead.
+ * Every photo slot is a 1:1 frame. The photo is shown whole (never cropped);
+ * whatever space is left over is filled with a blurred, enlarged copy of the
+ * same photo instead of a flat colour. With no `src` it renders a plain
+ * placeholder tile.
  */
-export default function PlaceholderImage({
-  src,
-  alt = "",
-  className = "",
-  aspect = "aspect-[4/3]",
-  fit = "cover",
-}) {
+export default function PlaceholderImage({ src, alt = "", className = "", aspect = "aspect-square" }) {
   if (src) {
-    if (fit === "contain") {
-      return (
-        <div className={`${aspect} w-full overflow-hidden bg-bg-elevated flex items-center justify-center`}>
-          <img src={assetUrl(src)} alt={alt} className={`h-full w-full object-contain ${className}`} />
-        </div>
-      );
-    }
-    return <img src={assetUrl(src)} alt={alt} className={`${aspect} w-full object-cover ${className}`} />;
+    const url = assetUrl(src);
+    return (
+      <div className={`relative ${aspect} w-full overflow-hidden bg-bg-elevated ${className}`}>
+        <motion.img
+          src={url}
+          alt=""
+          aria-hidden="true"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 0.9 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.9 }}
+          className="absolute inset-0 h-full w-full scale-125 object-cover blur-2xl"
+        />
+        <motion.img
+          src={url}
+          alt={alt}
+          initial={{ opacity: 0, scale: 1.07 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+          className="relative h-full w-full object-contain"
+        />
+      </div>
+    );
   }
   return (
     <div
