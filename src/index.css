@@ -296,3 +296,34 @@ body {
 .btn-shine:hover::after {
   transform: translateX(120%);
 }
+
+/* Printing / Save as PDF: always a clean light page, no chrome. */
+@media print {
+  :root,
+  :root[data-theme="dark"] {
+    color-scheme: light;
+    --color-bg: #ffffff;
+    --color-bg-muted: #ffffff;
+    --color-bg-panel: #ffffff;
+    --color-bg-elevated: #eef2f6;
+    --color-line: #d4d9df;
+    --color-line-strong: #b9c1ca;
+    --color-ink: #101826;
+    --color-ink-dim: #333c4a;
+    --color-ink-faint: #5c6675;
+    --color-accent: #1c6399;
+    --color-accent-dim: #1c6399;
+  }
+  html,
+  body {
+    background: #fff !important;
+  }
+  * {
+    box-shadow: none !important;
+    animation: none !important;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

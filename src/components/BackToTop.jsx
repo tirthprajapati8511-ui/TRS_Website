@@ -24,7 +24,7 @@ export default function BackToTop() {
           whileHover={{ y: -3 }}
           whileTap={{ scale: 0.92 }}
           transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-          className="fixed bottom-5 right-5 z-50 flex h-11 w-11 items-center justify-center rounded-full bg-accent text-on-accent shadow-lg hover:bg-accent-dim cursor-pointer"
+          className="print:hidden fixed bottom-5 right-5 z-50 flex h-11 w-11 items-center justify-center rounded-full bg-accent text-on-accent shadow-lg hover:bg-accent-dim cursor-pointer"
         >
           <ArrowUp size={18} strokeWidth={2.25} />
         </motion.button>

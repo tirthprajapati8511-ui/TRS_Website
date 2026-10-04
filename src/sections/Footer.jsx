@@ -22,7 +22,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-navy text-on-navy">
+    <footer className="print:hidden bg-navy text-on-navy">
       <div aria-hidden="true" className="h-[2px] circuit-trace opacity-70" />
       <Container className="py-10 sm:py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10">
