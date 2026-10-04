@@ -24,7 +24,7 @@ export default function Footer() {
   return (
     <footer className="bg-navy text-on-navy">
       <div aria-hidden="true" className="h-[2px] circuit-trace opacity-70" />
-      <Container className="py-14">
+      <Container className="py-10 sm:py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10">
           <div className="lg:col-span-3">
             <div className="flex items-center gap-2.5">
@@ -104,7 +104,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3">
+        <div className="mt-8 sm:mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3">
           <p className="text-[11.5px] text-on-navy-dim">
             © {year} TRS BVM Student Chapter. All rights reserved.
           </p>

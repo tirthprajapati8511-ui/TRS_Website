@@ -27,10 +27,10 @@ export default function FeatureStrip() {
               <Reveal
                 key={title}
                 delay={i * 0.05}
-                className="group flex flex-col items-center text-center gap-2.5 px-4 py-8"
+                className={`group flex flex-col items-center text-center gap-2 px-3 py-5 sm:gap-2.5 sm:px-4 sm:py-8 ${i === FEATURES.length - 1 && FEATURES.length % 2 === 1 ? "col-span-2 sm:col-span-1" : ""}`}
               >
                 <span
-                  className={`flex h-10 w-10 items-center justify-center rounded-full bg-accent-soft text-accent transition-all duration-300 group-hover:bg-accent group-hover:text-on-accent ${
+                  className={`flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-accent-soft text-accent transition-all duration-300 group-hover:bg-accent group-hover:text-on-accent ${
                     SPINS.has(icon) ? "group-hover:rotate-[20deg]" : "group-hover:scale-110"
                   }`}
                 >

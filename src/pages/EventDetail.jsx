@@ -105,7 +105,7 @@ export default function EventDetail() {
 
   if (!event) {
     return (
-      <section className="bg-bg py-24">
+      <section className="bg-bg py-14 sm:py-24">
         <Container className="max-w-xl text-center">
           <Reveal>
             <p className="text-[15px] text-ink-dim">That event couldn't be found.</p>
@@ -121,11 +121,11 @@ export default function EventDetail() {
   const registerUrl = safeUrl(event.registerUrl);
 
   return (
-    <section className="bg-bg py-16 lg:py-24">
+    <section className="bg-bg py-10 sm:py-16 lg:py-24">
       <Container className="max-w-4xl">
         <Reveal>
           <StatusPill tone={event.statusTone}>{event.status}</StatusPill>
-          <h1 className="mt-4 font-display text-3xl sm:text-4xl font-semibold text-ink leading-tight">
+          <h1 className="mt-4 font-display text-[26px] sm:text-4xl font-semibold text-ink leading-tight">
             {event.name}
           </h1>
           <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-[13.5px] text-ink-faint">

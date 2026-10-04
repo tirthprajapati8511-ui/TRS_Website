@@ -82,11 +82,11 @@ export default function Explore() {
   const milestones = achievements.archive.filter((e) => e.items.length > 0);
 
   return (
-    <section className="bg-bg py-16 lg:py-24">
+    <section className="bg-bg py-10 sm:py-16 lg:py-24">
       <Container>
         <Reveal>
           <span className="mono-label text-[11px] text-accent">{explore.eyebrow}</span>
-          <h1 className="mt-3 max-w-3xl font-display text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink leading-tight">
+          <h1 className="mt-3 max-w-3xl font-display text-[26px] sm:text-4xl lg:text-5xl font-semibold text-ink leading-tight">
             {explore.heading}
           </h1>
           {explore.motto && (
@@ -110,7 +110,7 @@ export default function Explore() {
           <div className="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-px overflow-hidden rounded-lg border border-line bg-line">
             {stats.map((s, i) => (
               <Reveal key={`${s.label}-${i}`} delay={i * 0.06} className="bg-bg-panel p-6 text-center">
-                <p className="font-display text-3xl sm:text-4xl font-semibold text-accent">
+                <p className="font-display text-[26px] sm:text-4xl font-semibold text-accent">
                   <StatValue value={s.value} />
                 </p>
                 <p className="mt-1.5 text-[13px] text-ink-dim">{s.label}</p>
@@ -120,7 +120,7 @@ export default function Explore() {
         )}
 
         {explore.whatWeDo?.length > 0 && (
-          <div className="mt-20">
+          <div className="mt-12 sm:mt-20">
             <SectionHeader title="What we do" />
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
               {explore.whatWeDo.map((item, i) => (
@@ -147,14 +147,14 @@ export default function Explore() {
         )}
 
         {(explore.domains?.length > 0 || explore.facilities?.length > 0) && (
-          <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="mt-12 sm:mt-20 grid grid-cols-1 md:grid-cols-2 gap-5">
             <InfoList title="What we build" items={explore.domains} />
             <InfoList title="Lab and facilities" items={explore.facilities} />
           </div>
         )}
 
         {milestones.length > 0 && (
-          <div className="mt-20">
+          <div className="mt-12 sm:mt-20">
             <SectionHeader title="Milestones" viewAllHref="/achievements" viewAllLabel="Full archive" />
             <ol className="relative ml-2 border-l border-line">
               {milestones.map((entry, i) => (
@@ -175,7 +175,7 @@ export default function Explore() {
           </div>
         )}
 
-        <Reveal className="mt-20 rounded-lg bg-navy text-on-navy p-8 sm:p-10 text-center">
+        <Reveal className="mt-12 sm:mt-20 rounded-lg bg-navy text-on-navy p-8 sm:p-10 text-center">
           <h2 className="font-display text-xl sm:text-2xl font-semibold">{explore.ctaHeading}</h2>
           <p className="mt-2.5 max-w-md mx-auto text-[13.5px] leading-relaxed text-on-navy-dim">
             {explore.ctaDescription}

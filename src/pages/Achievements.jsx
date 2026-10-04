@@ -105,11 +105,11 @@ export default function Achievements() {
     });
 
   return (
-    <section className="bg-bg py-16 lg:py-24">
+    <section className="bg-bg py-10 sm:py-16 lg:py-24">
       <Container>
         <Reveal>
           <span className="mono-label text-[11px] text-accent">Achievements</span>
-          <h1 className="mt-3 max-w-2xl font-display text-3xl sm:text-4xl font-semibold text-ink leading-tight">
+          <h1 className="mt-3 max-w-2xl font-display text-[26px] sm:text-4xl font-semibold text-ink leading-tight">
             Results, by academic year
           </h1>
           <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-ink-dim">
@@ -118,7 +118,7 @@ export default function Achievements() {
         </Reveal>
 
         {achievements.archive.length > 0 ? (
-          <div className="mt-12">
+          <div className="mt-8 sm:mt-12">
             {achievements.archive.map((entry, i) => (
               <YearSection
                 key={entry.year}
@@ -132,7 +132,7 @@ export default function Achievements() {
         ) : (
           <Reveal
             delay={0.08}
-            className="mt-12 flex flex-col items-center gap-3 rounded-lg border border-dashed border-line py-16 text-center"
+            className="mt-8 sm:mt-12 flex flex-col items-center gap-3 rounded-lg border border-dashed border-line py-16 text-center"
           >
             <Award size={28} strokeWidth={1.5} className="text-ink-faint" />
             <p className="text-[14px] text-ink-faint max-w-sm">

@@ -10,17 +10,17 @@ export default function WorkshopsList() {
   const { workshops } = useContent();
 
   return (
-    <section className="bg-bg py-16 lg:py-24">
+    <section className="bg-bg py-10 sm:py-16 lg:py-24">
       <Container>
         <Reveal>
           <span className="mono-label text-[11px] text-accent">Workshops</span>
-          <h1 className="mt-3 max-w-2xl font-display text-3xl sm:text-4xl font-semibold text-ink leading-tight">
+          <h1 className="mt-3 max-w-2xl font-display text-[26px] sm:text-4xl font-semibold text-ink leading-tight">
             Hands-on sessions and webinars
           </h1>
         </Reveal>
 
         {workshops.items.length > 0 ? (
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-5">
             {workshops.items.map((w, i) => {
               const formUrl = safeUrl(w.formHref);
               return (
@@ -50,7 +50,7 @@ export default function WorkshopsList() {
         ) : (
           <Reveal
             delay={0.08}
-            className="mt-12 flex flex-col items-center gap-3 rounded-lg border border-dashed border-line py-16 px-6 text-center"
+            className="mt-8 sm:mt-12 flex flex-col items-center gap-3 rounded-lg border border-dashed border-line py-16 px-6 text-center"
           >
             <GraduationCap size={28} strokeWidth={1.5} className="text-ink-faint" />
             <p className="max-w-sm text-[14px] text-ink-faint">

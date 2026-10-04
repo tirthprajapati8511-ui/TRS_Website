@@ -31,11 +31,11 @@ export default function Contact() {
   const socials = (footer.socials ?? []).filter((s) => safeUrl(s.href));
 
   return (
-    <section className="bg-bg py-16 lg:py-24">
+    <section className="bg-bg py-10 sm:py-16 lg:py-24">
       <Container>
         <Reveal>
           <span className="mono-label text-[11px] text-accent">{contact.eyebrow}</span>
-          <h1 className="mt-3 max-w-2xl font-display text-3xl sm:text-4xl font-semibold text-ink leading-tight">
+          <h1 className="mt-3 max-w-2xl font-display text-[26px] sm:text-4xl font-semibold text-ink leading-tight">
             {contact.heading}
           </h1>
           {contact.intro && (
@@ -43,7 +43,7 @@ export default function Contact() {
           )}
         </Reveal>
 
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-5 gap-6">
+        <div className="mt-8 sm:mt-12 grid grid-cols-1 lg:grid-cols-5 gap-6">
           <Reveal delay={0.05} className="lg:col-span-2 rounded-lg border border-line bg-bg-panel p-6 space-y-6">
             <QuickItem icon={Mail} label="Email">
               <a href={mailto} className="text-accent hover:text-accent-dim hover:underline underline-offset-4">
@@ -103,7 +103,7 @@ export default function Contact() {
         </div>
 
         {contact.contacts?.length > 0 && (
-          <div className="mt-16">
+          <div className="mt-10 sm:mt-16">
             <SectionHeader title="Who to contact" />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {contact.contacts.map((c, i) => (
@@ -126,7 +126,7 @@ export default function Contact() {
         )}
 
         {contact.faqs?.length > 0 && (
-          <div className="mt-16 max-w-3xl">
+          <div className="mt-10 sm:mt-16 max-w-3xl">
             <SectionHeader title="Frequently asked" />
             <div className="divide-y divide-line rounded-lg border border-line bg-bg-panel">
               {contact.faqs.map((f, i) => (

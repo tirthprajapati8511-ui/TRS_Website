@@ -26,7 +26,7 @@ export default function Achievements() {
   if (recentHighlights.length === 0) return null;
 
   return (
-    <section id="achievements" className="bg-bg-muted py-16 lg:py-20 border-b border-line">
+    <section id="achievements" className="bg-bg-muted py-10 sm:py-14 lg:py-20 border-b border-line">
       <Container>
         <SectionHeader title="Achievements" viewAllHref="/achievements" />
         <Reveal delay={0.05} className="max-w-2xl -mt-3 mb-6 text-[13.5px] leading-relaxed text-ink-dim">

@@ -10,11 +10,11 @@ import Button from "../components/Button";
  */
 export default function PageShell({ title, description }) {
   return (
-    <section className="bg-bg py-20 lg:py-28 min-h-[50vh]">
+    <section className="bg-bg py-12 sm:py-20 lg:py-28 min-h-[50vh]">
       <Container className="max-w-2xl">
         <Reveal>
           <span className="mono-label text-[11px] text-accent">In progress</span>
-          <h1 className="mt-3 font-display text-3xl sm:text-4xl font-semibold text-ink">{title}</h1>
+          <h1 className="mt-3 font-display text-[26px] sm:text-4xl font-semibold text-ink">{title}</h1>
           <p className="mt-4 text-[15px] leading-relaxed text-ink-dim">
             {description ??
               `The ${title} page is being built next. In the meantime, the homepage has a preview of what will live here.`}

@@ -8,7 +8,7 @@ import { assetUrl } from "../lib/assetUrl";
  * same photo instead of a flat colour. With no `src` it renders a plain
  * placeholder tile.
  */
-export default function PlaceholderImage({ src, alt = "", className = "", aspect = "aspect-square" }) {
+export default function PlaceholderImage({ src, alt = "", className = "", aspect = "aspect-[4/3] sm:aspect-square" }) {
   if (src) {
     const url = assetUrl(src);
     return (

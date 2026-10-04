@@ -14,7 +14,7 @@ export default function ProjectDetail() {
 
   if (!project) {
     return (
-      <section className="bg-bg py-24">
+      <section className="bg-bg py-14 sm:py-24">
         <Container className="max-w-xl text-center">
           <Reveal>
             <p className="text-[15px] text-ink-dim">That project couldn't be found.</p>
@@ -28,10 +28,10 @@ export default function ProjectDetail() {
   }
 
   return (
-    <section className="bg-bg py-16 lg:py-24">
+    <section className="bg-bg py-10 sm:py-16 lg:py-24">
       <Container className="max-w-4xl">
         <Reveal>
-          <h1 className="font-display text-3xl sm:text-4xl font-semibold text-ink leading-tight">
+          <h1 className="font-display text-[26px] sm:text-4xl font-semibold text-ink leading-tight">
             {project.name}
           </h1>
           {project.domains?.length > 0 && (

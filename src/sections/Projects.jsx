@@ -9,7 +9,7 @@ export default function Projects() {
   const { projects } = useContent();
 
   return (
-    <section id="projects" className="bg-bg py-16 lg:py-20 border-b border-line">
+    <section id="projects" className="bg-bg py-10 sm:py-14 lg:py-20 border-b border-line">
       <Container>
         <SectionHeader title="Our Projects" viewAllHref="/projects" />
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
