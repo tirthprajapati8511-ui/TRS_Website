@@ -70,8 +70,8 @@ export default function Hero() {
           className="flex items-center gap-2 mono-label text-[11px] text-white/70"
         >
           <span className="relative flex h-1.5 w-1.5">
-            <span className="absolute inset-0 rounded-full bg-accent-dim animate-ping-slow" />
-            <span className="relative h-1.5 w-1.5 rounded-full bg-accent-dim" />
+            <span className="absolute inset-0 rounded-full bg-[#6db8f2] animate-ping-slow" />
+            <span className="relative h-1.5 w-1.5 rounded-full bg-[#6db8f2]" />
           </span>
           {hero.eyebrow}
         </motion.p>
@@ -116,7 +116,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.45 }}
           className="mt-7 sm:mt-10 flex items-center gap-2 text-[12.5px] sm:text-[13px] text-white/70"
         >
-          <MapPin size={15} strokeWidth={2} className="shrink-0 text-accent-dim" />
+          <MapPin size={15} strokeWidth={2} className="shrink-0 text-[#6db8f2]" />
           <span>
             {hero.locationLine1} <span className="mx-1 opacity-50">·</span> {hero.locationLine2}
           </span>

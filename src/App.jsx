@@ -43,14 +43,22 @@ function SiteLayout() {
 
   return (
     <div className="bg-bg text-ink min-h-screen flex flex-col">
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[200] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-on-accent"
+      >
+        Skip to main content
+      </a>
       <ScrollProgress />
       <Navbar />
       <motion.main
+        id="main"
+        tabIndex={-1}
         key={pathname}
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-        className="flex-1"
+        className="flex-1 focus:outline-none"
       >
         <Outlet />
       </motion.main>

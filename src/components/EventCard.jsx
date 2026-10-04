@@ -7,7 +7,7 @@ import { safeUrl } from "../lib/safeUrl";
 
 // Shared between the homepage preview and the full /events list.
 
-export default function EventCard({ event, index }) {
+export default function EventCard({ event, index, headingLevel: Heading = "h3" }) {
   return (
     <TiltCard
       delay={index * 0.06}
@@ -29,7 +29,7 @@ export default function EventCard({ event, index }) {
           <Calendar size={13} strokeWidth={2} />
           {event.dateLabel}
         </div>
-        <h3 className="mt-1.5 font-display text-[16px] font-semibold text-ink">{event.name}</h3>
+        <Heading className="mt-1.5 font-display text-[16px] font-semibold text-ink">{event.name}</Heading>
         <div className="mt-1 flex items-center gap-1.5 text-[12.5px] text-ink-faint">
           <MapPin size={13} strokeWidth={2} />
           {event.location}

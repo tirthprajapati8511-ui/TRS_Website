@@ -55,7 +55,7 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-4">
-            <h4 className="mono-label text-[11px] text-on-navy-dim">Quick Links</h4>
+            <h2 className="mono-label text-[11px] text-on-navy-dim">Quick Links</h2>
             <div className="mt-4 grid grid-cols-2 gap-x-4">
               {[QUICK_LINKS_COL1, QUICK_LINKS_COL2].map((col, i) => (
                 <ul key={i} className="space-y-2.5">
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-3">
-            <h4 className="mono-label text-[11px] text-on-navy-dim">Contact Us</h4>
+            <h2 className="mono-label text-[11px] text-on-navy-dim">Contact Us</h2>
             <ul className="mt-4 space-y-2.5 text-[13px] text-on-navy-dim">
               <li className="flex items-center gap-2">
                 <Mail size={14} strokeWidth={2} className="shrink-0" />

@@ -24,7 +24,7 @@ export default function EventsList() {
         {events.items.length > 0 ? (
           <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
             {events.items.map((event, i) => (
-              <EventCard key={event.id} event={event} index={i} />
+              <EventCard key={event.id} event={event} index={i} headingLevel="h2" />
             ))}
           </div>
         ) : (

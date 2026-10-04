@@ -22,14 +22,14 @@
 
   --color-ink: #101826;
   --color-ink-dim: #4b5768;
-  --color-ink-faint: #8892a0;
+  --color-ink-faint: #626d7c;
 
   --color-navy: #0b2140;
   --color-navy-deep: #071730;
   --color-on-navy: #ffffff;
   --color-on-navy-dim: #aebedb;
 
-  --color-accent: #257ec2;
+  --color-accent: #1d6faf;
   --color-accent-dim: #1c6399;
   --color-accent-soft: #257ec21a;
   --color-on-accent: #ffffff;
@@ -76,7 +76,7 @@
 
     --color-ink: #eef1f6;
     --color-ink-dim: #a7b1c2;
-    --color-ink-faint: #6b7690;
+    --color-ink-faint: #8a96ab;
 
     --color-navy: #071427;
     --color-navy-deep: #040c1a;
@@ -106,7 +106,7 @@
 
   --color-ink: #eef1f6;
   --color-ink-dim: #a7b1c2;
-  --color-ink-faint: #6b7690;
+  --color-ink-faint: #8a96ab;
 
   --color-navy: #071427;
   --color-navy-deep: #040c1a;
@@ -134,14 +134,14 @@
 
   --color-ink: #101826;
   --color-ink-dim: #4b5768;
-  --color-ink-faint: #8892a0;
+  --color-ink-faint: #626d7c;
 
   --color-navy: #0b2140;
   --color-navy-deep: #071730;
   --color-on-navy: #ffffff;
   --color-on-navy-dim: #aebedb;
 
-  --color-accent: #257ec2;
+  --color-accent: #1d6faf;
   --color-accent-dim: #1c6399;
   --color-accent-soft: #257ec21a;
   --color-on-accent: #ffffff;
@@ -201,9 +201,9 @@ body {
 .shimmer-text {
   background-image: linear-gradient(
     100deg,
-    var(--color-accent-dim) 42%,
-    color-mix(in srgb, var(--color-accent-dim) 40%, white) 50%,
-    var(--color-accent-dim) 58%
+    #6db8f2 42%,
+    #d6ecfc 50%,
+    #6db8f2 58%
   );
   background-size: 250% 100%;
   -webkit-background-clip: text;

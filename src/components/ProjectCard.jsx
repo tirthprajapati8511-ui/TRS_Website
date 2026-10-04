@@ -3,7 +3,7 @@ import PlaceholderImage from "./PlaceholderImage";
 import Button from "./Button";
 
 // Shared between the homepage preview and the full /projects list.
-export default function ProjectCard({ project, index }) {
+export default function ProjectCard({ project, index, headingLevel: Heading = "h3" }) {
   return (
     <TiltCard
       delay={index * 0.06}
@@ -17,7 +17,7 @@ export default function ProjectCard({ project, index }) {
         />
       </div>
       <div className="flex flex-1 flex-col p-5">
-        <h3 className="font-display text-[16px] font-semibold text-ink">{project.name}</h3>
+        <Heading className="font-display text-[16px] font-semibold text-ink">{project.name}</Heading>
         <p className="mt-2 text-[13px] leading-relaxed text-ink-dim flex-1">{project.description}</p>
         <div className="mt-3 flex flex-wrap gap-1.5">
           {project.domains.map((d) => (
