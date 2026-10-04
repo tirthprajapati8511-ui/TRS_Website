@@ -327,3 +327,32 @@ body {
     text-decoration: none;
   }
 }
+
+/* Finishing touches */
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+p,
+li {
+  text-wrap: pretty;
+}
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-ink);
+}
+/* A faint wash of brand blue behind page headers. */
+.page-glow {
+  background-image: radial-gradient(
+    900px 360px at 90% -80px,
+    color-mix(in srgb, var(--color-accent) 9%, transparent),
+    transparent 70%
+  );
+  background-repeat: no-repeat;
+}
+@media print {
+  .page-glow {
+    background-image: none;
+  }
+}

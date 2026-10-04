@@ -10,7 +10,7 @@ export default function WorkshopsList() {
   const { workshops } = useContent();
 
   return (
-    <section className="bg-bg py-10 sm:py-16 lg:py-24">
+    <section className="bg-bg page-glow py-10 sm:py-16 lg:py-24">
       <Container>
         <Reveal>
           <span className="mono-label text-[11px] text-accent">Workshops</span>
@@ -27,7 +27,7 @@ export default function WorkshopsList() {
                 <Reveal
                   key={w.id}
                   delay={Math.min(i, 6) * 0.06}
-                  className="flex flex-col rounded-lg border border-line bg-bg-panel p-6"
+                  className="flex flex-col rounded-lg border border-line bg-bg-panel shadow-sm p-6"
                 >
                   <StatusPill tone="accent" className="self-start">
                     {w.status}

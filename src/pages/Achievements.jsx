@@ -52,7 +52,7 @@ function ItemCard({ item, index, instant }) {
       initial={instant ? false : { opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, delay: Math.min(index, 8) * 0.05, ease }}
-      className="group flex flex-col break-inside-avoid rounded-lg border border-line bg-bg-panel overflow-hidden transition-all duration-300 hover:border-accent/50 hover:shadow-lg"
+      className="group flex flex-col break-inside-avoid rounded-lg border border-line bg-bg-panel shadow-sm overflow-hidden transition-all duration-300 hover:border-accent/50 hover:shadow-lg"
     >
       {item.image && <PlaceholderImage src={item.image} alt={item.title} />}
       <div className="flex gap-3.5 p-5">
@@ -179,7 +179,7 @@ export default function Achievements() {
     });
 
   return (
-    <section className="bg-bg py-10 sm:py-16 lg:py-24">
+    <section className="bg-bg page-glow py-10 sm:py-16 lg:py-24">
       <Container>
         <Reveal>
           <span className="mono-label text-[11px] text-accent">Achievements</span>

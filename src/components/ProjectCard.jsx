@@ -7,7 +7,7 @@ export default function ProjectCard({ project, index, headingLevel: Heading = "h
   return (
     <TiltCard
       delay={index * 0.06}
-      className="group flex flex-col border border-line bg-bg-panel rounded-lg overflow-hidden transition-shadow duration-300 hover:border-accent/50 hover:shadow-xl"
+      className="group flex flex-col border border-line bg-bg-panel shadow-sm rounded-lg overflow-hidden transition-shadow duration-300 hover:border-accent/50 hover:shadow-xl"
     >
       <div className="overflow-hidden">
         <PlaceholderImage

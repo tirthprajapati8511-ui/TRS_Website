@@ -14,7 +14,7 @@ export default function MemberCard({ member, index }) {
       whileHover={{ y: -5 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.6, delay: Math.min(index, 8) * 0.05, ease: [0.16, 1, 0.3, 1] }}
-      className="group flex flex-col items-center text-center rounded-lg border border-line bg-bg-panel p-6 transition-shadow duration-300 hover:border-accent/50 hover:shadow-lg"
+      className="group flex flex-col items-center text-center rounded-lg border border-line bg-bg-panel shadow-sm p-6 transition-shadow duration-300 hover:border-accent/50 hover:shadow-lg"
     >
       {member.photo ? (
         <img

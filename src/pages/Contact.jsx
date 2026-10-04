@@ -31,7 +31,7 @@ export default function Contact() {
   const socials = (footer.socials ?? []).filter((s) => safeUrl(s.href));
 
   return (
-    <section className="bg-bg py-10 sm:py-16 lg:py-24">
+    <section className="bg-bg page-glow py-10 sm:py-16 lg:py-24">
       <Container>
         <Reveal>
           <span className="mono-label text-[11px] text-accent">{contact.eyebrow}</span>
@@ -44,7 +44,7 @@ export default function Contact() {
         </Reveal>
 
         <div className="mt-8 sm:mt-12 grid grid-cols-1 lg:grid-cols-5 gap-6">
-          <Reveal delay={0.05} className="lg:col-span-2 rounded-lg border border-line bg-bg-panel p-6 space-y-6">
+          <Reveal delay={0.05} className="lg:col-span-2 rounded-lg border border-line bg-bg-panel shadow-sm p-6 space-y-6">
             <QuickItem icon={Mail} label="Email">
               <a href={mailto} className="text-accent hover:text-accent-dim hover:underline underline-offset-4">
                 {footer.email}
@@ -110,7 +110,7 @@ export default function Contact() {
                 <Reveal
                   key={i}
                   delay={Math.min(i, 6) * 0.05}
-                  className="rounded-lg border border-line bg-bg-panel p-5"
+                  className="rounded-lg border border-line bg-bg-panel shadow-sm p-5"
                 >
                   <p className="mono-label text-[10px] text-accent">{c.topic}</p>
                   <p className="mt-2 font-display text-[15px] font-semibold text-ink">{c.person}</p>
@@ -128,7 +128,7 @@ export default function Contact() {
         {contact.faqs?.length > 0 && (
           <div className="mt-10 sm:mt-16 max-w-3xl">
             <SectionHeader title="Frequently asked" />
-            <div className="divide-y divide-line rounded-lg border border-line bg-bg-panel">
+            <div className="divide-y divide-line rounded-lg border border-line bg-bg-panel shadow-sm">
               {contact.faqs.map((f, i) => (
                 <Reveal key={i} delay={Math.min(i, 6) * 0.05} className="p-5">
                   <h3 className="font-display text-[15px] font-semibold text-ink">{f.q}</h3>

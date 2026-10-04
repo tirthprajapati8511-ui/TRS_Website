@@ -10,7 +10,7 @@ export default function Join() {
   const { facultyContact } = join;
 
   return (
-    <section className="bg-bg py-10 sm:py-16 lg:py-24">
+    <section className="bg-bg page-glow py-10 sm:py-16 lg:py-24">
       <Container>
         <Reveal>
           <span className="mono-label text-[11px] text-accent">Join TRS</span>
@@ -53,7 +53,7 @@ export default function Join() {
           </Reveal>
 
           <Reveal delay={0.16} className="lg:col-span-5">
-            <div className="rounded-lg border border-line bg-bg-panel p-6">
+            <div className="rounded-lg border border-line bg-bg-panel shadow-sm p-6">
               <h2 className="font-display text-base font-semibold text-ink">
                 Faculty enrollment contact
               </h2>

@@ -11,7 +11,7 @@ import { deriveStats } from "../lib/stats";
 function InfoList({ title, items }) {
   if (!items?.length) return null;
   return (
-    <Reveal className="rounded-lg border border-line bg-bg-panel p-6">
+    <Reveal className="rounded-lg border border-line bg-bg-panel shadow-sm p-6">
       <h3 className="font-display text-[15px] font-semibold text-ink">{title}</h3>
       <ul className="mt-4 space-y-2.5">
         {items.map((item, i) => (
@@ -31,7 +31,7 @@ export default function Explore() {
   const milestones = achievements.archive.filter((e) => e.items.length > 0);
 
   return (
-    <section className="bg-bg py-10 sm:py-16 lg:py-24">
+    <section className="bg-bg page-glow py-10 sm:py-16 lg:py-24">
       <Container>
         <Reveal>
           <span className="mono-label text-[11px] text-accent">{explore.eyebrow}</span>
@@ -76,7 +76,7 @@ export default function Explore() {
                 <Reveal key={i} delay={i * 0.06}>
                   <Link
                     to={item.href || "/"}
-                    className="group flex h-full flex-col rounded-lg border border-line bg-bg-panel p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-lg"
+                    className="group flex h-full flex-col rounded-lg border border-line bg-bg-panel shadow-sm p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-lg"
                   >
                     <span className="mono-label text-[11px] text-accent">{String(i + 1).padStart(2, "0")}</span>
                     <h3 className="mt-3 font-display text-[16px] font-semibold text-ink">{item.title}</h3>

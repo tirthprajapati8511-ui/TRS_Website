@@ -8,7 +8,7 @@ export default function Faculty() {
   const { faculty } = useContent();
 
   return (
-    <section className="bg-bg py-10 sm:py-16 lg:py-24">
+    <section className="bg-bg page-glow py-10 sm:py-16 lg:py-24">
       <Container>
         <Reveal>
           <span className="mono-label text-[11px] text-accent">Faculty Members</span>

@@ -28,7 +28,7 @@ export default function ProjectDetail() {
   }
 
   return (
-    <section className="bg-bg py-10 sm:py-16 lg:py-24">
+    <section className="bg-bg page-glow py-10 sm:py-16 lg:py-24">
       <Container className="max-w-4xl">
         <Reveal>
           <h1 className="font-display text-[26px] sm:text-4xl font-semibold text-ink leading-tight">

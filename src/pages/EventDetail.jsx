@@ -41,7 +41,7 @@ function MultiTeamBlock({ teams }) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
       {teams.map((team, i) => (
-        <div key={i} className="rounded-lg border border-line bg-bg-panel p-5">
+        <div key={i} className="rounded-lg border border-line bg-bg-panel shadow-sm p-5">
           <TeamHeading team={team}>
             {team.category && <p className="mt-0.5 text-[13px] text-accent">{team.category}</p>}
           </TeamHeading>
@@ -72,7 +72,7 @@ function SingleTeamBlock({ teams }) {
   return (
     <>
       {teams.map((team, i) => (
-        <div key={i} className="rounded-lg border border-line bg-bg-panel p-5">
+        <div key={i} className="rounded-lg border border-line bg-bg-panel shadow-sm p-5">
           <TeamHeading team={team} />
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
             {(team.roles ?? []).map((role, j) => (
@@ -122,7 +122,7 @@ export default function EventDetail() {
   const registerUrl = safeUrl(event.registerUrl);
 
   return (
-    <section className="bg-bg py-10 sm:py-16 lg:py-24">
+    <section className="bg-bg page-glow py-10 sm:py-16 lg:py-24">
       <Container className="max-w-4xl">
         <Reveal>
           <StatusPill tone={event.statusTone}>{event.status}</StatusPill>
@@ -160,7 +160,7 @@ export default function EventDetail() {
         {event.details?.length > 0 && (
           <Reveal delay={0.12} className="mt-10 max-w-2xl">
             <h2 className="font-display text-lg font-semibold text-ink mb-5">Event breakdown</h2>
-            <dl className="divide-y divide-line rounded-lg border border-line bg-bg-panel">
+            <dl className="divide-y divide-line rounded-lg border border-line bg-bg-panel shadow-sm">
               {event.details.map((section, i) => (
                 <motion.div
                   key={i}

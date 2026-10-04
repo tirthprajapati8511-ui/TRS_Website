@@ -37,7 +37,7 @@ export default function Achievements() {
             <Reveal
               key={`${item.title}-${i}`}
               delay={0.1 + i * 0.06}
-              className="group flex gap-3.5 rounded-lg border border-line bg-bg-panel p-5 transition-all duration-300 hover:border-accent/50 hover:shadow-md"
+              className="group flex gap-3.5 rounded-lg border border-line bg-bg-panel shadow-sm p-5 transition-all duration-300 hover:border-accent/50 hover:shadow-md"
             >
               {item.image ? (
                 <div className="h-12 w-12 shrink-0 rounded-md overflow-hidden">
