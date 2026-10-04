@@ -16,7 +16,7 @@
     "ctaSecondaryHref": "/join",
     "locationLine1": "BVM Engineering College",
     "locationLine2": "Vallabh Vidyanagar, Gujarat",
-    "image": "/uploads/1789059081322-chatgpt-image-sep-10-2026-10-21-03-pm.png",
+    "image": "/uploads/1789059081322-chatgpt-image-sep-10-2026-10-21-03-pm.jpg",
     "imageAlt": "BVM Engineering College campus"
   },
   "events": {
@@ -47,7 +47,7 @@
           }
         ],
         "gallery": [
-          "/uploads/1789388267013-robofest-6-0-hackathon-1-.png"
+          "/uploads/1789388267013-robofest-6-0-hackathon-1-.jpg"
         ],
         "details": [
           {
@@ -206,7 +206,7 @@
         "statusTone": "neutral",
         "location": "IIT Delhi",
         "description": "India's national robotics championship and the qualifier for ABU Robocon 2027 in Indonesia.",
-        "image": "/uploads/1790976999000-dd-robocon-2027-logo.png",
+        "image": "/uploads/1790976999000-dd-robocon-2027-logo.jpg",
         "href": "/events/robocon-2026",
         "structure": "single-team",
         "teams": [
@@ -232,7 +232,7 @@
               }
             ],
             "facultyAdvisor": "Prof.(Dr.) Haresh Patolia",
-            "logo": "/uploads/1790977920599-panchjanya-original.png"
+            "logo": "/uploads/1790977920599-panchjanya-original.jpg"
           }
         ],
         "details": [
@@ -322,7 +322,7 @@
           {
             "title": "ROBOFEST GUJARAT HACKATHON 6.0",
             "detail": " 7 teams from Birla Vishvakarma Mahavidyalaya , Vallabh vidhyanagar have secured their place among the shortlisted entries and will advance to the upcoming Hackathon stage.\nTeams qualifying through this stage receives ₹50,000/- cash prize and a certificate , celebrating their accomplishment and inspiring them to explore new ideas in robotics.\n",
-            "image": "/uploads/1790976075650-image.png",
+            "image": "/uploads/1790976075650-image.jpg",
             "gallery": [],
             "video": null
           }
@@ -334,7 +334,7 @@
           {
             "title": "GUJCOST Robofest 5.0 — 14 Teams Qualified for Level-2, Highest in India",
             "detail": "14 teams from TRS BVM advanced to Level-2 of Robofest 5.0 -- the highest number of teams selected from a single institution across the nation. Out of 1,102 ideation proposals submitted in Level-1 (914 at Senior Level), only 138 senior-level proposals were shortlisted for Level-2, and 14 of those were from BVM. Each advancing team received Rs 50,000. Categories: Underwater (Dr. A. A. Vahora, Dr. A. M. Thakkar, Prof. G. B. Rathod, Prof. V. J. Patel, Dr. M. S. Holia), Aerial (Prof. V. R. Singh), Maze (Dr. M. S. Holia), IGV (Prof. V. J. Patel, Prof. H. P. Patolia), Application (Prof. D. M. Patel, Prof. H. P. Patolia, Prof. D. K. Patel, Dr. M. M. Solanki, Prof. J. R. Koisa).",
-            "image": "/uploads/1790975930873-image.png",
+            "image": "/uploads/1790975930873-image.jpg",
             "gallery": []
           },
           {
@@ -351,7 +351,7 @@
           {
             "title": "GUJCOST Robofest 5.0 — Second Runner-up, Underwater Robot",
             "detail": "Team: Shyam Parsana, Vishrut Pambhar, Kishan Kanzariya, Harsh Chaudhari. Mentor: Dr. Mehfuza S. Holia. Rs. 5,00,000 cash prize at the Grand Finale.",
-            "image": "/uploads/1790975816879-image.png"
+            "image": "/uploads/1790975816879-image.jpg"
           },
           {
             "title": "DD Robocon '25 — AIR Rank 10",
@@ -514,7 +514,7 @@
           {
             "title": "GUJCOST Robofest 2.0 — Qualified for Level-3, Prototype Making",
             "detail": "All five TRS BVM teams qualified for the Prototype Making stage across their categories, with a combined prize pool of Rs 6,00,000 at this stage.",
-            "image": "/uploads/1790712429731-image.png",
+            "image": "/uploads/1790712429731-image.jpg",
             "gallery": []
           }
         ]
@@ -525,13 +525,13 @@
           {
             "title": "GUJCOST Robofest 2.0 — Qualified for Level-2, Proof of Concept",
             "detail": "All five TRS BVM teams (Pipe Climbing Robot, Underwater Robot, Four-Legged Robot, Micro-Robots, Prosthetic Limbs) advanced to Level-2 after winning Rs 50,000 each at the Level-1 Ideation stage, organised by GUJCOST, Gandhinagar.",
-            "image": "/uploads/1790712191232-image.png",
+            "image": "/uploads/1790712191232-image.jpg",
             "gallery": []
           },
           {
             "title": "ARTPARK Robotics Challenge — Top 29 Teams Nationally",
             "detail": "Team JANATICS BVM qualified in the first round of the National Level ARTPARK Robotics Challenge, securing a place among the Top 29 teams for developing an autonomous robot for janitorial tasks in washrooms. Team: Keivalya Pandya, Jay Prajapati, Darshit Darji, Hrushikesh Vegad, Jay Goswami. Mentor: Prof. (Dr.) Vinay Patel.",
-            "image": "/uploads/1790711990403-image.png",
+            "image": "/uploads/1790711990403-image.jpg",
             "gallery": []
           }
         ]
@@ -894,56 +894,56 @@
         "id": "faculty-1",
         "name": "Prof. (Dr.) Vinay J. Patel",
         "role": "",
-        "photo": "/uploads/1789336206327-image.png",
+        "photo": "/uploads/1789336206327-image.jpg",
         "email": ""
       },
       {
         "id": "faculty-2",
         "name": "Prof. (Dr.) Haresh Patolia",
         "role": "",
-        "photo": "/uploads/1789336220087-image.png",
+        "photo": "/uploads/1789336220087-image.jpg",
         "email": ""
       },
       {
         "id": "faculty-3",
         "name": "Prof. (Dr.) Rajiv Gandhi",
         "role": "",
-        "photo": "/uploads/1789337868681-image.png",
+        "photo": "/uploads/1789337868681-image.jpg",
         "email": ""
       },
       {
         "id": "faculty-4",
         "name": "Prof. (Dr.) D. M. Patel",
         "role": "",
-        "photo": "/uploads/1789336906002-image.png",
+        "photo": "/uploads/1789336906002-image.jpg",
         "email": ""
       },
       {
         "id": "faculty-5",
         "name": "Prof. (Dr.) Mehfuza S. Holia",
         "role": "",
-        "photo": "/uploads/1789336968017-image.png",
+        "photo": "/uploads/1789336968017-image.jpg",
         "email": ""
       },
       {
         "id": "faculty-6",
         "name": "Prof. (Dr.) Zankhana H. Shah",
         "role": "",
-        "photo": "/uploads/1789336788780-image.png",
+        "photo": "/uploads/1789336788780-image.jpg",
         "email": ""
       },
       {
         "id": "faculty-7",
         "name": "Prof. (Dr.) Aakar N. Roghelia",
         "role": "",
-        "photo": "/uploads/1789336867719-image.png",
+        "photo": "/uploads/1789336867719-image.jpg",
         "email": ""
       },
       {
         "id": "faculty-8",
         "name": "Prof. (Dr.) Milendrakumar Solanki",
         "role": "",
-        "photo": "/uploads/1789336989293-image.png",
+        "photo": "/uploads/1789336989293-image.jpg",
         "email": ""
       },
       {
@@ -957,21 +957,21 @@
         "id": "faculty-10",
         "name": "Prof. (Dr.) Alpesh Damor",
         "role": "",
-        "photo": "/uploads/1789336256287-image.png",
+        "photo": "/uploads/1789336256287-image.jpg",
         "email": ""
       },
       {
         "id": "faculty-11",
         "name": "Prof. Jayesh Koisa",
         "role": "",
-        "photo": "/uploads/1789336241513-image.png",
+        "photo": "/uploads/1789336241513-image.jpg",
         "email": ""
       },
       {
         "id": "faculty-12",
         "name": "Prof. Dharita Patel",
         "role": "",
-        "photo": "/uploads/1789337297263-image.png",
+        "photo": "/uploads/1789337297263-image.jpg",
         "email": ""
       },
       {
@@ -992,28 +992,28 @@
         "id": "faculty-15",
         "name": "Prof. (Dr.) Vatsal Shah",
         "role": "",
-        "photo": "/uploads/1789337133162-image.png",
+        "photo": "/uploads/1789337133162-image.jpg",
         "email": ""
       },
       {
         "id": "faculty-16",
         "name": "Prof. Vijay Pratap Singh",
         "role": "",
-        "photo": "/uploads/1789336280887-image.png",
+        "photo": "/uploads/1789336280887-image.jpg",
         "email": ""
       },
       {
         "id": "faculty-17",
         "name": "Prof. (Dr.) Jagruti P. Shah",
         "role": "",
-        "photo": "/uploads/1789337641175-image.png",
+        "photo": "/uploads/1789337641175-image.jpg",
         "email": ""
       },
       {
         "id": "faculty-18",
         "name": "Prof. Kankesh Dave",
         "role": "",
-        "photo": "/uploads/1789336304330-image.png",
+        "photo": "/uploads/1789336304330-image.jpg",
         "email": ""
       },
       {
@@ -1027,14 +1027,14 @@
         "id": "faculty-20",
         "name": "Prof. Vipul Gondaliya",
         "role": "",
-        "photo": "/uploads/1789336328015-image.png",
+        "photo": "/uploads/1789336328015-image.jpg",
         "email": ""
       },
       {
         "id": "faculty-21",
         "name": "Mosin I. Hasan",
         "role": "",
-        "photo": "/uploads/1789336747764-image.png",
+        "photo": "/uploads/1789336747764-image.jpg",
         "email": ""
       }
     ]
