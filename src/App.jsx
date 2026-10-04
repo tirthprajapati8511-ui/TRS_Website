@@ -23,14 +23,22 @@ import ProjectDetail from "./pages/ProjectDetail";
 import AdminPage from "./admin/AdminPage";
 import ScrollProgress from "./components/ScrollProgress";
 import BackToTop from "./components/BackToTop";
+import { useContent } from "./lib/ContentContext";
+import { getPageMeta } from "./lib/pageMeta";
 
 // Shared chrome for every public page — only the admin panel opts out.
 function SiteLayout() {
   const { pathname } = useLocation();
 
+  const content = useContent();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  useEffect(() => {
+    document.title = getPageMeta(pathname, content).title;
+  }, [pathname, content]);
 
   return (
     <div className="bg-bg text-ink min-h-screen flex flex-col">
