@@ -10,6 +10,7 @@ import Projects from "./sections/Projects";
 import Achievements from "./sections/Achievements";
 import PageShell from "./pages/PageShell";
 import Explore from "./pages/Explore";
+import Contact from "./pages/Contact";
 import Join from "./pages/Join";
 import Committee from "./pages/Committee";
 import Faculty from "./pages/Faculty";
@@ -77,7 +78,7 @@ function App() {
         <Route path="/achievements" element={<AchievementsPage />} />
         <Route path="/workshops" element={<PageShell title="Workshops" />} />
         <Route path="/join" element={<Join />} />
-        <Route path="/contact" element={<PageShell title="Contact" />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<PageShell title="Page not found" description="That page doesn't exist yet." />} />
       </Route>
       <Route path="/admin/*" element={<AdminPage />} />

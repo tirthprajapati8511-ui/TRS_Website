@@ -275,6 +275,59 @@ export const DEFAULT_CONTENT = {
     "ctaHref": "/join"
   },
 
+  contact: {
+    "eyebrow": "Contact",
+    "heading": "Get in touch with TRS BVM",
+    "intro": "Questions about joining, events or working with us? Reach the right person below, or write to us directly.",
+    "mapQuery": "BVM Engineering College, Vallabh Vidyanagar, Anand, Gujarat 388120",
+    "messageLabel": "Email us",
+    "messageSubject": "Enquiry from the TRS BVM website",
+    "contacts": [
+      {
+        "topic": "Membership and joining",
+        "person": "Dr. Milendrakumar Manilal Solanki",
+        "role": "TRS Membership In-Charge",
+        "email": "mmsolanki@bvmengineering.ac.in",
+        "phone": ""
+      },
+      {
+        "topic": "Events and competitions",
+        "person": "Placeholder name",
+        "role": "Faculty coordinator",
+        "email": "",
+        "phone": ""
+      },
+      {
+        "topic": "Sponsorship and collaboration",
+        "person": "Placeholder name",
+        "role": "Faculty / executive committee contact",
+        "email": "",
+        "phone": ""
+      },
+      {
+        "topic": "Website issues",
+        "person": "Placeholder name",
+        "role": "Web development team",
+        "email": "",
+        "phone": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Who can join TRS BVM?",
+        "a": "Membership is open to students of BVM Engineering College."
+      },
+      {
+        "q": "Is membership an online form?",
+        "a": "No. Membership uses an official enrollment form that you download, fill in, sign and submit in person to the faculty enrollment contact. The steps are on the Join TRS page."
+      },
+      {
+        "q": "How do I register for an event?",
+        "a": "When registration is open, the event's page has a Register button that opens its registration form."
+      }
+    ]
+  },
+
   workshops: {
     eyebrowTitle: "Workshops",
     items: [
