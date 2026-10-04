@@ -561,6 +561,125 @@
       "2023–24"
     ]
   },
+  "explore": {
+    "eyebrow": "Explore TRS",
+    "heading": "We compete, we learn, we grow",
+    "motto": "LEARN | EXPLORE | INNOVATE",
+    "about": [
+      {
+        "text": "TRS BVM is the authorised student chapter of The Robotics Society (TRS), India, at BVM Engineering College. The Robotics Society empowers technical institutions across India to start TRS Student Chapters — a group of researchers, industrialists and students working in different domains of robotics, together making our society."
+      },
+      {
+        "text": "Regular meetings help us connect with every member and keep everyone updated with the latest technology, because we believe that technology will not replace great teachers, but technology in the hands of great teachers is transformational."
+      },
+      {
+        "text": "We believe that any sufficiently advanced technology is equivalent to magic. That magic shows in our projects, built with the help of faculty and M.Tech students."
+      },
+      {
+        "text": "We are a team not because we work together, but because we respect each other and welcome every member's ideas and projects from their innovative minds."
+      }
+    ],
+    "whatWeDo": [
+      {
+        "title": "Events",
+        "description": "Competitions and programmes we take part in, from Robofest and Robocon to SAUVC and NIDAR.",
+        "href": "/events"
+      },
+      {
+        "title": "Workshops",
+        "description": "Webinars, hands-on sessions and hackathons that keep every member up to date.",
+        "href": "/workshops"
+      },
+      {
+        "title": "Projects",
+        "description": "Rovers, drones, underwater robots, quadrupeds and more, built by our teams.",
+        "href": "/projects"
+      },
+      {
+        "title": "Achievements",
+        "description": "Our results year by year, from Robofest 1.0 to today.",
+        "href": "/achievements"
+      }
+    ],
+    "domains": [
+      "6-wheeled all-terrain rover (NVIDIA Jetson Nano)",
+      "Quadruped robot",
+      "PID-controlled line follower",
+      "Micro mouse robot",
+      "Aerial vehicles and drones",
+      "Underwater robots",
+      "2D plotter"
+    ],
+    "facilities": [
+      "Robotics lab, accessible 24×7",
+      "3D printer",
+      "Demonstration robots",
+      "Toolkits and machines, including a CNC machine",
+      "Access to the mechanical workshop"
+    ],
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "Robotics lab access"
+      }
+    ],
+    "ctaHeading": "Want to build with us?",
+    "ctaDescription": "Membership is open to BVM students. See how to enrol and become part of the society.",
+    "ctaLabel": "Join TRS",
+    "ctaHref": "/join"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Get in touch with TRS BVM",
+    "intro": "Questions about joining, events or working with us? Reach the right person below, or write to us directly.",
+    "mapQuery": "BVM Engineering College, Vallabh Vidyanagar, Anand, Gujarat 388120",
+    "messageLabel": "Email us",
+    "messageSubject": "Enquiry from the TRS BVM website",
+    "contacts": [
+      {
+        "topic": "Membership and joining",
+        "person": "Dr. Milendrakumar Manilal Solanki",
+        "role": "TRS Membership In-Charge",
+        "email": "mmsolanki@bvmengineering.ac.in",
+        "phone": "9825716003"
+      },
+      {
+        "topic": "Events and competitions",
+        "person": "Jeel Gujarati",
+        "role": "Secretary",
+        "email": "",
+        "phone": "9106517141"
+      },
+      {
+        "topic": "Sponsorship and collaboration",
+        "person": "Prof. Kankesh Dave",
+        "role": "Faculty Coordinator",
+        "email": "",
+        "phone": "8849872113"
+      },
+      {
+        "topic": "Website issues",
+        "person": "Prof. (Dr.) Vatsal Shah",
+        "role": "Web development team",
+        "email": "",
+        "phone": "9601290965"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Who can join TRS BVM?",
+        "a": "Membership is open to students of BVM Engineering College."
+      },
+      {
+        "q": "Is membership an online form?",
+        "a": "No. Membership uses an official enrollment form that you download, fill in, sign and submit in person to the faculty enrollment contact. The steps are on the Join TRS page."
+      },
+      {
+        "q": "How do I register for an event?",
+        "a": "When registration is open, the event's page has a Register button that opens its registration form."
+      }
+    ]
+  },
   "workshops": {
     "eyebrowTitle": "Workshops",
     "items": []
@@ -967,124 +1086,5 @@
       "name": "The Robotics Society (India)",
       "note": "An authorized student chapter of"
     }
-  },
-  "explore": {
-    "eyebrow": "Explore TRS",
-    "heading": "We compete, we learn, we grow",
-    "motto": "LEARN | EXPLORE | INNOVATE",
-    "about": [
-      {
-        "text": "TRS BVM is the authorised student chapter of The Robotics Society (TRS), India, at BVM Engineering College. The Robotics Society empowers technical institutions across India to start TRS Student Chapters — a group of researchers, industrialists and students working in different domains of robotics, together making our society."
-      },
-      {
-        "text": "Regular meetings help us connect with every member and keep everyone updated with the latest technology, because we believe that technology will not replace great teachers, but technology in the hands of great teachers is transformational."
-      },
-      {
-        "text": "We believe that any sufficiently advanced technology is equivalent to magic. That magic shows in our projects, built with the help of faculty and M.Tech students."
-      },
-      {
-        "text": "We are a team not because we work together, but because we respect each other and welcome every member's ideas and projects from their innovative minds."
-      }
-    ],
-    "whatWeDo": [
-      {
-        "title": "Events",
-        "description": "Competitions and programmes we take part in, from Robofest and Robocon to SAUVC and NIDAR.",
-        "href": "/events"
-      },
-      {
-        "title": "Workshops",
-        "description": "Webinars, hands-on sessions and hackathons that keep every member up to date.",
-        "href": "/workshops"
-      },
-      {
-        "title": "Projects",
-        "description": "Rovers, drones, underwater robots, quadrupeds and more, built by our teams.",
-        "href": "/projects"
-      },
-      {
-        "title": "Achievements",
-        "description": "Our results year by year, from Robofest 1.0 to today.",
-        "href": "/achievements"
-      }
-    ],
-    "domains": [
-      "6-wheeled all-terrain rover (NVIDIA Jetson Nano)",
-      "Quadruped robot",
-      "PID-controlled line follower",
-      "Micro mouse robot",
-      "Aerial vehicles and drones",
-      "Underwater robots",
-      "2D plotter"
-    ],
-    "facilities": [
-      "Robotics lab, accessible 24×7",
-      "3D printer",
-      "Demonstration robots",
-      "Toolkits and machines, including a CNC machine",
-      "Access to the mechanical workshop"
-    ],
-    "stats": [
-      {
-        "value": "24/7",
-        "label": "Robotics lab access"
-      }
-    ],
-    "ctaHeading": "Want to build with us?",
-    "ctaDescription": "Membership is open to BVM students. See how to enrol and become part of the society.",
-    "ctaLabel": "Join TRS",
-    "ctaHref": "/join"
-  },
-  "contact": {
-    "eyebrow": "Contact",
-    "heading": "Get in touch with TRS BVM",
-    "intro": "Questions about joining, events or working with us? Reach the right person below, or write to us directly.",
-    "mapQuery": "BVM Engineering College, Vallabh Vidyanagar, Anand, Gujarat 388120",
-    "messageLabel": "Email us",
-    "messageSubject": "Enquiry from the TRS BVM website",
-    "contacts": [
-      {
-        "topic": "Membership and joining",
-        "person": "Dr. Milendrakumar Manilal Solanki",
-        "role": "TRS Membership In-Charge",
-        "email": "mmsolanki@bvmengineering.ac.in",
-        "phone": ""
-      },
-      {
-        "topic": "Events and competitions",
-        "person": "Placeholder name",
-        "role": "Faculty coordinator",
-        "email": "",
-        "phone": ""
-      },
-      {
-        "topic": "Sponsorship and collaboration",
-        "person": "Placeholder name",
-        "role": "Faculty / executive committee contact",
-        "email": "",
-        "phone": ""
-      },
-      {
-        "topic": "Website issues",
-        "person": "Placeholder name",
-        "role": "Web development team",
-        "email": "",
-        "phone": ""
-      }
-    ],
-    "faqs": [
-      {
-        "q": "Who can join TRS BVM?",
-        "a": "Membership is open to students of BVM Engineering College."
-      },
-      {
-        "q": "Is membership an online form?",
-        "a": "No. Membership uses an official enrollment form that you download, fill in, sign and submit in person to the faculty enrollment contact. The steps are on the Join TRS page."
-      },
-      {
-        "q": "How do I register for an event?",
-        "a": "When registration is open, the event's page has a Register button that opens its registration form."
-      }
-    ]
   }
 }
