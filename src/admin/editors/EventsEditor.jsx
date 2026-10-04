@@ -20,6 +20,20 @@ function RolesEditor({ roles, onChange }) {
   );
 }
 
+function DateInput({ label, value, onChange }) {
+  return (
+    <label className="block">
+      <span className="mono-label text-[10px] text-ink-faint">{label}</span>
+      <input
+        type="date"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="mt-1.5 w-full border border-line bg-bg px-3 py-2 text-sm text-ink outline-none focus:border-accent transition-colors"
+      />
+    </label>
+  );
+}
+
 function DetailsEditor({ details, onChange }) {
   return (
     <ArrayEditor
@@ -110,6 +124,8 @@ export default function EventsEditor({ value, onChange }) {
           gallery: [],
           details: [],
           registerUrl: "",
+          startDate: "",
+          endDate: "",
           href: "/events",
           structure: "single-team",
           teams: [],
@@ -119,6 +135,14 @@ export default function EventsEditor({ value, onChange }) {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <Field label="Event name" value={item.name} onChange={(v) => update({ name: v })} />
               <Field label="Date label" value={item.dateLabel} onChange={(v) => update({ dateLabel: v })} />
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <DateInput
+                label='Start date — shows the "Add to calendar" buttons (leave blank to hide)'
+                value={item.startDate ?? ""}
+                onChange={(v) => update({ startDate: v })}
+              />
+              <DateInput label="Last day (optional)" value={item.endDate ?? ""} onChange={(v) => update({ endDate: v })} />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <Field label="Status label" value={item.status} onChange={(v) => update({ status: v })} />

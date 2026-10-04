@@ -6,6 +6,7 @@ import Reveal from "../components/Reveal";
 import PlaceholderImage from "../components/PlaceholderImage";
 import PhotoGallery from "../components/PhotoGallery";
 import Button from "../components/Button";
+import AddToCalendar from "../components/AddToCalendar";
 import ContactLink from "../components/ContactLink";
 import StatusPill from "../components/StatusPill";
 import { assetUrl } from "../lib/assetUrl";
@@ -143,6 +144,9 @@ export default function EventDetail() {
               Register for this event
             </Button>
           )}
+          <div className="mt-4">
+            <AddToCalendar event={event} />
+          </div>
         </Reveal>
 
         <Reveal delay={0.06} className="mt-8 max-w-xl rounded-lg overflow-hidden">

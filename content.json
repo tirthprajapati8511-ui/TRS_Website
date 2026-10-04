@@ -78,7 +78,9 @@
             "heading": "Prize pool",
             "body": "Rs 5 crore across winners and prototype developers at the different stages."
           }
-        ]
+        ],
+        "startDate": "2027-02-15",
+        "endDate": "2027-02-18"
       },
       {
         "id": "event-1789339079932",
@@ -196,7 +198,9 @@
             "heading": "Official website",
             "body": "sauvc.org"
           }
-        ]
+        ],
+        "startDate": "2027-02-24",
+        "endDate": "2027-02-27"
       },
       {
         "id": "robocon-2026",
@@ -260,7 +264,9 @@
             "heading": "Official website",
             "body": "ddrobocon.iitd.ac.in"
           }
-        ]
+        ],
+        "startDate": "2027-07-01",
+        "endDate": "2027-07-04"
       }
     ]
   },

@@ -8,7 +8,7 @@ import FeatureStrip from "./sections/FeatureStrip";
 import HomeUpdates from "./sections/HomeUpdates";
 import Projects from "./sections/Projects";
 import Achievements from "./sections/Achievements";
-import PageShell from "./pages/PageShell";
+import NotFound from "./pages/NotFound";
 import Explore from "./pages/Explore";
 import Contact from "./pages/Contact";
 import WorkshopsList from "./pages/WorkshopsList";
@@ -88,7 +88,7 @@ function App() {
         <Route path="/workshops" element={<WorkshopsList />} />
         <Route path="/join" element={<Join />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<PageShell title="Page not found" description="That page doesn't exist yet." />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
       <Route path="/admin/*" element={<AdminPage />} />
     </Routes>
