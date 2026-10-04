@@ -36,10 +36,10 @@ jobs:
         env:
           VITE_BASE_PATH: /TRS_Website/
 
-      # SPA fallback: GitHub Pages has no server-side router, so a direct
-      # visit to e.g. /join needs the same index.html served for it too —
-      # react-router then takes over client-side.
-      - run: cp dist/index.html dist/404.html
+      # GitHub Pages has no server-side router: write index.html at every
+      # route (so /join etc. answer 200 on a direct visit) plus a 404.html
+      # fallback. react-router then takes over client-side.
+      - run: node scripts/spa-routes.mjs
 
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -11,6 +11,7 @@ import Achievements from "./sections/Achievements";
 import PageShell from "./pages/PageShell";
 import Explore from "./pages/Explore";
 import Contact from "./pages/Contact";
+import WorkshopsList from "./pages/WorkshopsList";
 import Join from "./pages/Join";
 import Committee from "./pages/Committee";
 import Faculty from "./pages/Faculty";
@@ -76,7 +77,7 @@ function App() {
         <Route path="/projects" element={<ProjectsList />} />
         <Route path="/projects/:projectId" element={<ProjectDetail />} />
         <Route path="/achievements" element={<AchievementsPage />} />
-        <Route path="/workshops" element={<PageShell title="Workshops" />} />
+        <Route path="/workshops" element={<WorkshopsList />} />
         <Route path="/join" element={<Join />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<PageShell title="Page not found" description="That page doesn't exist yet." />} />
