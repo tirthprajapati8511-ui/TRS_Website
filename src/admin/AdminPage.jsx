@@ -12,6 +12,7 @@ import WorkshopsEditor from "./editors/WorkshopsEditor";
 import JoinEditor from "./editors/JoinEditor";
 import ExploreEditor from "./editors/ExploreEditor";
 import ContactEditor from "./editors/ContactEditor";
+import InstagramEditor from "./editors/InstagramEditor";
 import FooterEditor from "./editors/FooterEditor";
 import { TrsLogo } from "../components/Logo";
 import { ADMIN_TOKEN_KEY as TOKEN_KEY } from "./tokenKey";
@@ -27,6 +28,7 @@ const TABS = [
   { key: "explore", label: "Explore TRS", Editor: ExploreEditor },
   { key: "workshops", label: "Workshops", Editor: WorkshopsEditor },
   { key: "join", label: "Join TRS", Editor: JoinEditor },
+  { key: "instagram", label: "Instagram feed", Editor: InstagramEditor },
   { key: "contact", label: "Contact", Editor: ContactEditor },
   { key: "footer", label: "Footer", Editor: FooterEditor },
 ];

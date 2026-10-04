@@ -1092,5 +1092,11 @@
       "name": "The Robotics Society (India)",
       "note": "An authorized student chapter of"
     }
+  },
+  "instagram": {
+    "show": true,
+    "username": "trs_bvm",
+    "heading": "Follow us on Instagram",
+    "description": "Our latest posts — results, events and life at TRS BVM — straight from Instagram."
   }
 }

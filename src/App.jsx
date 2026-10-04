@@ -23,6 +23,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 import AdminPage from "./admin/AdminPage";
 import ScrollProgress from "./components/ScrollProgress";
 import BackToTop from "./components/BackToTop";
+import InstagramFeed from "./sections/InstagramFeed";
 import { useContent } from "./lib/ContentContext";
 import { getPageMeta } from "./lib/pageMeta";
 
@@ -67,6 +68,7 @@ function Home() {
       <HomeUpdates />
       <Projects />
       <Achievements />
+      <InstagramFeed />
     </>
   );
 }

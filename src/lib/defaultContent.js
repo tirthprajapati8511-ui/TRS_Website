@@ -328,6 +328,13 @@ export const DEFAULT_CONTENT = {
     ]
   },
 
+  instagram: {
+    "show": true,
+    "username": "trs_bvm",
+    "heading": "Follow us on Instagram",
+    "description": "Our latest posts — results, events and life at TRS BVM — straight from Instagram."
+  },
+
   workshops: {
     eyebrowTitle: "Workshops",
     items: [
