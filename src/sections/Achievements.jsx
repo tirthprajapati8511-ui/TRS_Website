@@ -41,7 +41,7 @@ export default function Achievements() {
             >
               {item.image ? (
                 <div className="h-12 w-12 shrink-0 rounded-md overflow-hidden">
-                  <PlaceholderImage src={item.image} alt={item.title} />
+                  <PlaceholderImage src={item.image} alt={item.title} aspect="aspect-square" />
                 </div>
               ) : (
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent-soft text-accent transition-all duration-300 group-hover:bg-accent group-hover:text-on-accent group-hover:rotate-12">
@@ -51,7 +51,7 @@ export default function Achievements() {
               <div>
                 <span className="mono-label text-[10px] text-ink-faint">{item.year}</span>
                 <h3 className="mt-1 font-display text-[15px] font-semibold text-ink">{item.title}</h3>
-                <p className="mt-1 text-[12.5px] leading-relaxed text-ink-dim">{item.detail}</p>
+                <p className="mt-1 text-[12.5px] leading-relaxed text-ink-dim line-clamp-4">{item.detail}</p>
               </div>
             </Reveal>
           ))}

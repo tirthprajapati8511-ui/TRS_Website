@@ -57,7 +57,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="hidden sm:block absolute top-6 right-0 max-w-[210px] text-right text-[13px] italic leading-snug text-white/60"
+            className="hidden sm:block absolute top-6 right-0 max-w-[230px] rounded-md bg-black/30 px-3.5 py-2.5 text-right text-[13px] italic leading-snug text-white/90 backdrop-blur-sm"
           >
             “{hero.quote}”
           </motion.p>

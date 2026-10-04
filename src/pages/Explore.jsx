@@ -1,63 +1,12 @@
-import { useEffect, useRef, useState } from "react";
-import { animate, useInView, useReducedMotion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Container from "../components/Container";
 import Reveal from "../components/Reveal";
 import SectionHeader from "../components/SectionHeader";
 import Button from "../components/Button";
+import StatValue from "../components/CountUp";
 import { useContent } from "../lib/ContentContext";
-
-function CountUp({ to }) {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true });
-  const reduce = useReducedMotion();
-  const [n, setN] = useState(0);
-
-  useEffect(() => {
-    if (!inView || reduce) return;
-    const controls = animate(0, to, {
-      duration: 1.4,
-      ease: "easeOut",
-      onUpdate: (v) => setN(Math.round(v)),
-    });
-    return () => controls.stop();
-  }, [inView, reduce, to]);
-
-  return <span ref={ref}>{reduce ? to : n}</span>;
-}
-
-function StatValue({ value }) {
-  const text = String(value ?? "").trim();
-  const match = text.match(/^(\d+)(\D*)$/);
-  if (!match) return <>{text}</>;
-  return (
-    <>
-      <CountUp to={Number(match[1])} />
-      {match[2]}
-    </>
-  );
-}
-
-// Everything numeric on this page that can be worked out from the
-// achievements archive is, so it stays correct as results get added.
-function deriveStats(archive) {
-  const startYears = archive
-    .filter((e) => e.items.length > 0)
-    .map((e) => parseInt(e.year, 10))
-    .filter(Number.isFinite);
-  const total = archive.reduce((sum, e) => sum + e.items.length, 0);
-  const stats = [];
-  if (startYears.length > 0) {
-    // An academic year's competition results land in its second calendar
-    // year (e.g. 2019–20 → early 2020), so count from there.
-    const years = new Date().getFullYear() - (Math.min(...startYears) + 1);
-    stats.push({ value: `${years}+`, label: "Years of competing" });
-    stats.push({ value: String(startYears.length), label: "Seasons with results" });
-  }
-  if (total > 0) stats.push({ value: String(total), label: "Results recorded" });
-  return stats;
-}
+import { deriveStats } from "../lib/stats";
 
 function InfoList({ title, items }) {
   if (!items?.length) return null;

@@ -33,14 +33,17 @@ export default function InstagramFeed() {
           </Reveal>
 
           <Reveal delay={0.08} className="lg:col-span-3">
-            <div className="mx-auto w-full max-w-[420px] overflow-hidden rounded-lg border border-line bg-white lg:mx-0">
+            <div className="relative mx-auto w-full max-w-[420px] overflow-hidden rounded-lg border border-line bg-bg-elevated lg:mx-0">
+              <div className="absolute inset-0 flex items-center justify-center text-[13px] text-ink-faint">
+                Loading latest posts&hellip;
+              </div>
               <iframe
                 title={`Latest posts from @${username} on Instagram`}
                 src={`${profileUrl}embed/`}
                 loading="lazy"
                 sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="block h-[430px] w-full border-0"
+                className="relative block h-[430px] w-full border-0"
               />
             </div>
           </Reveal>

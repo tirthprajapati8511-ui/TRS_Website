@@ -11,7 +11,7 @@ const SPINS = new Set(["tool", "network"]);
 
 export default function FeatureStrip() {
   return (
-    <section className="bg-bg border-b border-line" aria-label="Why TRS">
+    <section className="bg-bg border-b border-line pt-6" aria-label="Why TRS">
       <Container className="relative">
         {/* A circuit trace linking the five nodes — one purposeful,
             restrained nod to the "robotics" theme, not a page-wide motif. */}

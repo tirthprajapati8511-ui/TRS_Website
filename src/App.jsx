@@ -24,6 +24,7 @@ import AdminPage from "./admin/AdminPage";
 import ScrollProgress from "./components/ScrollProgress";
 import BackToTop from "./components/BackToTop";
 import InstagramFeed from "./sections/InstagramFeed";
+import HeroStats from "./sections/HeroStats";
 import { useContent } from "./lib/ContentContext";
 import { getPageMeta } from "./lib/pageMeta";
 
@@ -72,6 +73,7 @@ function Home() {
   return (
     <>
       <Hero />
+      <HeroStats />
       <FeatureStrip />
       <HomeUpdates />
       <Projects />
