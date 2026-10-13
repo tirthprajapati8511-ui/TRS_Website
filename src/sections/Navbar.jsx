@@ -4,7 +4,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X as CloseIcon } from "lucide-react";
 import Container from "../components/Container";
 import Button from "../components/Button";
-import ThemeToggle from "../components/ThemeToggle";
 import { TrsLogo, BvmLogo } from "../components/Logo";
 import { SOCIAL_ICONS } from "../components/SocialIcons";
 import { NAV_LINKS, JOIN_LINK } from "../lib/defaultContent";
@@ -100,8 +99,7 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden 2xl:flex items-center gap-3 shrink-0">
-          <ThemeToggle />
-          <div className="pl-3 ml-1 border-l border-line flex items-center">
+          <div className="flex items-center">
             <BvmLogo className="h-9 w-9" />
           </div>
           <Button href={JOIN_LINK.href} variant="primary" size="sm" icon={false}>
@@ -110,7 +108,6 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-2.5 2xl:hidden">
-          <ThemeToggle />
           <button
             onClick={() => setOpen((o) => !o)}
             className="text-ink p-1.5"

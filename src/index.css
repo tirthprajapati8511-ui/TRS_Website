@@ -3,10 +3,8 @@
 /*
  * Design tokens — TRS BVM.
  *
- * Light is the default, primary theme (matches the approved mockup).
- * Dark is a full alternate palette, not an inverted filter — selected via
- * the .ThemeToggle component, which sets documentElement[data-theme].
- * "system" (no attribute) follows the OS preference.
+ * The site is always light (matches the approved mockup); there is no
+ * dark mode.
  */
 @theme {
   --font-display: "Space Grotesk", "Inter", sans-serif;
@@ -63,109 +61,12 @@
   }
 }
 
-/* Dark palette — used when the OS prefers dark and no explicit choice has
-   been made ("system"), or when the user explicitly picks dark. */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --color-bg: #0b1220;
-    --color-bg-muted: #091019;
-    --color-bg-panel: #111a29;
-    --color-bg-elevated: #172335;
-    --color-line: #253248;
-    --color-line-strong: #34435c;
-
-    --color-ink: #eef1f6;
-    --color-ink-dim: #a7b1c2;
-    --color-ink-faint: #8a96ab;
-
-    --color-navy: #071427;
-    --color-navy-deep: #040c1a;
-    --color-on-navy: #f3f6fb;
-    --color-on-navy-dim: #93a4c2;
-
-    --color-accent: #59a8e6;
-    --color-accent-dim: #7fbcee;
-    --color-accent-soft: #59a8e626;
-    --color-on-accent: #071427;
-
-    --color-good: #3fbf85;
-    --color-good-soft: #3fbf851f;
-    --color-warn: #e0a238;
-    --color-warn-soft: #e0a23820;
-  }
-}
-
-/* Explicit user choice always wins, in both directions. */
-:root[data-theme="dark"] {
-  --color-bg: #0b1220;
-  --color-bg-muted: #091019;
-  --color-bg-panel: #111a29;
-  --color-bg-elevated: #172335;
-  --color-line: #253248;
-  --color-line-strong: #34435c;
-
-  --color-ink: #eef1f6;
-  --color-ink-dim: #a7b1c2;
-  --color-ink-faint: #8a96ab;
-
-  --color-navy: #071427;
-  --color-navy-deep: #040c1a;
-  --color-on-navy: #f3f6fb;
-  --color-on-navy-dim: #93a4c2;
-
-  --color-accent: #59a8e6;
-  --color-accent-dim: #7fbcee;
-  --color-accent-soft: #59a8e626;
-  --color-on-accent: #071427;
-
-  --color-good: #3fbf85;
-  --color-good-soft: #3fbf851f;
-  --color-warn: #e0a238;
-  --color-warn-soft: #e0a23820;
-}
-
-:root[data-theme="light"] {
-  --color-bg: #ffffff;
-  --color-bg-muted: #f5f7fa;
-  --color-bg-panel: #ffffff;
-  --color-bg-elevated: #eef2f6;
-  --color-line: #e3e7ec;
-  --color-line-strong: #ccd3da;
-
-  --color-ink: #101826;
-  --color-ink-dim: #4b5768;
-  --color-ink-faint: #626d7c;
-
-  --color-navy: #0b2140;
-  --color-navy-deep: #071730;
-  --color-on-navy: #ffffff;
-  --color-on-navy-dim: #aebedb;
-
-  --color-accent: #1d6faf;
-  --color-accent-dim: #1c6399;
-  --color-accent-soft: #257ec21a;
-  --color-on-accent: #ffffff;
-
-  --color-good: #1c7a4f;
-  --color-good-soft: #1c7a4f1a;
-  --color-warn: #a15c00;
-  --color-warn-soft: #a15c0016;
-}
-
 html {
   background: var(--color-bg);
   scroll-behavior: smooth;
   color-scheme: light;
   /* Defensive: nothing on this site should ever need horizontal scroll. */
   overflow-x: hidden;
-}
-html[data-theme="dark"] {
-  color-scheme: dark;
-}
-@media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) {
-    color-scheme: dark;
-  }
 }
 
 body {
@@ -299,8 +200,7 @@ body {
 
 /* Printing / Save as PDF: always a clean light page, no chrome. */
 @media print {
-  :root,
-  :root[data-theme="dark"] {
+  :root {
     color-scheme: light;
     --color-bg: #ffffff;
     --color-bg-muted: #ffffff;

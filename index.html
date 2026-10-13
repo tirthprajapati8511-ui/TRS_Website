@@ -7,6 +7,7 @@
     <meta name="description" content="TRS BVM — The Robotics Society, BVM Engineering College. A student-driven robotics and engineering society designing, building and competing with robots." />
     <title>TRS BVM — The Robotics Society</title>
     <meta name="theme-color" content="#0a1628" />
+    <meta name="color-scheme" content="light" />
 
     <!-- Link previews (WhatsApp, LinkedIn, Facebook, X). The values below are
          rewritten per page, with absolute URLs, by scripts/spa-routes.mjs
@@ -21,19 +22,6 @@
     <meta name="twitter:title" content="TRS BVM — The Robotics Society" />
     <meta name="twitter:description" content="TRS BVM is the robotics club of BVM Engineering College, Vallabh Vidyanagar — competing at national and international robotics competitions." />
     <meta name="twitter:image" content="/brand/og-card.png" />
-
-    <script>
-      // Applied before first paint so there's no flash of the wrong theme.
-      // Mirrors the logic in src/lib/ThemeContext.jsx.
-      (function () {
-        try {
-          var saved = localStorage.getItem("trs-theme");
-          if (saved === "light" || saved === "dark") {
-            document.documentElement.setAttribute("data-theme", saved);
-          }
-        } catch (e) {}
-      })();
-    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

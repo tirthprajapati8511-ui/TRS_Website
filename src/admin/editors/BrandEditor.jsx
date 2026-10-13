@@ -6,7 +6,7 @@ export default function BrandEditor({ value, onChange }) {
   return (
     <SectionCard
       title="Branding"
-      description="Real brand assets — upload the actual logo files here, not a redrawn or generated version. The BVM college seal needs two versions since it has a solid background: one for light mode, one for dark, so it never shows as a white or black box."
+      description="Real brand assets — upload the actual logo files here, not a redrawn or generated version."
     >
       <ImageUploadField
         label="TRS BVM logo"
@@ -14,14 +14,9 @@ export default function BrandEditor({ value, onChange }) {
         onChange={(path) => set({ trsLogo: path })}
       />
       <ImageUploadField
-        label="BVM college logo — light mode"
+        label="BVM college logo"
         value={value.bvmLogoLight}
         onChange={(path) => set({ bvmLogoLight: path })}
-      />
-      <ImageUploadField
-        label="BVM college logo — dark mode"
-        value={value.bvmLogoDark}
-        onChange={(path) => set({ bvmLogoDark: path })}
       />
     </SectionCard>
   );
