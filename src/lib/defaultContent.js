@@ -358,6 +358,8 @@ export const DEFAULT_CONTENT = {
     // specific enough that a fake one would read as a real claim. Add real
     // members through the admin panel.
     members: [],
+    year: "",
+    past: [],
   },
 
   // Kept independent of `committee` on purpose — faculty are advisors and
