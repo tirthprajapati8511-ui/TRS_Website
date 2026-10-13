@@ -988,7 +988,584 @@
       }
     ],
     "year": "2026–27",
-    "past": []
+    "past": [
+      {
+        "year": "2025–26",
+        "intro": "The executive committee for the academic year 2025–26.",
+        "members": [
+          {
+            "id": "c2526-utsav-maradia",
+            "name": "Utsav Maradia",
+            "role": "Secretary",
+            "branch": "",
+            "photo": "/uploads/1791000022729-ec-2025-26-utsav-maradia.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-ruchit-soni",
+            "name": "Ruchit Soni",
+            "role": "Joint Secretary",
+            "branch": "",
+            "photo": "/uploads/1791000016044-ec-2025-26-ruchit-soni.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-anshul-majumdar",
+            "name": "Anshul Majumdar",
+            "role": "Joint Secretary",
+            "branch": "",
+            "photo": "/uploads/1791000000000-ec-2025-26-anshul-majumdar.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-smit-talaviya",
+            "name": "Smit Talaviya",
+            "role": "Treasurer",
+            "branch": "",
+            "photo": "/uploads/1791000020055-ec-2025-26-smit-talaviya.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-satheesh-nadar",
+            "name": "Satheesh Nadar",
+            "role": "Branch Coordinator",
+            "branch": "Mechanical",
+            "photo": "/uploads/1791000018718-ec-2025-26-satheesh-nadar.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-het-desai",
+            "name": "Het Desai",
+            "role": "Branch Coordinator",
+            "branch": "Electronics & Communication",
+            "photo": "/uploads/1791000008022-ec-2025-26-het-desai.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-deep-maheshwari",
+            "name": "Deep Maheshwari",
+            "role": "Branch Coordinator",
+            "branch": "Electronics",
+            "photo": "/uploads/1791000002674-ec-2025-26-deep-maheshwari.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-ayushi-faldu",
+            "name": "Ayushi Faldu",
+            "role": "Branch Coordinator",
+            "branch": "Electrical",
+            "photo": "/uploads/1791000001337-ec-2025-26-ayushi-faldu.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-divij-rana",
+            "name": "Divij Rana",
+            "role": "Branch Coordinator",
+            "branch": "Computer / IT",
+            "photo": "/uploads/1791000005348-ec-2025-26-divij-rana.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-prem-kansara",
+            "name": "Prem Kansara",
+            "role": "Finance & Inventory Lead",
+            "branch": "",
+            "photo": "/uploads/1791000014707-ec-2025-26-prem-kansara.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-yash-gandhi",
+            "name": "Yash Gandhi",
+            "role": "Documentation Lead",
+            "branch": "",
+            "photo": "/uploads/1791000025403-ec-2025-26-yash-gandhi.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-yagnik-vadaliya",
+            "name": "Yagnik Vadaliya",
+            "role": "Documentation Lead",
+            "branch": "",
+            "photo": "/uploads/1791000024066-ec-2025-26-yagnik-vadaliya.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-dhruti-trivedi",
+            "name": "Dhruti Trivedi",
+            "role": "Documentation Lead",
+            "branch": "",
+            "photo": "/uploads/1791000004011-ec-2025-26-dhruti-trivedi.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-mohit-kapadiya",
+            "name": "Mohit Kapadiya",
+            "role": "Graphics Lead",
+            "branch": "",
+            "photo": "/uploads/1791000012033-ec-2025-26-mohit-kapadiya.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-maitri-chahuan",
+            "name": "Maitri Chahuan",
+            "role": "Graphics Lead",
+            "branch": "",
+            "photo": "/uploads/1791000010696-ec-2025-26-maitri-chahuan.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-harshil-shah",
+            "name": "Harshil Shah",
+            "role": "Graphics Lead",
+            "branch": "",
+            "photo": "/uploads/1791000006685-ec-2025-26-harshil-shah.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-tirth-prajapati",
+            "name": "Tirth Prajapati",
+            "role": "Social Media Lead",
+            "branch": "",
+            "photo": "/uploads/1791000021392-ec-2025-26-tirth-prajapati.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-prachi-bachani",
+            "name": "Prachi Bachani",
+            "role": "Web Turtles",
+            "branch": "",
+            "photo": "/uploads/1791000013370-ec-2025-26-prachi-bachani.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-kishan-mori",
+            "name": "Kishan Mori",
+            "role": "Photography",
+            "branch": "",
+            "photo": "/uploads/1791000009359-ec-2025-26-kishan-mori.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2526-rushik-javaya",
+            "name": "Rushik Javaya",
+            "role": "Photography",
+            "branch": "",
+            "photo": "/uploads/1791000017381-ec-2025-26-rushik-javaya.jpg",
+            "email": "",
+            "linkedin": ""
+          }
+        ]
+      },
+      {
+        "year": "2024–25",
+        "intro": "The executive committee for the academic year 2024–25.",
+        "members": [
+          {
+            "id": "c2425-shoobham-parikh",
+            "name": "Shoobham Parikh",
+            "role": "Secretary",
+            "branch": "Mechanical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-priya-bhavasar",
+            "name": "Priya Bhavasar",
+            "role": "Joint Secretary",
+            "branch": "Electronics & Communication",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-yash-roghelia",
+            "name": "Yash Roghelia",
+            "role": "Joint Secretary",
+            "branch": "Electronics",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-dushyant-singh-rathore",
+            "name": "Dushyant Singh Rathore",
+            "role": "Treasurer",
+            "branch": "Mechanical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-bhavya-jadav",
+            "name": "Bhavya Jadav",
+            "role": "Branch Coordinator",
+            "branch": "Mechanical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-twisha-shah",
+            "name": "Twisha Shah",
+            "role": "Branch Coordinator",
+            "branch": "Electronics",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-paavan-shah",
+            "name": "Paavan Shah",
+            "role": "Branch Coordinator",
+            "branch": "Electronics & Communication",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-jenish-pansheriya",
+            "name": "Jenish Pansheriya",
+            "role": "Branch Coordinator",
+            "branch": "Electrical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-ruchit-soni",
+            "name": "Ruchit Soni",
+            "role": "Finance & Inventory Lead",
+            "branch": "Mechanical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-smit-talaviya",
+            "name": "Smit Talaviya",
+            "role": "Finance & Inventory Lead",
+            "branch": "Mechanical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-krish-vaghela",
+            "name": "Krish Vaghela",
+            "role": "Finance & Inventory Lead",
+            "branch": "Electronics & Communication",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-anshul-majmudar",
+            "name": "Anshul Majmudar",
+            "role": "Finance & Inventory Lead",
+            "branch": "Electronics & Communication",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-twisha-shah-2",
+            "name": "Twisha Shah",
+            "role": "Documentation Lead",
+            "branch": "Electronics",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-drashti-prajapati",
+            "name": "Drashti Prajapati",
+            "role": "Documentation Lead",
+            "branch": "Electronics",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-utsav-maradia",
+            "name": "Utsav Maradia",
+            "role": "Graphics Lead",
+            "branch": "Mechanical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-dhanraj-zaveri",
+            "name": "Dhanraj Zaveri",
+            "role": "Graphics Lead",
+            "branch": "Electronics",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-tushar-galaiya",
+            "name": "Tushar Galaiya",
+            "role": "Graphics Lead",
+            "branch": "Electronics",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-kaid-johar",
+            "name": "Kaid Johar",
+            "role": "Graphics Lead",
+            "branch": "Mechanical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-tarun-kataria",
+            "name": "Tarun Kataria",
+            "role": "Social Media Lead",
+            "branch": "Mechanical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2425-yash-roghelia-2",
+            "name": "Yash Roghelia",
+            "role": "Social Media Lead",
+            "branch": "Electronics",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          }
+        ]
+      },
+      {
+        "year": "2023–24",
+        "intro": "The executive committee for the academic year 2023–24.",
+        "members": [
+          {
+            "id": "c2324-amisha-sakhare",
+            "name": "Amisha Sakhare",
+            "role": "Secretary",
+            "branch": "Electronics & Communication",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-dev-bhandari",
+            "name": "Dev Bhandari",
+            "role": "Joint Secretary",
+            "branch": "Mechanical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-yash-mehta",
+            "name": "Yash Mehta",
+            "role": "Joint Secretary",
+            "branch": "Electronics & Communication",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-rohit-jasoliya",
+            "name": "Rohit Jasoliya",
+            "role": "Treasurer",
+            "branch": "Mechanical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-dushyant",
+            "name": "Dushyant",
+            "role": "Branch Coordinator",
+            "branch": "Mechanical, 3rd Year",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-dev",
+            "name": "Dev",
+            "role": "Branch Coordinator",
+            "branch": "Mechanical, 1st Year",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-rugnesh-vora",
+            "name": "Rugnesh Vora",
+            "role": "Branch Coordinator",
+            "branch": "Electronics",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-dhanraj-zaveri",
+            "name": "Dhanraj Zaveri",
+            "role": "Branch Coordinator",
+            "branch": "Electronics",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-paavan-shah",
+            "name": "Paavan Shah",
+            "role": "Branch Coordinator",
+            "branch": "Electronics & Communication",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-jeet-rathod",
+            "name": "Jeet Rathod",
+            "role": "Branch Coordinator",
+            "branch": "Electrical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-jayati-raval",
+            "name": "Jayati Raval",
+            "role": "Branch Coordinator",
+            "branch": "Computer / IT",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-swayam-jathar",
+            "name": "Swayam Jathar",
+            "role": "Finance & Inventory Lead",
+            "branch": "Mechanical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-twisha-shah",
+            "name": "Twisha Shah",
+            "role": "Documentation Lead",
+            "branch": "Electronics",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-dhrumil-rupera",
+            "name": "Dhrumil Rupera",
+            "role": "Documentation Lead",
+            "branch": "Electronics & Communication",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-kunal-engineer",
+            "name": "Kunal Engineer",
+            "role": "Procurement Lead",
+            "branch": "Mechanical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-akshay-singh",
+            "name": "Akshay Singh",
+            "role": "Graphics Lead",
+            "branch": "Electronics",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-kaidjohar-kharodwala",
+            "name": "Kaidjohar Kharodwala",
+            "role": "Graphics Lead",
+            "branch": "Mechanical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-yash-roghelia",
+            "name": "Yash Roghelia",
+            "role": "Graphics Lead",
+            "branch": "Electronics",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-hunaid-barodawala",
+            "name": "Hunaid Barodawala",
+            "role": "Social Media Lead",
+            "branch": "Mechanical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-nirmay-gajjar",
+            "name": "Nirmay Gajjar",
+            "role": "Social Media Lead",
+            "branch": "Electronics",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-abishek-kevat",
+            "name": "Abishek Kevat",
+            "role": "Social Media Lead",
+            "branch": "Electronics",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2324-vraj-upadhyay",
+            "name": "Vraj Upadhyay",
+            "role": "Web Turtles",
+            "branch": "Computer / IT",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          }
+        ]
+      }
+    ]
   },
   "faculty": {
     "intro": "The faculty members who advise and mentor TRS BVM.",
