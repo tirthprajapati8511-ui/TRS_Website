@@ -269,6 +269,7 @@ export const DEFAULT_CONTENT = {
         "label": "Robotics lab access"
       }
     ],
+    "keyNumbers": [{"value": "5+", "label": "Years of competing"}, {"value": "{results}", "label": "Results recorded"}],
     "ctaHeading": "Want to build with us?",
     "ctaDescription": "Membership is open to BVM students. See how to enrol and become part of the society.",
     "ctaLabel": "Join TRS",

@@ -632,7 +632,17 @@
     "ctaHeading": "Want to build with us?",
     "ctaDescription": "Membership is open to BVM students. See how to enrol and become part of the society.",
     "ctaLabel": "Join TRS",
-    "ctaHref": "/join"
+    "ctaHref": "/join",
+    "keyNumbers": [
+      {
+        "value": "5+",
+        "label": "Years of competing"
+      },
+      {
+        "value": "{results}",
+        "label": "Results recorded"
+      }
+    ]
   },
   "contact": {
     "eyebrow": "Contact",

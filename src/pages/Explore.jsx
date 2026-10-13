@@ -6,7 +6,7 @@ import SectionHeader from "../components/SectionHeader";
 import Button from "../components/Button";
 import StatValue from "../components/CountUp";
 import { useContent } from "../lib/ContentContext";
-import { deriveStats } from "../lib/stats";
+import { getKeyNumbers } from "../lib/stats";
 
 function InfoList({ title, items }) {
   if (!items?.length) return null;
@@ -27,7 +27,7 @@ function InfoList({ title, items }) {
 
 export default function Explore() {
   const { explore, achievements } = useContent();
-  const stats = [...deriveStats(achievements.archive), ...(explore.stats ?? [])];
+  const stats = [...getKeyNumbers(explore, achievements.archive), ...(explore.stats ?? [])];
   const milestones = achievements.archive.filter((e) => e.items.length > 0);
 
   return (
@@ -56,9 +56,19 @@ export default function Explore() {
         )}
 
         {stats.length > 0 && (
-          <div className="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-px overflow-hidden rounded-lg border border-line bg-line">
+          <div
+            className={`mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-line bg-line ${
+              stats.length === 3 ? "lg:grid-cols-3" : stats.length === 2 ? "lg:grid-cols-2" : "lg:grid-cols-4"
+            }`}
+          >
             {stats.map((s, i) => (
-              <Reveal key={`${s.label}-${i}`} delay={i * 0.06} className="bg-bg-panel p-6 text-center">
+              <Reveal
+                key={`${s.label}-${i}`}
+                delay={i * 0.06}
+                className={`bg-bg-panel p-6 text-center ${
+                  i === stats.length - 1 && stats.length % 2 === 1 ? "col-span-2 lg:col-span-1" : ""
+                }`}
+              >
                 <p className="font-display text-[26px] sm:text-4xl font-semibold text-accent">
                   <StatValue value={s.value} />
                 </p>

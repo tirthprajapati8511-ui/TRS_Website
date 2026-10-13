@@ -16,8 +16,26 @@ export default function ExploreEditor({ value, onChange }) {
   return (
     <div className="space-y-6">
       <SectionCard
+        title="Key numbers (homepage and Explore page)"
+        description="The numbers under the homepage photo and on the Explore page. Type any number or text, e.g. 5+. To count automatically from the Achievements list, type {results} (all entries), {seasons} (years with entries) or {years} (years since the first entry). Up to 4 show on the homepage."
+      >
+        <ArrayEditor
+          items={value.keyNumbers ?? []}
+          onChange={(keyNumbers) => set({ keyNumbers })}
+          addLabel="+ Add number"
+          newItem={() => ({ value: "0", label: "Label" })}
+          renderItem={(item, update) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Field label="Number" value={item.value} onChange={(v) => update({ value: v })} />
+              <Field label="Label" value={item.label} onChange={(v) => update({ label: v })} />
+            </div>
+          )}
+        />
+      </SectionCard>
+
+      <SectionCard
         title="Explore TRS — introduction"
-        description="The page behind the Explore TRS link. Years of competing, seasons and results counters are worked out from the Achievements archive automatically."
+        description="The page behind the Explore TRS link."
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <Field label="Small label above the heading" value={value.eyebrow} onChange={(v) => set({ eyebrow: v })} />
