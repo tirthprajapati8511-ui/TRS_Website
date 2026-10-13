@@ -326,6 +326,13 @@
         "year": "2026–27",
         "items": [
           {
+            "title": "GUJCOST ROBOFEST GUJARAT 6.0 HACKATHON : 2nd Runner-Up",
+            "detail": "Charutar Vidya Mandal’s Birla Vishvakarma Mahavidyalaya proudly celebrates remarkable achievement  of it's  TRS Student chapter at GUJCOST ROBOFEST GUJARAT 6.0 HACKATHON , where the team secured 🥉 2nd Runner-Up and was awarded a grand prize of ₹5,00,000. 🏆\n\nTeam Members:\nRuchit Soni (Mechanical)\nPrem Kansara (Mechanical)\nHimani Thattil (Mechanical)\nMann Bodar (Mechanical)\n\nMentor: Prof. Haresh P. Patolia",
+            "image": "/uploads/1791871255059-whatsapp-image-2026-10-10-at-7-44-45-am.jpg",
+            "gallery": [],
+            "video": null
+          },
+          {
             "title": "ROBOFEST GUJARAT HACKATHON 6.0",
             "detail": " 7 teams from Birla Vishvakarma Mahavidyalaya , Vallabh vidhyanagar have secured their place among the shortlisted entries and will advance to the upcoming Hackathon stage.\nTeams qualifying through this stage receives ₹50,000/- cash prize and a certificate , celebrating their accomplishment and inspiring them to explore new ideas in robotics.\n",
             "image": "/uploads/1790976075650-image.jpg",
@@ -629,10 +636,6 @@
         "label": "Robotics lab access"
       }
     ],
-    "ctaHeading": "Want to build with us?",
-    "ctaDescription": "Membership is open to BVM students. See how to enrol and become part of the society.",
-    "ctaLabel": "Join TRS",
-    "ctaHref": "/join",
     "keyNumbers": [
       {
         "value": "5+",
@@ -642,7 +645,11 @@
         "value": "{results}",
         "label": "Results recorded"
       }
-    ]
+    ],
+    "ctaHeading": "Want to build with us?",
+    "ctaDescription": "Membership is open to BVM students. See how to enrol and become part of the society.",
+    "ctaLabel": "Join TRS",
+    "ctaHref": "/join"
   },
   "contact": {
     "eyebrow": "Contact",
@@ -696,9 +703,87 @@
       }
     ]
   },
+  "instagram": {
+    "show": true,
+    "username": "trs_bvm",
+    "heading": "Follow us on Instagram",
+    "description": "Our latest posts — results, events and life at TRS BVM — straight from Instagram."
+  },
   "workshops": {
     "eyebrowTitle": "Workshops",
-    "items": []
+    "items": [
+      {
+        "id": "ros-workshop-2026",
+        "title": "Four-Day Workshop on ROS (Robot Operating System)",
+        "dateLabel": "2, 5, 9 & 12 September 2026",
+        "location": "TRS Lab, BVM Engineering College",
+        "status": "Completed",
+        "description": "A four-day hands-on workshop on ROS by the TRS Students Chapter with the R&D and IPR Cell, led by Prof. (Dr.) Dipak M. Patel.",
+        "image": "/uploads/1790990000000-ros-workshop-lab-session.jpg",
+        "gallery": [
+          "/uploads/1790990001111-ros-workshop-technical-session-f103.jpg",
+          "/uploads/1790990002222-ros-workshop-faculty-valedictory.jpg",
+          "/uploads/1790990003333-ros-workshop-faculty-conclusion.jpg",
+          "/uploads/1790990004444-ros-workshop-organizer-certificate-1.jpg",
+          "/uploads/1790990005555-ros-workshop-organizer-certificate-2.jpg",
+          "/uploads/1790990006666-ros-workshop-participant-certificate-1.jpg",
+          "/uploads/1790990007777-ros-workshop-participant-certificate-2.jpg",
+          "/uploads/1790990008888-ros-workshop-participant-certificate-3.jpg",
+          "/uploads/1790990009999-ros-workshop-vote-of-thanks.jpg"
+        ],
+        "details": [
+          {
+            "heading": "Organised by",
+            "body": "TRS Students Chapter, in association with the R&D and IPR Cell, BVM Engineering College."
+          },
+          {
+            "heading": "Resource person",
+            "body": "Prof. (Dr.) Dipak M. Patel, Professor, Electronics Engineering Department."
+          },
+          {
+            "heading": "Dates and venue",
+            "body": "2, 5, 9 and 12 September 2026, in the TRS Lab and the F103 computer laboratory."
+          },
+          {
+            "heading": "Conveners",
+            "body": "Prof. (Dr.) D. M. Patel\nDr. R. B. Gandhi, Dean, R&D and IPR Cell\nDr. D. S. Modi, Associate Dean, R&D and IPR Cell"
+          },
+          {
+            "heading": "Coordinators",
+            "body": "Prof. (Dr.) Milendra M. Solanki and Prof. Vijaypratap Singh, with support from the TRS Students Chapter team."
+          },
+          {
+            "heading": "Purpose",
+            "body": "To introduce a reusable software framework for robot applications, build familiarity with ROS communication and tools, and show how the same concepts support simulation, mapping, navigation and physical devices."
+          },
+          {
+            "heading": "Introduction to ROS",
+            "body": "ROS is an open-source framework of libraries and tools for building robotic applications. It organises reusable capabilities into packages and lets small programs, called nodes, cooperate by exchanging messages. Client libraries allow modules to be written in different programming languages."
+          },
+          {
+            "heading": "Architecture covered",
+            "body": "Nodes, messages, topics and services\nROS Master and the parameter server\nPackages\nExample flow: a LiDAR node publishes scans, mapping and navigation nodes use them, and a base controller turns velocity commands into wheel motion"
+          },
+          {
+            "heading": "Tools covered",
+            "body": "catkin workspaces and packages (catkin_make)\nroscore, rosrun and roslaunch\nrosnode and rostopic (list, info, echo)\nrqt_graph and RViz\nOpenCV integration through cv_bridge"
+          },
+          {
+            "heading": "Hardware interfacing",
+            "body": "ROS hosts: Ubuntu computers, virtual machines, Raspberry Pi and Jetson Nano\nArduino-compatible boards for peripheral control\nrosserial and ros_lib to connect Arduino sketches to ROS 1\nExamples: a publisher on a chatter topic, a subscriber for a toggle_led message, and a pushbutton event"
+          },
+          {
+            "heading": "Valedictory function",
+            "body": "Faculty and guests joined the participants at the concluding programme. Certificates were presented to students and to the programme conveners and coordinators, and Prof. Vijaypratap Singh gave the vote of thanks."
+          },
+          {
+            "heading": "Outcome",
+            "body": "Participants gained an introduction to ROS and hands-on exposure to robotics software in a supervised lab, strengthening the link between the TRS Students Chapter's robotics activities and the college's R&D initiatives."
+          }
+        ],
+        "formHref": null
+      }
+    ]
   },
   "committee": {
     "intro": "The students who run TRS BVM day to day — organising events, leading projects, and keeping the society running. AY 2026-27.",
@@ -1102,11 +1187,5 @@
       "name": "The Robotics Society (India)",
       "note": "An authorized student chapter of"
     }
-  },
-  "instagram": {
-    "show": true,
-    "username": "trs_bvm",
-    "heading": "Follow us on Instagram",
-    "description": "Our latest posts — results, events and life at TRS BVM — straight from Instagram."
   }
 }

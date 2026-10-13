@@ -61,12 +61,12 @@ export function getPageMeta(pathname, content) {
     const { title, description } = STATIC[path];
     return { title: path === "/" ? title : title + SUFFIX, description, image: null };
   }
-  const m = path.match(/^\/(events|projects)\/(.+)$/);
+  const m = path.match(/^\/(events|projects|workshops)\/(.+)$/);
   if (m && content) {
     const list = content[m[1]]?.items ?? [];
     const item = list.find((x) => x.id === m[2]);
     if (item) {
-      const name = item.name;
+      const name = item.name ?? item.title;
       return {
         title: name + SUFFIX,
         description: item.description || STATIC["/" + m[1]].description,

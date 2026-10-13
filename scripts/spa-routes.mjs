@@ -51,6 +51,7 @@ const routes = [
   "contact",
   ...(content.events?.items ?? []).map((e) => `events/${e.id}`),
   ...(content.projects?.items ?? []).map((p) => `projects/${p.id}`),
+  ...(content.workshops?.items ?? []).map((w) => `workshops/${w.id}`),
 ];
 
 fs.writeFileSync(path.join(dist, "index.html"), render(""));
