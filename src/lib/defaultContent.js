@@ -366,6 +366,7 @@ export const DEFAULT_CONTENT = {
   // mentors, not part of the student executive committee, so they get their
   // own content, admin tab, and section rather than being nested under it.
   faculty: {
+    former: [],
     intro: "The faculty members who advise and mentor TRS BVM.",
     members: [],
   },

@@ -35,6 +35,20 @@ export default function Faculty() {
             </p>
           </Reveal>
         )}
+
+        {faculty.former?.length > 0 && (
+          <div className="mt-12 sm:mt-16">
+            <Reveal>
+              <h2 className="font-display text-xl font-semibold text-ink">Former faculty advisors</h2>
+              <p className="mt-1.5 text-[13.5px] text-ink-dim">Faculty who guided the society in earlier years.</p>
+            </Reveal>
+            <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+              {faculty.former.map((member, i) => (
+                <MemberCard key={member.id} member={member} index={i} />
+              ))}
+            </div>
+          </div>
+        )}
       </Container>
     </section>
   );

@@ -1564,6 +1564,831 @@
             "linkedin": ""
           }
         ]
+      },
+      {
+        "year": "2022–23",
+        "intro": "The executive committee for the academic year 2022–23.",
+        "members": [
+          {
+            "id": "c2223-keivalya-pandya",
+            "name": "Keivalya Pandya",
+            "role": "Secretary · Web Turtles",
+            "branch": "",
+            "photo": "/uploads/1791100000977-ec-2022-23-keivalya-pandya.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2223-darshit-darji",
+            "name": "Darshit Darji",
+            "role": "Joint Secretary",
+            "branch": "",
+            "photo": "/uploads/1791100001954-ec-2022-23-darshit-darji.jpg",
+            "email": "",
+            "linkedin": "https://www.linkedin.com/in/darshit27/"
+          },
+          {
+            "id": "c2223-swayam-jathar",
+            "name": "Swayam Jathar",
+            "role": "Joint Secretary",
+            "branch": "",
+            "photo": "/uploads/1791100002931-ec-2022-23-swayam-jathar.jpg",
+            "email": "",
+            "linkedin": "https://www.linkedin.com/in/swayamjathar"
+          },
+          {
+            "id": "c2223-jay-goswami",
+            "name": "Jay Goswami",
+            "role": "Treasurer",
+            "branch": "",
+            "photo": "/uploads/1791100003908-ec-2022-23-jay-goswami.jpg",
+            "email": "",
+            "linkedin": "https://www.linkedin.com/in/goswamijay"
+          },
+          {
+            "id": "c2223-rohit-jasoliya",
+            "name": "Rohit Jasoliya",
+            "role": "Branch Coordinator",
+            "branch": "Mechanical",
+            "photo": "/uploads/1791100004885-ec-2022-23-rohit-jasoliya.jpg",
+            "email": "",
+            "linkedin": "https://www.linkedin.com/in/rohit-jasoliya-280549214"
+          },
+          {
+            "id": "c2223-jay-rathod",
+            "name": "Jay Rathod",
+            "role": "Branch Coordinator",
+            "branch": "Mechanical",
+            "photo": "/uploads/1791100005862-ec-2022-23-jay-rathod.jpg",
+            "email": "",
+            "linkedin": "http://www.linkedin.com/in/jay-rathod-5677a8247"
+          },
+          {
+            "id": "c2223-kashish-datta",
+            "name": "Kashish Datta",
+            "role": "Branch Coordinator",
+            "branch": "IT",
+            "photo": "/uploads/1791100006839-ec-2022-23-kashish-datta.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2223-amisha-sakhare",
+            "name": "Amisha Sakhare",
+            "role": "Branch Coordinator",
+            "branch": "Electronics & Communication",
+            "photo": "/uploads/1791100007816-ec-2022-23-amisha-sakhare.jpg",
+            "email": "",
+            "linkedin": "https://www.linkedin.com/in/amisha-sakhare-8a3841212"
+          },
+          {
+            "id": "c2223-tirth-soni",
+            "name": "Tirth Soni",
+            "role": "Branch Coordinator",
+            "branch": "Electronics",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2223-mrunal-patil",
+            "name": "Mrunal Patil",
+            "role": "Branch Coordinator",
+            "branch": "Electrical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2223-raj-sharma",
+            "name": "Raj Sharma",
+            "role": "Branch Coordinator",
+            "branch": "Electrical",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2223-honey-rathod",
+            "name": "Honey Rathod",
+            "role": "Documentation Lead",
+            "branch": "",
+            "photo": "/uploads/1791100008793-ec-2022-23-honey-rathod.jpg",
+            "email": "",
+            "linkedin": "https://www.linkedin.com/in/honey-r-ab8848197"
+          },
+          {
+            "id": "c2223-kunal-engineer",
+            "name": "Kunal Engineer",
+            "role": "Finance & Inventory Lead",
+            "branch": "",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2223-jayati-raval",
+            "name": "Jayati Raval",
+            "role": "Graphics Lead",
+            "branch": "",
+            "photo": "/uploads/1791100009770-ec-2022-23-jayati-raval.jpg",
+            "email": "",
+            "linkedin": "https://www.linkedin.com/in/jayati-r"
+          },
+          {
+            "id": "c2223-dipesh-vadhwani",
+            "name": "Dipesh Vadhwani",
+            "role": "Social Media Lead",
+            "branch": "",
+            "photo": "/uploads/1791100010747-ec-2022-23-dipesh-vadhwani.jpg",
+            "email": "",
+            "linkedin": "https://www.linkedin.com/in/dipesh-vadhwani-922855175"
+          },
+          {
+            "id": "c2223-rayyan-mansuri",
+            "name": "Rayyan Mansuri",
+            "role": "Social Media Lead",
+            "branch": "",
+            "photo": "/uploads/1791100011724-ec-2022-23-rayyan-mansuri.jpg",
+            "email": "",
+            "linkedin": "https://www.linkedin.com/in/mansuri-rayyan-31aaa6208"
+          },
+          {
+            "id": "c2223-hunaid-barodawala",
+            "name": "Hunaid Barodawala",
+            "role": "Social Media Lead",
+            "branch": "",
+            "photo": "/uploads/1791100012701-ec-2022-23-hunaid-barodawala.jpg",
+            "email": "",
+            "linkedin": "https://www.linkedin.com/in/hunaid-barodawala-a4561b208"
+          },
+          {
+            "id": "c2223-krish-mehta",
+            "name": "Krish Mehta",
+            "role": "Web Turtles",
+            "branch": "",
+            "photo": "/uploads/1791100014655-ec-2022-23-krish-mehta.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2223-shuchi-saraiya",
+            "name": "Shuchi Saraiya",
+            "role": "Web Turtles",
+            "branch": "",
+            "photo": "/uploads/1791100015632-ec-2022-23-shuchi-saraiya.jpg",
+            "email": "",
+            "linkedin": ""
+          }
+        ]
+      },
+      {
+        "year": "2021–22",
+        "intro": "The executive committee for the academic year 2021–22.",
+        "members": [
+          {
+            "id": "c2122-jay-prajapati",
+            "name": "Jay Prajapati",
+            "role": "Secretary",
+            "branch": "",
+            "photo": "/uploads/1791100016609-ec-2021-22-jay-prajapati.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-amaan-shaikh",
+            "name": "Amaan Shaikh",
+            "role": "Joint Secretary",
+            "branch": "",
+            "photo": "/uploads/1791100017586-ec-2021-22-amaan-shaikh.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-darshit-darji",
+            "name": "Darshit Darji",
+            "role": "Joint Secretary",
+            "branch": "",
+            "photo": "/uploads/1791100018563-ec-2021-22-darshit-darji.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-naitik-dalwadi",
+            "name": "Naitik Dalwadi",
+            "role": "Treasurer",
+            "branch": "",
+            "photo": "/uploads/1791100019540-ec-2021-22-naitik-dalwadi.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-raunak-abhani",
+            "name": "Raunak Abhani",
+            "role": "Branch Coordinator",
+            "branch": "Mechanical",
+            "photo": "/uploads/1791100020517-ec-2021-22-raunak-abhani.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-jayati-raval",
+            "name": "Jayati Raval",
+            "role": "Branch Coordinator",
+            "branch": "IT",
+            "photo": "/uploads/1791100021494-ec-2021-22-jayati-raval.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-devansh-dave",
+            "name": "Devansh Dave",
+            "role": "Branch Coordinator",
+            "branch": "Electronics & Communication",
+            "photo": "/uploads/1791100022471-ec-2021-22-devansh-dave.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-hrushikesh-vegad",
+            "name": "Hrushikesh Vegad",
+            "role": "Branch Coordinator",
+            "branch": "Electronics",
+            "photo": "/uploads/1791100023448-ec-2021-22-hrushikesh-vegad.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-jay-goswami",
+            "name": "Jay Goswami",
+            "role": "Branch Coordinator · Graphics Lead",
+            "branch": "Electronics",
+            "photo": "/uploads/1791100024425-ec-2021-22-jay-goswami.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-meet-sheth",
+            "name": "Meet Sheth",
+            "role": "Branch Coordinator",
+            "branch": "Electronics & Communication",
+            "photo": "/uploads/1791100025402-ec-2021-22-meet-sheth.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-vaidehi-shah",
+            "name": "Vaidehi Shah",
+            "role": "Documentation Lead",
+            "branch": "",
+            "photo": "/uploads/1791100026379-ec-2021-22-vaidehi-shah.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-riya-vithlani",
+            "name": "Riya Vithlani",
+            "role": "Documentation Lead",
+            "branch": "",
+            "photo": "/uploads/1791100027356-ec-2021-22-riya-vithlani.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-kashish-datta",
+            "name": "Kashish Datta",
+            "role": "Documentation Team Member",
+            "branch": "",
+            "photo": "/uploads/1791100028333-ec-2021-22-kashish-datta.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-dipesh-shobhraj-vadhwani",
+            "name": "Dipesh Shobhraj Vadhwani",
+            "role": "Inventory Lead",
+            "branch": "",
+            "photo": "/uploads/1791100029310-ec-2021-22-dipesh-shobhraj-vadhwani.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-keivalya-pandya",
+            "name": "Keivalya Pandya",
+            "role": "Finance Lead · Web Ninja",
+            "branch": "",
+            "photo": "/uploads/1791100030287-ec-2021-22-keivalya-pandya.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-swayam-vijay-jathar",
+            "name": "Swayam Vijay Jathar",
+            "role": "Finance Lead",
+            "branch": "",
+            "photo": "/uploads/1791100031264-ec-2021-22-swayam-vijay-jathar.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-indrajit-patel",
+            "name": "Indrajit Patel",
+            "role": "Graphics Lead",
+            "branch": "",
+            "photo": "/uploads/1791100032241-ec-2021-22-indrajit-patel.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-mansi-patel",
+            "name": "Mansi Patel",
+            "role": "Graphic Designer",
+            "branch": "",
+            "photo": "/uploads/1791100034195-ec-2021-22-mansi-patel.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-stutee-dave",
+            "name": "Stutee Dave",
+            "role": "Graphic Designer",
+            "branch": "",
+            "photo": "/uploads/1791100035172-ec-2021-22-stutee-dave.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-ishan-mohite",
+            "name": "Ishan Mohite",
+            "role": "R&D Lead",
+            "branch": "",
+            "photo": "/uploads/1791100036149-ec-2021-22-ishan-mohite.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-pawan-patel",
+            "name": "Pawan Patel",
+            "role": "R&D Lead",
+            "branch": "",
+            "photo": "/uploads/1791100037126-ec-2021-22-pawan-patel.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-manav-thakkar",
+            "name": "Manav Thakkar",
+            "role": "R&D Lead",
+            "branch": "",
+            "photo": "/uploads/1791100038103-ec-2021-22-manav-thakkar.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-parth-panchal",
+            "name": "Parth Panchal",
+            "role": "R&D Lead",
+            "branch": "",
+            "photo": "/uploads/1791100039080-ec-2021-22-parth-panchal.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-vishwas-suthar",
+            "name": "Vishwas Suthar",
+            "role": "R&D Lead",
+            "branch": "",
+            "photo": "/uploads/1791100040057-ec-2021-22-vishwas-suthar.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-heramb-dahivalkar",
+            "name": "Heramb Dahivalkar",
+            "role": "R&D Lead",
+            "branch": "",
+            "photo": "/uploads/1791100041034-ec-2021-22-heramb-dahivalkar.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-ved-bhonsle",
+            "name": "Ved Bhonsle",
+            "role": "R&D Lead",
+            "branch": "",
+            "photo": "/uploads/1791100042011-ec-2021-22-ved-bhonsle.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-pratham-barve",
+            "name": "Pratham Barve",
+            "role": "R&D Lead",
+            "branch": "",
+            "photo": "/uploads/1791100042988-ec-2021-22-pratham-barve.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-krish-mehta",
+            "name": "Krish Mehta",
+            "role": "Web Ninja",
+            "branch": "",
+            "photo": "/uploads/1791100044942-ec-2021-22-krish-mehta.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2122-shuchi-saraiya",
+            "name": "Shuchi Saraiya",
+            "role": "Web Ninja",
+            "branch": "",
+            "photo": "/uploads/1791100045919-ec-2021-22-shuchi-saraiya.jpg",
+            "email": "",
+            "linkedin": ""
+          }
+        ]
+      },
+      {
+        "year": "2020–21",
+        "intro": "The executive committee for the academic year 2020–21.",
+        "members": [
+          {
+            "id": "c2021-sahil-vaghela",
+            "name": "Sahil Vaghela",
+            "role": "Secretary",
+            "branch": "",
+            "photo": "/uploads/1791100046896-ec-2020-21-sahil-vaghela.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-vrushal-vara",
+            "name": "Vrushal Vara",
+            "role": "Joint Secretary",
+            "branch": "",
+            "photo": "/uploads/1791100047873-ec-2020-21-vrushal-vara.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-harshil-patel",
+            "name": "Harshil Patel",
+            "role": "Joint Secretary",
+            "branch": "",
+            "photo": "/uploads/1791100048850-ec-2020-21-harshil-patel.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-ishwariya-joshi",
+            "name": "Ishwariya Joshi",
+            "role": "Treasurer",
+            "branch": "",
+            "photo": "/uploads/1791100049827-ec-2020-21-ishwariya-joshi.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-ishan-mohite",
+            "name": "Ishan Mohite",
+            "role": "Branch Coordinator",
+            "branch": "Mechanical",
+            "photo": "/uploads/1791100050804-ec-2020-21-ishan-mohite.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-param-shah",
+            "name": "Param Shah",
+            "role": "Branch Coordinator",
+            "branch": "IT",
+            "photo": "/uploads/1791100051781-ec-2020-21-param-shah.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-heramb-dahivalkar",
+            "name": "Heramb Dahivalkar",
+            "role": "Branch Coordinator",
+            "branch": "Electronics & Communication",
+            "photo": "/uploads/1791100052758-ec-2020-21-heramb-dahivalkar.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-ved-bhonsle",
+            "name": "Ved Bhonsle",
+            "role": "Branch Coordinator",
+            "branch": "Electronics",
+            "photo": "/uploads/1791100053735-ec-2020-21-ved-bhonsle.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-pranav-shah",
+            "name": "Pranav Shah",
+            "role": "Branch Coordinator",
+            "branch": "Production",
+            "photo": null,
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-vishwas-suthar",
+            "name": "Vishwas Suthar",
+            "role": "Documentation Lead",
+            "branch": "",
+            "photo": "/uploads/1791100054712-ec-2020-21-vishwas-suthar.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-parth-panchal",
+            "name": "Parth Panchal",
+            "role": "Finance Lead",
+            "branch": "",
+            "photo": "/uploads/1791100055689-ec-2020-21-parth-panchal.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-pratham-barve",
+            "name": "Pratham Barve",
+            "role": "Inventory Lead",
+            "branch": "",
+            "photo": "/uploads/1791100056666-ec-2020-21-pratham-barve.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-amaan-shaikh",
+            "name": "Amaan Shaikh",
+            "role": "Graphics Lead",
+            "branch": "",
+            "photo": "/uploads/1791100057643-ec-2020-21-amaan-shaikh.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-jay-prajapati",
+            "name": "Jay Prajapati",
+            "role": "R&D Lead",
+            "branch": "",
+            "photo": "/uploads/1791100058620-ec-2020-21-jay-prajapati.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-rutvik-patel",
+            "name": "Rutvik Patel",
+            "role": "R&D Lead",
+            "branch": "",
+            "photo": "/uploads/1791100059597-ec-2020-21-rutvik-patel.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-rutvik-valand",
+            "name": "Rutvik Valand",
+            "role": "R&D Lead",
+            "branch": "",
+            "photo": "/uploads/1791100060574-ec-2020-21-rutvik-valand.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-yukti-patel",
+            "name": "Yukti Patel",
+            "role": "R&D Lead",
+            "branch": "",
+            "photo": "/uploads/1791100061551-ec-2020-21-yukti-patel.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-deep-kapadia",
+            "name": "Deep Kapadia",
+            "role": "Website Developer",
+            "branch": "",
+            "photo": "/uploads/1791100062528-ec-2020-21-deep-kapadia.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-gargi-pimpalskar",
+            "name": "Gargi Pimpalskar",
+            "role": "Website Developer",
+            "branch": "",
+            "photo": "/uploads/1791100063505-ec-2020-21-gargi-pimpalskar.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c2021-aniket-singh-rawat",
+            "name": "Aniket Singh Rawat",
+            "role": "Website Developer",
+            "branch": "",
+            "photo": "/uploads/1791100064482-ec-2020-21-aniket-singh-rawat.jpg",
+            "email": "",
+            "linkedin": ""
+          }
+        ]
+      },
+      {
+        "year": "2019–20",
+        "intro": "The executive committee for the academic year 2019–20.",
+        "members": [
+          {
+            "id": "c1920-vishnu-nair",
+            "name": "Vishnu Nair",
+            "role": "Secretary",
+            "branch": "",
+            "photo": "/uploads/1791100065459-ec-2019-20-vishnu-nair.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-hussain-badri",
+            "name": "Hussain Badri",
+            "role": "Joint Secretary",
+            "branch": "",
+            "photo": "/uploads/1791100066436-ec-2019-20-hussain-badri.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-harshil-patel",
+            "name": "Harshil Patel",
+            "role": "Treasurer",
+            "branch": "",
+            "photo": "/uploads/1791100067413-ec-2019-20-harshil-patel.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-jay-prajapati",
+            "name": "Jay Prajapati",
+            "role": "Branch Coordinator",
+            "branch": "Mechanical",
+            "photo": "/uploads/1791100068390-ec-2019-20-jay-prajapati.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-param-shah",
+            "name": "Param Shah",
+            "role": "Branch Coordinator",
+            "branch": "IT",
+            "photo": "/uploads/1791100069367-ec-2019-20-param-shah.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-rutvik-patel",
+            "name": "Rutvik Patel",
+            "role": "Branch Coordinator",
+            "branch": "Electronics & Communication",
+            "photo": "/uploads/1791100070344-ec-2019-20-rutvik-patel.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-rutvik-valand",
+            "name": "Rutvik Valand",
+            "role": "Branch Coordinator",
+            "branch": "Electronics",
+            "photo": "/uploads/1791100071321-ec-2019-20-rutvik-valand.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-vishwas-suthar",
+            "name": "Vishwas Suthar",
+            "role": "Documentation Lead",
+            "branch": "",
+            "photo": "/uploads/1791100072298-ec-2019-20-vishwas-suthar.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-heramb-dahivalkar",
+            "name": "Heramb Dahivalkar",
+            "role": "Documentation Lead",
+            "branch": "",
+            "photo": "/uploads/1791100073275-ec-2019-20-heramb-dahivalkar.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-vrushal-vara",
+            "name": "Vrushal Vara",
+            "role": "Finance Lead",
+            "branch": "",
+            "photo": "/uploads/1791100074252-ec-2019-20-vrushal-vara.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-ishan-mohite",
+            "name": "Ishan Mohite",
+            "role": "Finance Lead",
+            "branch": "",
+            "photo": "/uploads/1791100075229-ec-2019-20-ishan-mohite.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-deep-kapadia",
+            "name": "Deep Kapadia",
+            "role": "Finance Lead · Website Developer",
+            "branch": "",
+            "photo": "/uploads/1791100076206-ec-2019-20-deep-kapadia.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-vivek-solanki",
+            "name": "Vivek Solanki",
+            "role": "Inventory Lead",
+            "branch": "",
+            "photo": "/uploads/1791100077183-ec-2019-20-vivek-solanki.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-parth-langalia",
+            "name": "Parth Langalia",
+            "role": "Inventory Lead",
+            "branch": "",
+            "photo": "/uploads/1791100078160-ec-2019-20-parth-langalia.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-pratham-barve",
+            "name": "Pratham Barve",
+            "role": "Inventory Lead",
+            "branch": "",
+            "photo": "/uploads/1791100079137-ec-2019-20-pratham-barve.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-amaan-shaikh",
+            "name": "Amaan Shaikh",
+            "role": "Graphics Lead",
+            "branch": "",
+            "photo": "/uploads/1791100080114-ec-2019-20-amaan-shaikh.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-parth-panchal",
+            "name": "Parth Panchal",
+            "role": "Graphics Lead",
+            "branch": "",
+            "photo": "/uploads/1791100081091-ec-2019-20-parth-panchal.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-sanjay-karangiya",
+            "name": "Sanjay Karangiya",
+            "role": "R&D Lead",
+            "branch": "",
+            "photo": "/uploads/1791100082068-ec-2019-20-sanjay-karangiya.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-ishwariya-joshi",
+            "name": "Ishwariya Joshi",
+            "role": "R&D Lead",
+            "branch": "",
+            "photo": "/uploads/1791100083045-ec-2019-20-ishwariya-joshi.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-yukti-patel",
+            "name": "Yukti Patel",
+            "role": "R&D Lead",
+            "branch": "",
+            "photo": "/uploads/1791100084022-ec-2019-20-yukti-patel.jpg",
+            "email": "",
+            "linkedin": ""
+          },
+          {
+            "id": "c1920-aniket-singh-rawat",
+            "name": "Aniket Singh Rawat",
+            "role": "Website Developer",
+            "branch": "",
+            "photo": "/uploads/1791100085976-ec-2019-20-aniket-singh-rawat.jpg",
+            "email": "",
+            "linkedin": ""
+          }
+        ]
       }
     ]
   },
@@ -1715,6 +2540,15 @@
         "name": "Mosin I. Hasan",
         "role": "",
         "photo": "/uploads/1789336747764-image.jpg",
+        "email": ""
+      }
+    ],
+    "former": [
+      {
+        "id": "faculty-former-ashish-thakkar",
+        "name": "Prof. Ashish Thakkar",
+        "role": "Former Faculty Advisor",
+        "photo": "/uploads/1791100086953-faculty-ashish-thakkar.jpg",
         "email": ""
       }
     ]

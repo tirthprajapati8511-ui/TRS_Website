@@ -47,6 +47,34 @@ export default function FacultyEditor({ value, onChange }) {
           />
         </div>
       </div>
+      <div>
+        <span className="mono-label text-[10px] text-ink-faint">
+          Former faculty advisors — shown in their own section below the current faculty
+        </span>
+        <div className="mt-1.5">
+          <ArrayEditor
+            items={value.former ?? []}
+            onChange={(former) => set({ former })}
+            addLabel="+ Add former faculty member"
+            newItem={() => ({
+              id: `faculty-former-${Date.now()}`,
+              name: "Prof. Name",
+              role: "Former Faculty Advisor",
+              photo: null,
+              email: "",
+            })}
+            renderItem={(item, update) => (
+              <>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <Field label="Name" value={item.name} onChange={(v) => update({ name: v })} />
+                  <Field label="Role" value={item.role ?? ""} onChange={(v) => update({ role: v })} />
+                </div>
+                <ImageUploadField label="Photo" value={item.photo} onChange={(path) => update({ photo: path })} />
+              </>
+            )}
+          />
+        </div>
+      </div>
     </SectionCard>
   );
 }
