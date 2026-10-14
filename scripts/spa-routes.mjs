@@ -11,9 +11,11 @@ const dist = "dist";
 const template = fs.readFileSync(path.join(dist, "index.html"), "utf-8");
 const content = JSON.parse(fs.readFileSync("content.json", "utf-8"));
 
-// Where the site will live. Set SITE_URL when building for another address
-// (for example https://www.bvmengineering.ac.in/TRS/).
-let siteUrl = process.env.SITE_URL || "https://tirthprajapati8511-ui.github.io/TRS_Website/";
+// Where the site will live. On Netlify this is picked up automatically; set
+// SITE_URL when building for another address (for example
+// https://www.bvmengineering.ac.in/TRS/).
+// SITE_URL wins; otherwise Netlify's own URL variable; otherwise a neutral placeholder.
+let siteUrl = process.env.SITE_URL || process.env.URL || "https://trs-bvm.netlify.app/";
 if (!siteUrl.endsWith("/")) siteUrl += "/";
 
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");

@@ -63,7 +63,7 @@ content.json    The live, saved content (created the first time something is sav
 
 ## Notes
 
-- This repo is private and intended to stay that way for now — no live public deployment exists yet.
+- **Hosting:** the site is deployed on Netlify (settings in `netlify.toml`). Netlify builds it from this repo whenever `main` is pushed, and serves it from the root of its own address — no `VITE_BASE_PATH` is needed there. The admin panel (`/admin`) only works locally with `npm run dev`; on Netlify the public site shows whatever was last saved to `content.json`.
 - The eventual production home is `https://bvmengineering.ac.in/TRS/`; `vite.config.js` and the router are already set up to support being served from a subpath via the `VITE_BASE_PATH` env var when that's ready.
 - **Building for another address** (for example the college server): set both `VITE_BASE_PATH` (the sub-folder, e.g. `/TRS/`) and `SITE_URL` (the full address, e.g. `https://bvmengineering.ac.in/TRS/`), run `npm run build`, then `node scripts/spa-routes.mjs`. The script writes a page for every route and fills in each page's title and link-preview text using `SITE_URL`.
 - Photos and videos live in `public/uploads/`. Keep photos under about 1800 px wide and videos around 720p so the site stays quick on phones.

@@ -1,0 +1,30 @@
+# Netlify build settings. The site is served from the root of its own address
+# (no sub-folder), so no VITE_BASE_PATH is needed. Netlify sets URL to the
+# site's address while building, which scripts/spa-routes.mjs uses for the
+# link-preview tags.
+[build]
+  command = "npm run build && node scripts/spa-routes.mjs"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Unknown addresses fall back to dist/404.html (the app's own "page not found"
+# screen, served with a 404 status) — no catch-all rewrite is needed because
+# every real page has its own index.html.
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/uploads/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
