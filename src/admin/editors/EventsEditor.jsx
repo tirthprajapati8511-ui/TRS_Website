@@ -1,3 +1,5 @@
+import EventAccess from "../EventAccess";
+import { cloudEnabled } from "../../lib/cloud";
 import { ArrayEditor, Field, TextArea, SectionCard, ImageUploadField, ImageGalleryField } from "../fields";
 
 const STATUS_TONES = ["accent", "good", "neutral"];
@@ -132,6 +134,18 @@ export default function EventsEditor({ value, onChange }) {
         })}
         renderItem={(item, update) => (
           <>
+            <EventForm item={item} update={update} />
+            {cloudEnabled && <EventAccess eventId={item.id} />}
+          </>
+        )}
+      />
+    </SectionCard>
+  );
+}
+
+export function EventForm({ item, update }) {
+  return (
+    <>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <Field label="Event name" value={item.name} onChange={(v) => update({ name: v })} />
               <Field label="Date label" value={item.dateLabel} onChange={(v) => update({ dateLabel: v })} />
@@ -207,9 +221,6 @@ export default function EventsEditor({ value, onChange }) {
                 />
               </div>
             </div>
-          </>
-        )}
-      />
-    </SectionCard>
+    </>
   );
 }

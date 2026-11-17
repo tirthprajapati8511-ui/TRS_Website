@@ -48,6 +48,13 @@ One-time setup:
 4. In **Project Settings → API** copy the *Project URL* and the *anon public* key into Netlify (**Site configuration → Environment variables**: `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`) and redeploy. Put the same two in `.env.local` to use the database when running locally.
 5. Open `/admin` on the live site, sign in, and press **Save changes** once — that copies the current content into the database. After that the database is the source of truth.
 
+### Giving one person access to one event
+
+1. Run `supabase/access-control.sql` once in the SQL Editor (everyone who already has a login becomes an owner).
+2. Create the person's login in **Authentication → Users** (tick Auto confirm).
+3. In `/admin` → Events, open the event and add their email under *People who can edit ONLY this event*. It applies immediately.
+4. They sign in at `/admin` and see only that event; the database itself refuses anything else.
+
 Without those two settings everything works as before: content comes from `content.json`, and the admin only runs locally via `npm run dev` (it uses the small local API in `vite.content-api.js`).
 
 Things to know: the per-page browser titles and link-preview text are generated when the site is built, so they follow `content.json` until the next deploy. `content.json` stays in the repo as the built-in copy shown while the database loads and as a fallback if it is unreachable.

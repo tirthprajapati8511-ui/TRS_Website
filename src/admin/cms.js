@@ -53,6 +53,40 @@ export async function saveContent(draft, localToken) {
   if (!res.ok) throw new Error("Save failed");
 }
 
+// ---------- who may do what ----------
+// Local dev: always an owner. Online: owner if listed in `admins`, otherwise an
+// event editor limited to the events listed for their email.
+export async function getAccess() {
+  if (!cloudEnabled) return { admin: true, eventIds: [] };
+  const sb = await getSupabase();
+  const { data: isAdmin } = await sb.rpc("is_admin");
+  if (isAdmin === true) return { admin: true, eventIds: [] };
+  const { data } = await sb.from("event_editors").select("event_id");
+  return { admin: false, eventIds: (data ?? []).map((r) => r.event_id) };
+}
+
+export async function listEventEditors(eventId) {
+  const sb = await getSupabase();
+  const { data, error } = await sb.from("event_editors").select("email").eq("event_id", eventId).order("added_at");
+  if (error) throw new Error(error.message);
+  return (data ?? []).map((r) => r.email);
+}
+export async function addEventEditor(eventId, email) {
+  const sb = await getSupabase();
+  const { error } = await sb.from("event_editors").upsert({ event_id: eventId, email: email.trim().toLowerCase() });
+  if (error) throw new Error(error.message);
+}
+export async function removeEventEditor(eventId, email) {
+  const sb = await getSupabase();
+  const { error } = await sb.from("event_editors").delete().eq("event_id", eventId).eq("email", email);
+  if (error) throw new Error(error.message);
+}
+export async function saveEventAsEditor(eventId, event) {
+  const sb = await getSupabase();
+  const { error } = await sb.rpc("save_event", { p_id: eventId, p_event: event });
+  if (error) throw new Error(error.message || "Could not save this event.");
+}
+
 // ---------- upload a photo / video ----------
 function fileToBase64(file) {
   return new Promise((resolve, reject) => {

@@ -17,7 +17,8 @@ import InstagramEditor from "./editors/InstagramEditor";
 import FooterEditor from "./editors/FooterEditor";
 import { TrsLogo } from "../components/Logo";
 import { useAdminAuth } from "./useAdminAuth";
-import { saveContent } from "./cms";
+import { saveContent, getAccess } from "./cms";
+import EventEditorPage from "./EventEditorPage";
 
 const TABS = [
   { key: "brand", label: "Branding", Editor: BrandEditor },
@@ -45,6 +46,18 @@ export default function AdminPage() {
   if (!auth.loggedIn) {
     return <AdminLogin cloud={auth.cloud} onSubmit={auth.login} />;
   }
+  return <RoleGate auth={auth} />;
+}
+
+function RoleGate({ auth }) {
+  const [access, setAccess] = useState(null);
+  const [failed, setFailed] = useState(false);
+  useEffect(() => {
+    getAccess().then(setAccess).catch(() => setFailed(true));
+  }, []);
+  if (failed) return <div className="min-h-screen bg-bg p-8 text-sm text-ink-dim">Could not check your access. Refresh and try again.</div>;
+  if (!access) return <div className="min-h-screen bg-bg" />;
+  if (!access.admin) return <EventEditorPage eventIds={access.eventIds} email={auth.email} onLogout={auth.logout} />;
   return <AdminDashboard token={auth.token} onLogout={auth.logout} email={auth.email} />;
 }
 
