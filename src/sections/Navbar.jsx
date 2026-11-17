@@ -102,12 +102,18 @@ export default function Navbar() {
           <div className="flex items-center">
             <BvmLogo className="h-9 w-9" />
           </div>
+          <NavLink to="/admin" className="border border-line px-3.5 py-1.5 text-[13px] font-medium text-ink hover:border-accent hover:text-accent transition-colors">
+            Login
+          </NavLink>
           <Button href={JOIN_LINK.href} variant="primary" size="sm" icon={false}>
             {JOIN_LINK.label}
           </Button>
         </div>
 
         <div className="flex items-center gap-2.5 2xl:hidden">
+          <NavLink to="/admin" className="border border-line px-3 py-1 text-[13px] font-medium text-ink hover:border-accent hover:text-accent transition-colors">
+            Login
+          </NavLink>
           <button
             onClick={() => setOpen((o) => !o)}
             className="text-ink p-1.5"
