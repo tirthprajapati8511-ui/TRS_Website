@@ -8,6 +8,7 @@ import { DEFAULT_CONTENT } from "./defaultContent";
 // reachable (local dev), so editing in /admin and refreshing always shows
 // the latest without needing a rebuild.
 import bundledContent from "../../content.json";
+import { cloudEnabled, fetchCloudContent } from "./cloud";
 
 const ContentContext = createContext(null);
 
@@ -28,10 +29,28 @@ function mergeContent(saved) {
 }
 
 export function ContentProvider({ children }) {
-  const [content, setContent] = useState(DEFAULT_CONTENT);
+  const [content, setContent] = useState(() => mergeContent(bundledContent));
   const [status, setStatus] = useState("loading"); // loading | saved | defaults | bundled
 
   const refresh = useCallback(async () => {
+    // Online database: the saved copy wins; the snapshot baked in at build
+    // time is what shows until it arrives (and if the database is down).
+    if (cloudEnabled) {
+      try {
+        const row = await fetchCloudContent();
+        if (row?.data) {
+          setContent(mergeContent(row.data));
+          setStatus("cloud");
+        } else {
+          setContent(mergeContent(bundledContent));
+          setStatus("cloud-empty");
+        }
+      } catch {
+        setContent(mergeContent(bundledContent));
+        setStatus("bundled");
+      }
+      return;
+    }
     try {
       const res = await fetch("/api/content");
       if (!res.ok) throw new Error("Request failed");

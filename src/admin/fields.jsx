@@ -4,31 +4,15 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp, ImageIcon, Loader2, X } from "lucide-react";
 import { ADMIN_TOKEN_KEY } from "./tokenKey";
+import { cloudEnabled } from "../lib/cloud";
+import { uploadFile } from "./cms";
 
 const MAX_UPLOAD_MB = 8;
-const MAX_VIDEO_UPLOAD_MB = 60; // keep in sync with vite.content-api.js
+const MAX_VIDEO_UPLOAD_MB = cloudEnabled ? 50 : 60; // 50 = the online storage limit; 60 = vite.content-api.js
 
-function fileToBase64(file) {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = () => resolve(String(reader.result).split(",")[1] ?? "");
-    reader.onerror = reject;
-    reader.readAsDataURL(file);
-  });
-}
-
-/** Uploads an image file to the local content API and returns its saved path. */
+/** Uploads a photo or video (online storage, or the local dev API) and returns its address. */
 async function uploadImage(file) {
-  const token = sessionStorage.getItem(ADMIN_TOKEN_KEY) || "";
-  const dataBase64 = await fileToBase64(file);
-  const res = await fetch("/api/upload", {
-    method: "POST",
-    headers: { "Content-Type": "application/json", "x-admin-token": token },
-    body: JSON.stringify({ filename: file.name, mime: file.type, dataBase64 }),
-  });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error || "Upload failed.");
-  return data.path;
+  return uploadFile(file, sessionStorage.getItem(ADMIN_TOKEN_KEY) || "");
 }
 
 /**

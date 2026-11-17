@@ -36,7 +36,21 @@ From there you can edit branding/logos, the hero section, Executive Committee, F
 
 Saved content is written to `content.json` in this folder — it's real, permanent data that survives restarts, but only on this computer until it's committed and pushed to GitHub.
 
-**Important**: the admin panel only works while running via `npm run dev` (or `npm run preview` after a build) — it depends on a small local API (`vite.content-api.js`) that a static, publicly-hosted build won't have. See that file's comments for what a production deployment would need instead.
+### Online database (edit the live site from the browser)
+
+With the two settings in `.env.example` filled in, the website reads its content from an online **Supabase** database and the admin panel works on the live site at `/admin` — you sign in with an email and password and press **Save changes**; no VS Code, no `npm`, no deploy. Photos and videos you upload go to Supabase Storage.
+
+One-time setup:
+
+1. Create a free project at supabase.com.
+2. In **SQL Editor**, paste and run `supabase/setup.sql` (creates the content table, the photo bucket, and the rules: everyone can read, only signed-in admins can write).
+3. In **Authentication → Users**, add your admin user (email + password, tick "Auto confirm"). In **Authentication → Providers → Email**, switch **off** "Allow new users to sign up".
+4. In **Project Settings → API** copy the *Project URL* and the *anon public* key into Netlify (**Site configuration → Environment variables**: `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`) and redeploy. Put the same two in `.env.local` to use the database when running locally.
+5. Open `/admin` on the live site, sign in, and press **Save changes** once — that copies the current content into the database. After that the database is the source of truth.
+
+Without those two settings everything works as before: content comes from `content.json`, and the admin only runs locally via `npm run dev` (it uses the small local API in `vite.content-api.js`).
+
+Things to know: the per-page browser titles and link-preview text are generated when the site is built, so they follow `content.json` until the next deploy. `content.json` stays in the repo as the built-in copy shown while the database loads and as a fallback if it is unreachable.
 
 ## Other useful commands
 

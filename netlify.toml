@@ -13,6 +13,16 @@
 # screen, served with a 404 status) — no catch-all rewrite is needed because
 # every real page has its own index.html.
 
+[[redirects]]
+  from = "/admin"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/index.html"
+  status = 200
+
 [[headers]]
   for = "/assets/*"
   [headers.values]

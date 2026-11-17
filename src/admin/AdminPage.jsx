@@ -16,7 +16,8 @@ import PatentsEditor from "./editors/PatentsEditor";
 import InstagramEditor from "./editors/InstagramEditor";
 import FooterEditor from "./editors/FooterEditor";
 import { TrsLogo } from "../components/Logo";
-import { ADMIN_TOKEN_KEY as TOKEN_KEY } from "./tokenKey";
+import { useAdminAuth } from "./useAdminAuth";
+import { saveContent } from "./cms";
 
 const TABS = [
   { key: "brand", label: "Branding", Editor: BrandEditor },
@@ -36,31 +37,18 @@ const TABS = [
 ];
 
 export default function AdminPage() {
-  const [token, setToken] = useState(() => sessionStorage.getItem(TOKEN_KEY) || "");
+  const auth = useAdminAuth();
 
-  if (!token) {
-    return (
-      <AdminLogin
-        onLogin={(pwd) => {
-          sessionStorage.setItem(TOKEN_KEY, pwd);
-          setToken(pwd);
-        }}
-      />
-    );
+  if (!auth.ready) {
+    return <div className="min-h-screen bg-bg" />;
   }
-
-  return (
-    <AdminDashboard
-      token={token}
-      onLogout={() => {
-        sessionStorage.removeItem(TOKEN_KEY);
-        setToken("");
-      }}
-    />
-  );
+  if (!auth.loggedIn) {
+    return <AdminLogin cloud={auth.cloud} onSubmit={auth.login} />;
+  }
+  return <AdminDashboard token={auth.token} onLogout={auth.logout} email={auth.email} />;
 }
 
-function AdminDashboard({ token, onLogout }) {
+function AdminDashboard({ token, onLogout, email }) {
   const content = useContent();
   const { status, refresh } = useContentStatus();
 
@@ -89,17 +77,7 @@ function AdminDashboard({ token, onLogout }) {
     setSaveState("saving");
     setErrorMessage("");
     try {
-      const res = await fetch("/api/content", {
-        method: "PUT",
-        headers: { "Content-Type": "application/json", "x-admin-token": token },
-        body: JSON.stringify(draft),
-      });
-      if (res.status === 401) {
-        setErrorMessage("Session expired or wrong password — please sign in again.");
-        setSaveState("error");
-        return;
-      }
-      if (!res.ok) throw new Error("Save failed");
+      await saveContent(draft, token);
       setSaveState("saved");
       refresh();
     } catch (err) {
@@ -157,7 +135,7 @@ function AdminDashboard({ token, onLogout }) {
               onClick={onLogout}
               className="mono-label text-[11px] text-ink-faint hover:text-accent transition-colors px-2"
             >
-              Log out
+              Log out{email ? ` (${email})` : ""}
             </button>
           </div>
         </div>
@@ -212,6 +190,8 @@ function StatusPill({ status }) {
     loading: { text: "Loading…", cls: "text-ink-faint" },
     saved: { text: "Editing saved content", cls: "text-accent" },
     defaults: { text: "Editing defaults — nothing saved yet", cls: "text-ink-dim" },
+    cloud: { text: "Editing the live online content — saving updates the website", cls: "text-accent" },
+    "cloud-empty": { text: "Online database is empty — press SAVE CHANGES once to publish the current content to it", cls: "text-ink-dim" },
     bundled: { text: "No local API — viewing the last built snapshot, changes won't save", cls: "text-ink-faint" },
   };
   const { text, cls } = map[status] ?? map.loading;

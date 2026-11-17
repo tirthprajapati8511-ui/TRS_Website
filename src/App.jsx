@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Route, Routes, Outlet, useLocation } from "react-router-dom";
 import { MotionConfig, motion } from "framer-motion";
 import Navbar from "./sections/Navbar";
@@ -22,7 +22,7 @@ import EventsList from "./pages/EventsList";
 import EventDetail from "./pages/EventDetail";
 import ProjectsList from "./pages/ProjectsList";
 import ProjectDetail from "./pages/ProjectDetail";
-import AdminPage from "./admin/AdminPage";
+const AdminPage = lazy(() => import("./admin/AdminPage"));
 import ScrollProgress from "./components/ScrollProgress";
 import BackToTop from "./components/BackToTop";
 import InstagramFeed from "./sections/InstagramFeed";
@@ -106,7 +106,14 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Route>
-      <Route path="/admin/*" element={<AdminPage />} />
+      <Route
+        path="/admin/*"
+        element={
+          <Suspense fallback={<div className="min-h-screen bg-bg" />}>
+            <AdminPage />
+          </Suspense>
+        }
+      />
     </Routes>
     </MotionConfig>
   );
