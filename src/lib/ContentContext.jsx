@@ -38,7 +38,7 @@ export function ContentProvider({ children }) {
     if (cloudEnabled) {
       try {
         const row = await fetchCloudContent();
-        if (row?.data) {
+        if (row?.data && Object.keys(row.data).length > 0) {
           setContent(mergeContent(row.data));
           setStatus("cloud");
         } else {
