@@ -48,6 +48,7 @@ const routes = [
   "events",
   "projects",
   "achievements",
+  "patents",
   "workshops",
   "join",
   "contact",

@@ -12,6 +12,7 @@ import WorkshopsEditor from "./editors/WorkshopsEditor";
 import JoinEditor from "./editors/JoinEditor";
 import ExploreEditor from "./editors/ExploreEditor";
 import ContactEditor from "./editors/ContactEditor";
+import PatentsEditor from "./editors/PatentsEditor";
 import InstagramEditor from "./editors/InstagramEditor";
 import FooterEditor from "./editors/FooterEditor";
 import { TrsLogo } from "../components/Logo";
@@ -26,6 +27,7 @@ const TABS = [
   { key: "projects", label: "Projects", Editor: ProjectsEditor },
   { key: "achievements", label: "Achievements", Editor: AchievementsEditor },
   { key: "explore", label: "Explore TRS", Editor: ExploreEditor },
+  { key: "patents", label: "Patents", Editor: PatentsEditor },
   { key: "workshops", label: "Workshops", Editor: WorkshopsEditor },
   { key: "join", label: "Join TRS", Editor: JoinEditor },
   { key: "instagram", label: "Instagram feed", Editor: InstagramEditor },

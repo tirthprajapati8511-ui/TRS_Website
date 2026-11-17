@@ -2607,5 +2607,10 @@
       "name": "The Robotics Society (India)",
       "note": "An authorized student chapter of"
     }
+  },
+  "patents": {
+    "heading": "Patents issued",
+    "description": "Inventions by students and faculty of TRS BVM that have been filed or issued as patents.",
+    "items": []
   }
 }

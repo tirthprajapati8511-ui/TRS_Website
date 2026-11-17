@@ -25,6 +25,7 @@ export const NAV_LINKS = [
   { label: "Events", href: "/events" },
   { label: "Projects", href: "/projects" },
   { label: "Achievements", href: "/achievements" },
+  { label: "Patents", href: "/patents" },
   { label: "Workshops", href: "/workshops" },
   { label: "Contact", href: "/contact" },
 ];
@@ -334,6 +335,12 @@ export const DEFAULT_CONTENT = {
     "username": "trs_bvm",
     "heading": "Follow us on Instagram",
     "description": "Our latest posts — results, events and life at TRS BVM — straight from Instagram."
+  },
+
+  patents: {
+    heading: "Patents issued",
+    description: "Inventions by students and faculty of TRS BVM that have been filed or issued as patents.",
+    items: [],
   },
 
   workshops: {

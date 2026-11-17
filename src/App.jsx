@@ -13,6 +13,7 @@ import Explore from "./pages/Explore";
 import Contact from "./pages/Contact";
 import WorkshopsList from "./pages/WorkshopsList";
 import WorkshopDetail from "./pages/WorkshopDetail";
+import Patents from "./pages/Patents";
 import Join from "./pages/Join";
 import Committee from "./pages/Committee";
 import Faculty from "./pages/Faculty";
@@ -98,6 +99,7 @@ function App() {
         <Route path="/projects" element={<ProjectsList />} />
         <Route path="/projects/:projectId" element={<ProjectDetail />} />
         <Route path="/achievements" element={<AchievementsPage />} />
+        <Route path="/patents" element={<Patents />} />
         <Route path="/workshops" element={<WorkshopsList />} />
         <Route path="/workshops/:workshopId" element={<WorkshopDetail />} />
         <Route path="/join" element={<Join />} />

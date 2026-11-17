@@ -36,6 +36,10 @@ const STATIC = {
     title: "Achievements",
     description: "Results of TRS BVM at national and international robotics competitions, year by year.",
   },
+  "/patents": {
+    title: "Patents",
+    description: "Patents filed and issued from the work of TRS BVM students and faculty.",
+  },
   "/workshops": {
     title: "Workshops",
     description: "Hands-on sessions and webinars from TRS BVM.",
