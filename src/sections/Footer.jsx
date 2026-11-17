@@ -109,6 +109,12 @@ export default function Footer() {
             © {year} TRS BVM Student Chapter. All rights reserved.
           </p>
           <p className="text-[11.5px] text-on-navy-dim">BVM Engineering College, Vallabh Vidyanagar</p>
+          <Link
+            to="/admin"
+            className="inline-flex items-center gap-1.5 text-[11.5px] text-on-navy-dim hover:text-white transition-colors"
+          >
+            <ShieldCheck size={13} aria-hidden="true" /> Admin / Editor login
+          </Link>
         </div>
       </Container>
     </footer>
